@@ -125,7 +125,7 @@ gitment:
 # 站长分析，输入站点id
 cnzz_analytics: false
 # 百度分析，输入key值
-baidu_analytics: false
+baidu_analytics: true
 # google analytics | google分析
 google_analytics: true
 
@@ -138,4 +138,4 @@ access_counter:
   site_pv: 总访问量：
 
 # Copyright Information | 版权信息
-copyright: 2018 MinHow
+copyright: 2018 adoredee

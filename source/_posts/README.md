@@ -1,3 +1,7 @@
+---
+title: Lab532服务器环境(Ubuntu18.04LTS)须知
+cover_picture: https://www.z4a.net/images/2018/11/28/Pic1.jpg
+---
 
 # Lab532服务器环境(Ubuntu18.04LTS)须知
 Author | kangzhiheng
@@ -103,7 +107,7 @@ passwd username
 ### FileZilla
 > FileZilla 客户端是一个快速可靠的、跨平台的FTP,FTPS和SFTP客户端。具有图形用户界面(GUI)和很多有用的特性，比如支持FTP, FTP并支持SSL/TLS (FTPS)协议，支持SSH文件传输协议(SFTP)等。
 
-![FileZilla](https://github.com/kangzhiheng/GitLocalDoc/blob/master/img/FileZilla_Client.png)
+![FileZilla_Client.png](https://www.z4a.net/images/2018/11/28/FileZilla_Client.png)
 
 **FileZilla**可以进行本地文件与服务器文件的相互传输，具体操作如下：
 
@@ -129,7 +133,7 @@ passwd username
 
 以window 10为例，利用FileZilla登录到服务器后，可以看到左边是**本地站点**，右边是**远程站点**(服务器上的目录)，如下图所示，直接将本地文件`test.py`用鼠标拖拽到服务器上的指定目录即可（**上传过程**），这个过程是可逆的（**下载过程**），非常方便。
 
-![FileZilla_file](https://github.com/kangzhiheng/GitLocalDoc/blob/master/img/FileZilla_file.png)
+![FileZilla_file.png](https://www.z4a.net/images/2018/11/28/FileZilla_file.png)
 
 ### 总结
 利用**FileZilla**软件配合**SSH**协议，即可完成文件传输及程序运行等必要工作。
@@ -142,7 +146,7 @@ nvidia-smi
 ```
 若输出以下信息，即证明显卡驱动已安装.
 
-![nvidia](https://github.com/kangzhiheng/GitLocalDoc/blob/master/img/nvidia.png)
+![nvidia.png](https://www.z4a.net/images/2018/11/28/nvidia.png)
 
 若有错误提示，请及时联系管理员**adoredee**(kangzhiheng@sjtu.edu.cn)
 
@@ -275,7 +279,7 @@ ls
 bash Anaconda3-5.2.0-Linux-x86_64.sh
 ```
 按`Enter`键继续，出现以下的界面
-![Anaconda_1](https://github.com/kangzhiheng/GitLocalDoc/blob/master/img/Anaconda_1.png)
+![Anaconda_1.png](https://www.z4a.net/images/2018/11/28/Anaconda_1.png)
 此时按一下`space`(空格)键，有如下提示，在`[no] >>>` 后面输入`yes`，如下所示：
 ```bash
 Do you accept the license terms? [yes|no]

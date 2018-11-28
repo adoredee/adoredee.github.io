@@ -33,5 +33,5 @@ branches:
     - hexo
 env:
  global:
-   - GH_REF: adoredee.github.com/adoredee/adoredee.github.io.git
+   - GH_REF: github.com/adoredee/adoredee.github.io.git
              

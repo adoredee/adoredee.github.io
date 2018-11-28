@@ -7,11 +7,11 @@ favicon: /favicon.ico
 # Header
 
 # Keywords of your site | 网站关键字
-keywords: MinHow,MinHow's Blog
+keywords: Kang's Blog
 # Head headline | 头部标题
-header_title: MinHow's Blog
+header_title: adoredee
 # Head description | 头部描述
-header_description: 一个专注 WEB 开发的技术博客
+header_description: 谁知我知你，我知你知深。
 # Link to your logo | logo地址
 logo: images/logo.png
 # Link to your banner_img | 首页banner图地址
@@ -41,12 +41,12 @@ menu:
 #    target: true         Whether to jump out | 是否跳出
 social:
   home:
-    title: MinHow
-    url: //minhow.com
+    title: kangzhiheng
+    url: //kangzhiheng.top
     target: true
   github:
     title: Github
-    url: //github.com/wongminho
+    url: //github.com/kangzhiheng
     target: true
   weibo:
     title: Weibo
@@ -72,7 +72,7 @@ excerpt_length: 190
 # Excerpt link | 摘录链接
 excerpt_link: more>>
 # New window open link | 新窗口打开文章
-open_new_link: false
+open_new_link: true
 # Article default cover picture，size：350*150 | 文章默认封面图，尺寸：350*150
 cover_picture: images/banner.jpg
 # Open background particles | 开启背景粒子
@@ -101,9 +101,9 @@ reward:
   # 标题
   title: 请我吃糖~
   # 微信，关闭设为 false
-  wechat: images/wechat_code.jpg
+  wechat: images/wechat.jpg
   # 支付宝，关闭设为 false
-  alipay: images/alipay_code.jpg
+  alipay: images/alipay.jpg
 
 # Comments | 评论
 
@@ -127,7 +127,7 @@ cnzz_analytics: false
 # 百度分析，输入key值
 baidu_analytics: false
 # google analytics | google分析
-google_analytics: false
+google_analytics: true
 
 # Footer
 

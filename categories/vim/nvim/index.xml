@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Vim/Nvim on adoredee</title>
+    <link>http://kangzhiheng.top/categories/vim/nvim/</link>
+    <description>Recent content in Vim/Nvim on adoredee</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <copyright>Copyright © 2008–2020, Steve Francia and the Hugo Authors; All Rights Reserved.</copyright>
+    
+	<atom:link href="http://kangzhiheng.top/categories/vim/nvim/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Linux之像IDE一样使用vim（C&#43;&#43;版本/Python版本</title>
+      <link>http://kangzhiheng.top/post/9-linux%E4%B9%8B%E6%89%93%E9%80%A0vim%E5%AE%9E%E7%94%A8%E9%85%8D%E7%BD%AE%E6%96%B9%E6%A1%88/</link>
+      <pubDate>Mon, 30 Mar 2020 00:00:00 +0000</pubDate>
+      
+      <guid>http://kangzhiheng.top/post/9-linux%E4%B9%8B%E6%89%93%E9%80%A0vim%E5%AE%9E%E7%94%A8%E9%85%8D%E7%BD%AE%E6%96%B9%E6%A1%88/</guid>
+      <description>&lt;p&gt;打造vim实用配置方案&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>面试 on adoredee</title>
+    <link>http://kangzhiheng.top/series/%E9%9D%A2%E8%AF%95/</link>
+    <description>Recent content in 面试 on adoredee</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <copyright>Copyright © 2008–2020, Steve Francia and the Hugo Authors; All Rights Reserved.</copyright>
+    <lastBuildDate>Sat, 22 Feb 2020 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="http://kangzhiheng.top/series/%E9%9D%A2%E8%AF%95/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>计算机操作系统</title>
+      <link>http://kangzhiheng.top/post/5-%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/</link>
+      <pubDate>Sat, 22 Feb 2020 00:00:00 +0000</pubDate>
+      
+      <guid>http://kangzhiheng.top/post/5-%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/</guid>
+      <description>&lt;p&gt;操作系统相关知识&lt;/p&gt;
+&lt;p&gt;本文整理计算机操作系统相关知识&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>C&#43;&#43;之查漏补缺</title>
+      <link>http://kangzhiheng.top/post/3-c&#43;&#43;%E7%9F%A5%E8%AF%86%E7%82%B9/</link>
+      <pubDate>Sat, 15 Feb 2020 00:00:00 +0000</pubDate>
+      
+      <guid>http://kangzhiheng.top/post/3-c&#43;&#43;%E7%9F%A5%E8%AF%86%E7%82%B9/</guid>
+      <description>&lt;p&gt;关于C++的一些知识点，方便查阅。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Linux之常用命令</title>
+      <link>http://kangzhiheng.top/post/4-linux%E4%B9%8B%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/</link>
+      <pubDate>Sat, 15 Feb 2020 00:00:00 +0000</pubDate>
+      
+      <guid>http://kangzhiheng.top/post/4-linux%E4%B9%8B%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/</guid>
+      <description>&lt;p&gt;关于Linux常用的一些命令&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>TCP/IP之知识点梳理</title>
+      <link>http://kangzhiheng.top/post/6-tcp-ip%E7%9F%A5%E8%AF%86%E7%82%B9%E6%A2%B3%E7%90%86/</link>
+      <pubDate>Sat, 15 Feb 2020 00:00:00 +0000</pubDate>
+      
+      <guid>http://kangzhiheng.top/post/6-tcp-ip%E7%9F%A5%E8%AF%86%E7%82%B9%E6%A2%B3%E7%90%86/</guid>
+      <description>&lt;p&gt;网络原理&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

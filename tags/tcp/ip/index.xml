@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>TCP/IP on adoredee</title>
+    <link>http://kangzhiheng.top/tags/tcp/ip/</link>
+    <description>Recent content in TCP/IP on adoredee</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <copyright>Copyright © 2008–2020, Steve Francia and the Hugo Authors; All Rights Reserved.</copyright>
+    
+	<atom:link href="http://kangzhiheng.top/tags/tcp/ip/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>TCP/IP之知识点梳理</title>
+      <link>http://kangzhiheng.top/post/6-tcp-ip%E7%9F%A5%E8%AF%86%E7%82%B9%E6%A2%B3%E7%90%86/</link>
+      <pubDate>Sat, 15 Feb 2020 00:00:00 +0000</pubDate>
+      
+      <guid>http://kangzhiheng.top/post/6-tcp-ip%E7%9F%A5%E8%AF%86%E7%82%B9%E6%A2%B3%E7%90%86/</guid>
+      <description>&lt;p&gt;网络原理&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

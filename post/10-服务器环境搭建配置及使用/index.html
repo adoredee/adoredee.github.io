@@ -11,6 +11,13 @@
   
 </title><meta name="description" content="谁知我知你，我知你之深。"><meta name="author" content="kangzhiheng">
 
+<link rel="apple-touch-icon" href="/apple-touch-icon.png" sizes="180x180">
+<link rel="icon" href="/favicon-32x32.png " sizes="32x32" type="image/png">
+<link rel="icon" href="/favicon-16x16.png" sizes="16x16" type="image/png">
+<link rel="manifest" href="/manifest.json">
+<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#0c344b">
+<link rel="icon" href="/favicon.ico">
+
 
     
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.17.1/themes/prism.min.css">
@@ -41,7 +48,7 @@
 注意：标题右上角带有&rdquo;*&ldquo;标记的，意为这一部分内容需要管理员操作。">
 <meta itemprop="datePublished" content="2020-04-17T00:00:00&#43;00:00" />
 <meta itemprop="dateModified" content="2020-04-17T00:00:00&#43;00:00" />
-<meta itemprop="wordCount" content="34618">
+<meta itemprop="wordCount" content="34622">
 <meta itemprop="image" content="http://kangzhiheng.top/10-cover.png">
 
 
@@ -471,7 +478,13 @@ CentOS Linux release 7.7.1908 (Core)
 <p><strong>遇到顽固的进程，使出必杀技</strong></p>
 <pre><code class="language-bash">kill -9 PID
 </code></pre>
-<p><img src="https://s4.aconvert.com/convert/p3r68-cdx67/a6yfe-e7t35.png" alt=""></p>
+<figure class="figure">
+    <a href="https://s4.aconvert.com/convert/p3r68-cdx67/a6yfe-e7t35.png" class="d-block" data-toggle="lightbox" data-gallery="post-gallery">
+        <img src="https://s4.aconvert.com/convert/p3r68-cdx67/a6yfe-e7t35.png"class="figure-img img-fluid"
+        /> 
+    </a>
+</figure>
+
 <h3 id="资源统计">资源统计</h3>
 <p><strong>查看当前目录大小</strong></p>
 <pre><code class="language-bash">du -sh
@@ -974,13 +987,31 @@ top
 </table>
 <h4 id="tensorflow建议配置httpswwwtensorfloworginstallsourcelinux">Tensorflow建议<a href="https://www.tensorflow.org/install/source#linux">配置</a></h4>
 <p>数据来源于<a href="https://www.tensorflow.org/install/source#linux">官网</a>，截止2020年4月11号，<code>tensorflow-2.1.0</code>版本需要配合<code>CUDA 10.1</code>和<code>cuDNN 7.6</code>配合使用。</p>
-<p><img src="https://pic.downk.cc/item/5e9137b1504f4bcb04541d52.png" alt="Tensorflow版本"></p>
+<figure class="figure">
+    <a href="https://pic.downk.cc/item/5e9137b1504f4bcb04541d52.png" class="d-block" data-toggle="lightbox" data-gallery="post-gallery">
+        <img src="https://pic.downk.cc/item/5e9137b1504f4bcb04541d52.png"class="figure-img img-fluid"
+        /> 
+    </a>
+</figure>
+
 <h4 id="pytorch建议配置httpspytorchorgget-startedprevious-versions">PyTorch建议<a href="https://pytorch.org/get-started/previous-versions/">配置</a></h4>
 <p>数据来源于<a href="https://pytorch.org/get-started/previous-versions/">官网</a>，截止2020年4月11号，<code>PyTorch 1.4</code>版本需要配合<code>CUDA 10.1</code>或<code>CUDA9.2</code>配合使用。</p>
-<p><img src="https://pic.downk.cc/item/5e91390d504f4bcb04552f6c.png" alt="PyTorch"></p>
+<figure class="figure">
+    <a href="https://pic.downk.cc/item/5e91390d504f4bcb04552f6c.png" class="d-block" data-toggle="lightbox" data-gallery="post-gallery">
+        <img src="https://pic.downk.cc/item/5e91390d504f4bcb04552f6c.png"class="figure-img img-fluid"
+        /> 
+    </a>
+</figure>
+
 <h4 id="nvidia驱动选型">NVIDIA驱动选型</h4>
 <p>在Linux系统下，<a href="https://docs.nvidia.com/cuda/cuda-toolkit-release-notes/index.html">NVIDIA驱动型号</a>根据需求来安装，<code>CUDA10.2</code>需求<code>NVIDIA &gt;= 440.33</code>，所以NVIDIA驱动型号至少是<code>440.33</code>。</p>
-<p><img src="https://pic.downk.cc/item/5e913b69504f4bcb04574a5e.png" alt="CUDA版本与NVIDIA驱动之间的关系"></p>
+<figure class="figure">
+    <a href="https://pic.downk.cc/item/5e913b69504f4bcb04574a5e.png" class="d-block" data-toggle="lightbox" data-gallery="post-gallery">
+        <img src="https://pic.downk.cc/item/5e913b69504f4bcb04574a5e.png"class="figure-img img-fluid"
+        /> 
+    </a>
+</figure>
+
 <h3 id="nvidia驱动安装centosubuntu">NVIDIA驱动安装（CentOS、Ubuntu）*</h3>
 <p>通过前面的分析，目前Tensorflow 最新版本2.1.0需求CUDA 10.1，索性安装CUDA 10.2所需求的最低要求的NVIDIA版本<code>440.33</code>。</p>
 <p>另外NVIDIA驱动不要轻易更新，在CentOS下，尤其是不到万不得已的地步，千万千万不要运行<code>sudo yum update</code>指令！Ubuntu对应的指令是<code>sudo apt-get update</code>。</p>
@@ -1070,7 +1101,13 @@ CentOS Linux release 7.7.1908 (Core)
 </ol>
 <h4 id="禁用第三方开源驱动nouveau">禁用第三方开源驱动nouveau</h4>
 <p>Nouveau是由第三方为NVIDIA显卡开发的一个开源3D驱动，不过没有得到NVIDIA的认可与支持。Nouveau让Linux更容易的应对各种复杂的NVIDIA显卡环境，让用户安装完系统即可进入桌面并且有不错的显示效果，所以，很多Linux发行版默认集成了Nouveau驱动，在遇到NVIDIA显卡时默认安装。企业版的Linux更是如此，几乎所有支持图形界面的企业Linux发行版都将Nouveau收入其中。不过对于个人桌面用户来说，处于成长阶段的Nouveau并不完美，与企业版不一样，个人用户除了想让正常显示图形界面外很多时候还需要一些3D特效，Nouveau多数时候并不能完成，而用户在安装NVIDIA官方私有驱动的时候Nouveau又成为了阻碍，如果不干掉Nouveau，NVIDIA驱动安装时总是报错。</p>
-<p><img src="https://pic.downk.cc/item/5e93446cc2a9a83be5684112.jpg" alt=""></p>
+<p><figure class="figure">
+    <a href="https://pic.downk.cc/item/5e93446cc2a9a83be5684112.jpg" class="d-block" data-toggle="lightbox" data-gallery="post-gallery">
+        <img src="https://pic.downk.cc/item/5e93446cc2a9a83be5684112.jpg"class="figure-img img-fluid"
+        /> 
+    </a>
+</figure>
+)</p>
 <p><strong>NVIDIA驱动和nouveau驱动最好二选一</strong>，一般情况下，<strong>深度学习环境配置需禁用nouveau驱动</strong>，查看nouveau驱动信息：</p>
 <pre><code class="language-bash">lsmod |grep nouveau
 </code></pre>
@@ -1111,7 +1148,13 @@ options nouveau modeset=0
 </code></pre>
 <p>总之，可以得知当前NVIDIA版本信息（就算使用了<code>sudo yum update</code>），使用上述四条命令之一也可以查到，如果真的真的忘记了，跳过这一步吧……</p>
 <p>假设知道了目前的NVIDIA驱动型号，假设为390.77，去<a href="https://download.nvidia.com/XFree86/Linux-x86_64/">该网站</a>上下载对应的驱动文件</p>
-<p><img src="https://pic.downk.cc/item/5e9340d4c2a9a83be565cc63.png" alt=""></p>
+<figure class="figure">
+    <a href="https://pic.downk.cc/item/5e9340d4c2a9a83be565cc63.png" class="d-block" data-toggle="lightbox" data-gallery="post-gallery">
+        <img src="https://pic.downk.cc/item/5e9340d4c2a9a83be565cc63.png"class="figure-img img-fluid"
+        /> 
+    </a>
+</figure>
+
 <p>类似于<code>NVIDIA-Linux-x86_64-390.77.run</code>这种文件，右键<strong>复制链接</strong>，使用<strong>wget</strong>工具下载</p>
 <pre><code class="language-bash">cd ~    // 回到主目录
 wget -c https://download.nvidia.com/XFree86/Linux-x86_64/390.77/NVIDIA-Linux-x86_64-390.77.run
@@ -1199,7 +1242,13 @@ sudo apt-get install nvidia-xxx
 <p><strong>CUDA的安装，建议<a href="#%E5%85%B3%E9%97%AD%E6%A1%8C%E9%9D%A2%E6%9C%8D%E5%8A%A1">关闭桌面服务</a>，通过<code>Alt + Ctrl + F1 </code>进入终端。</strong></p>
 <h4 id="cuda文件下载">CUDA文件下载</h4>
 <p>CUDA的官网下载链接为https://developer.nvidia.com/cuda-toolkit-archive，CUDA的下载不需要注册，cuDNN需要。以CUDA9.2下载为例，依次按图红色框框进行选择，需要注意的是图中的<strong>黑色框框</strong>，那个是当前CUDA版本的补丁，也要下载，安装方法与<strong>基础版本一致</strong>。</p>
-<p><img src="https://pic.downk.cc/item/5e9144da504f4bcb045fe855.png" alt="cuda9.2"></p>
+<figure class="figure">
+    <a href="https://pic.downk.cc/item/5e9144da504f4bcb045fe855.png" class="d-block" data-toggle="lightbox" data-gallery="post-gallery">
+        <img src="https://pic.downk.cc/item/5e9144da504f4bcb045fe855.png"class="figure-img img-fluid"
+        /> 
+    </a>
+</figure>
+
 <p>正常方法是点击Download下载，下载后还要拖入到服务器种比较麻烦，在这里给出直接将文件下载到服务器的方法。</p>
 <p>创建不同CUDA版本的目录</p>
 <pre><code class="language-bash">cd ~
@@ -1383,11 +1432,29 @@ Installation directory: /usr/local/cuda-9.1
 <pre><code class="language-bash">sudo sh cuda_10.1.243_418.87.00_linux.run
 </code></pre>
 <p>终端会出现一个框框</p>
-<p><img src="https://pic.downk.cc/item/5e919104504f4bcb04a646b2.png" alt=""></p>
+<figure class="figure">
+    <a href="https://pic.downk.cc/item/5e919104504f4bcb04a646b2.png" class="d-block" data-toggle="lightbox" data-gallery="post-gallery">
+        <img src="https://pic.downk.cc/item/5e919104504f4bcb04a646b2.png"class="figure-img img-fluid"
+        /> 
+    </a>
+</figure>
+
 <p>输入<strong>accept</strong>后，出现</p>
-<p><img src="https://pic.downk.cc/item/5e918ea5504f4bcb04a3d678.png" alt="CUDA 10.1"></p>
+<figure class="figure">
+    <a href="https://pic.downk.cc/item/5e918ea5504f4bcb04a3d678.png" class="d-block" data-toggle="lightbox" data-gallery="post-gallery">
+        <img src="https://pic.downk.cc/item/5e918ea5504f4bcb04a3d678.png"class="figure-img img-fluid"
+        /> 
+    </a>
+</figure>
+
 <p>注意，不要选择<strong>Driver</strong>！<strong>如图所选</strong>，移动<strong>下键</strong>至<strong>Install</strong>处，Enter一下立即安装，出现界面</p>
-<p><img src="https://pic.downk.cc/item/5e918f1e504f4bcb04a443d9.png" alt=""></p>
+<figure class="figure">
+    <a href="https://pic.downk.cc/item/5e918f1e504f4bcb04a443d9.png" class="d-block" data-toggle="lightbox" data-gallery="post-gallery">
+        <img src="https://pic.downk.cc/item/5e918f1e504f4bcb04a443d9.png"class="figure-img img-fluid"
+        /> 
+    </a>
+</figure>
+
 <p>选择<strong>No</strong>，安装过程中没有什么反应，耐心等待一会儿，终端打印出信息</p>
 <pre><code class="language-bash">===========
 = Summary =
@@ -1531,7 +1598,13 @@ make
 <p>按照<a href="https://docs.nvidia.com/deeplearning/sdk/cudnn-install/index.html#installlinux">官方指导教程</a>进行cuDNN配置。</p>
 <h4 id="cudnn文件下载">cuDNN文件下载</h4>
 <p>首先要确定要下载的cuDNN版本，<strong>仔细看清楚其对应的CUDA版本</strong>，以cuDNN对应的CUDA 9.0为例，推荐下载<strong>cuDNN v7.0.5 Library for Linux</strong>类似的压缩包。</p>
-<p><img src="https://pic.downk.cc/item/5e9518fcc2a9a83be5720e10.png" alt=""></p>
+<figure class="figure">
+    <a href="https://pic.downk.cc/item/5e9518fcc2a9a83be5720e10.png" class="d-block" data-toggle="lightbox" data-gallery="post-gallery">
+        <img src="https://pic.downk.cc/item/5e9518fcc2a9a83be5720e10.png"class="figure-img img-fluid"
+        /> 
+    </a>
+</figure>
+
 <p>下载完成后，文件为cudnn-9.0-linux-x64-v7.solitairetheme8，这其实是一个压缩包，解压方法与<code>.tgz</code>格式的文件一致。建立cuDNN文件夹，</p>
 <pre><code class="language-bash">mkdir ~/NVIDIA/cuDNN
 </code></pre>
@@ -1541,14 +1614,32 @@ make
 <pre><code class="language-bash">tar -xzvf cudnn-9.0-linux-x64-v7.solitairetheme8
 </code></pre>
 <p>解压后的文件都在名为<code>cuda</code>的文件夹下，如图</p>
-<p><img src="https://pic.downk.cc/item/5e958245c2a9a83be5b9b2a0.png" alt=""></p>
+<figure class="figure">
+    <a href="https://pic.downk.cc/item/5e958245c2a9a83be5b9b2a0.png" class="d-block" data-toggle="lightbox" data-gallery="post-gallery">
+        <img src="https://pic.downk.cc/item/5e958245c2a9a83be5b9b2a0.png"class="figure-img img-fluid"
+        /> 
+    </a>
+</figure>
+
 <p><code>cudnn-9.0-linux-x64-v7.solitairetheme8</code>的文件组成如下</p>
-<p><img src="https://pic.downk.cc/item/5e958783c2a9a83be5bd2a6a.jpg" alt=""></p>
+<p><figure class="figure">
+    <a href="https://pic.downk.cc/item/5e958783c2a9a83be5bd2a6a.jpg" class="d-block" data-toggle="lightbox" data-gallery="post-gallery">
+        <img src="https://pic.downk.cc/item/5e958783c2a9a83be5bd2a6a.jpg"class="figure-img img-fluid"
+        /> 
+    </a>
+</figure>
+)</p>
 <p>查看<code>linudnn.so</code>、<code>libcudnn.so.7</code>、<code>libcudnn.so.7.0.5</code>的关系</p>
 <pre><code class="language-bash">ll ~/NVIDIA/cuDNN/lib64
 </code></pre>
 <p>输出</p>
-<p><img src="https://pic.downk.cc/item/5e95ada0c2a9a83be5d76131.png" alt=""></p>
+<figure class="figure">
+    <a href="https://pic.downk.cc/item/5e95ada0c2a9a83be5d76131.png" class="d-block" data-toggle="lightbox" data-gallery="post-gallery">
+        <img src="https://pic.downk.cc/item/5e95ada0c2a9a83be5d76131.png"class="figure-img img-fluid"
+        /> 
+    </a>
+</figure>
+
 <p>说明<code>linudnn.so</code>、<code>libcudnn.so.7</code>、<code>libcudnn.so.7.0.5</code>其实是同一个文件的不同扩展名。</p>
 <h4 id="cudnn配置">cuDNN配置</h4>
 <p>解压文件在<code>~/NVIDIA/cuDNN/cuda</code></p>
@@ -2111,7 +2202,13 @@ hash -r
 <p>FileZilla 客户端是一个快速可靠的、跨平台的FTP,FTPS和SFTP客户端。具有图形用户界面(GUI)和很多有用的特性，比如支持FTP, FTP并支持SSL/TLS (FTPS)协议，支持SSH文件传输协议(SFTP)等。</p>
 </blockquote>
 <p>以windows 10为例，下载<a href="https://download.filezilla-project.org/client/FileZilla_3.38.1_win64-setup_bundled.exe">FileZilla</a>，选择安装位置，正常安装即可。</p>
-<p><img src="https://pic.downk.cc/item/5e95d3bac2a9a83be5f30b2e.png" alt=""></p>
+<p><figure class="figure">
+    <a href="https://pic.downk.cc/item/5e95d3bac2a9a83be5f30b2e.png" class="d-block" data-toggle="lightbox" data-gallery="post-gallery">
+        <img src="https://pic.downk.cc/item/5e95d3bac2a9a83be5f30b2e.png"class="figure-img img-fluid"
+        /> 
+    </a>
+</figure>
+ &gt;}}</p>
 <h4 id="filezilla连接服务器">FileZilla连接服务器</h4>
 <p>打开FileZilla软件，</p>
 <ul>
@@ -2154,7 +2251,13 @@ hash -r
 </ul>
 <h4 id="文件传输">文件传输</h4>
 <p>以window 10为例，利用FileZilla登录到服务器后，可以看到左边是<strong>本地站点</strong>，右边是<strong>远程站点</strong>(服务器上的目录)，如下图所示，直接将本地文件<code>test.py</code>用鼠标拖拽到服务器上的指定目录即可（<strong>上传过程</strong>），这个过程是可逆的（<strong>下载过程</strong>），非常方便。</p>
-<p><img src="https://pic.downk.cc/item/5e95d3f9c2a9a83be5f335d0.png" alt=""></p>
+<figure class="figure">
+    <a href="https://pic.downk.cc/item/5e95d3f9c2a9a83be5f335d0.png" class="d-block" data-toggle="lightbox" data-gallery="post-gallery">
+        <img src="https://pic.downk.cc/item/5e95d3f9c2a9a83be5f335d0.png"class="figure-img img-fluid"
+        /> 
+    </a>
+</figure>
+
 <h4 id="总结">总结</h4>
 <p>利用<strong>FileZilla</strong>软件配合<strong>SSH</strong>协议，即可完成文件传输及程序运行等必要工作。</p>
 <h3 id="cudacudnn多版本切换之修改符号链接和覆盖cudnn文件">CUDA、cuDNN多版本切换之：修改符号链接和覆盖cuDNN文件*</h3>
@@ -2163,7 +2266,13 @@ hash -r
 <pre><code class="language-bash">ll /usr/local
 </code></pre>
 <p>输出</p>
-<p><img src="https://pic.downk.cc/item/5e95b42ac2a9a83be5dc2927.png" alt=""></p>
+<figure class="figure">
+    <a href="https://pic.downk.cc/item/5e95b42ac2a9a83be5dc2927.png" class="d-block" data-toggle="lightbox" data-gallery="post-gallery">
+        <img src="https://pic.downk.cc/item/5e95b42ac2a9a83be5dc2927.png"class="figure-img img-fluid"
+        /> 
+    </a>
+</figure>
+
 <p><strong>系统是通过<code>/usr/local/</code>下的<code>cuda</code>符号链接来识别CUDA当前指定的CUDA版本</strong>，比如现在符号链接<code>**cuda**</code>指向<strong>cuda-9.0</strong>，如果要指向其它CUDA版本，修改符号链接即可，比如切换到<strong>CUDA-10.0</strong>版本：</p>
 <pre><code class="language-bash">cd /usr/local/
 
@@ -2176,11 +2285,23 @@ sudo ln -s /usr/local/cuda-10.0 /usr/local/cuda
 <p><strong>查看当前<code>cuda</code>指向</strong></p>
 <pre><code class="language-bash">ll
 </code></pre>
-<p><img src="https://pic.downk.cc/item/5e95b5b6c2a9a83be5dd2da7.png" alt=""></p>
+<figure class="figure">
+    <a href="https://pic.downk.cc/item/5e95b5b6c2a9a83be5dd2da7.png" class="d-block" data-toggle="lightbox" data-gallery="post-gallery">
+        <img src="https://pic.downk.cc/item/5e95b5b6c2a9a83be5dd2da7.png"class="figure-img img-fluid"
+        /> 
+    </a>
+</figure>
+
 <p>或者</p>
 <pre><code class="language-bash">stat cuda
 </code></pre>
-<p><img src="https://pic.downk.cc/item/5e95b63cc2a9a83be5dd7b59.png" alt=""></p>
+<figure class="figure">
+    <a href="https://pic.downk.cc/item/5e95b63cc2a9a83be5dd7b59.png" class="d-block" data-toggle="lightbox" data-gallery="post-gallery">
+        <img src="https://pic.downk.cc/item/5e95b63cc2a9a83be5dd7b59.png"class="figure-img img-fluid"
+        /> 
+    </a>
+</figure>
+
 <p><strong>查看CUDA版本</strong></p>
 <pre><code class="language-bash">nvcc --version
 </code></pre>
@@ -2238,7 +2359,13 @@ sudo ln -s /usr/local/cuda-10.0 /usr/local/cuda
 </code></pre>
 <p>截止2020年4月11日，Anaconda官方<a href="https://anaconda.org/anaconda/cudatoolkit/files">CUDA版本</a>包含：<a href="https://developer.nvidia.com/cuda-90-download-archive">9.0</a>、<a href="https://developer.nvidia.com/cuda-92-download-archive">9.2</a>、<a href="https://developer.nvidia.com/cuda-10.0-download-archive">10.0</a>、10.1（<a href="https://developer.nvidia.com/cuda-10.1-download-archive-update1">update1</a>和<a href="https://developer.nvidia.com/cuda-10.1-download-archive-update2">update2</a>）、<a href="https://developer.nvidia.com/cuda-downloads">10.2</a>，Anaconda <a href="https://anaconda.org/anaconda/cudatoolkit/files">CUDA版本</a>紧跟NVIDIA官方<a href="https://developer.nvidia.com/cuda-toolkit-archive">CUDA</a>更新速度，满足绝大部分深度学习环境的要求。</p>
 <p>注意：不同的Anaconda源里的版本不一样，但是channel是<code>pkgs/main</code>的比较权威的，推荐使用<code>pkgs/main</code>里的版本。</p>
-<p><img src="https://pic.downk.cc/item/5e97d227c2a9a83be532729a.png" alt=""></p>
+<figure class="figure">
+    <a href="https://pic.downk.cc/item/5e97d227c2a9a83be532729a.png" class="d-block" data-toggle="lightbox" data-gallery="post-gallery">
+        <img src="https://pic.downk.cc/item/5e97d227c2a9a83be532729a.png"class="figure-img img-fluid"
+        /> 
+    </a>
+</figure>
+
 <p><strong>Tensorflow 1.6 GPU版本需求CUDA 9.0：</strong></p>
 <pre><code class="language-bash"></code></pre>
 </li>
@@ -2247,7 +2374,13 @@ sudo ln -s /usr/local/cuda-10.0 /usr/local/cuda
 <pre><code>
 安装完成
 
-![](https://pic.downk.cc/item/5e97d5f0c2a9a83be534c17d.png)
+<figure class="figure">
+    <a href="https://pic.downk.cc/item/5e97d5f0c2a9a83be534c17d.png" class="d-block" data-toggle="lightbox" data-gallery="post-gallery">
+        <img src="https://pic.downk.cc/item/5e97d5f0c2a9a83be534c17d.png"class="figure-img img-fluid"
+        /> 
+    </a>
+</figure>
+
 
 * **安装cuDNN 7**
 
@@ -2257,7 +2390,13 @@ sudo ln -s /usr/local/cuda-10.0 /usr/local/cuda
 conda search cudnn
 </code></pre>
 <p>截止2020年4月11日，Anaconda官方<a href="https://anaconda.org/anaconda/cudnn/files">cuDNN版本</a>如下，根据需求进行安装，也满足绝大部分深度学习环境的要求。</p>
-<p><img src="https://pic.downk.cc/item/5e97d82fc2a9a83be5361d52.png" alt=""></p>
+<figure class="figure">
+    <a href="https://pic.downk.cc/item/5e97d82fc2a9a83be5361d52.png" class="d-block" data-toggle="lightbox" data-gallery="post-gallery">
+        <img src="https://pic.downk.cc/item/5e97d82fc2a9a83be5361d52.png"class="figure-img img-fluid"
+        /> 
+    </a>
+</figure>
+
 <p><strong>Tensorflow 1.6 GPU版本需求cuDNN 7</strong>。</p>
 <p>选择cuDNN 7.0.5：</p>
 <pre><code class="language-bash">conda install cudnn==7.0.5
@@ -2272,21 +2411,45 @@ Found conflicts! Looking for incompatible packages.                             
 UnsatisfiableError:
 </code></pre>
 <p>这是怎么回事呢？打开<a href="https://developer.nvidia.com/rdp/cudnn-archive">cuDNN官网</a>，注意到，同一个版本的cuDNN，可能对应不同的CUDA版本，比如cuDNN 7.0.5可以对应CUDA 8.0、CUDA 9.0和CUDA 9.1，所以查看Anaconda官方里的cuDNN 7.0.5对应哪个CUDA版本。</p>
-<p><img src="https://pic.downk.cc/item/5e97db58c2a9a83be5381c80.png" alt=""></p>
+<figure class="figure">
+    <a href="https://pic.downk.cc/item/5e97db58c2a9a83be5381c80.png" class="d-block" data-toggle="lightbox" data-gallery="post-gallery">
+        <img src="https://pic.downk.cc/item/5e97db58c2a9a83be5381c80.png"class="figure-img img-fluid"
+        /> 
+    </a>
+</figure>
+
 <p>打开cuDNN的<a href="https://anaconda.org/anaconda/cudnn/files">Anaconda仓库</a>，查询到Anaconda仓库里的cuDNN 7.0.5对应的是CUDA 8.0），因此选择CUDA 9.0对应的<strong>cuDNN 7.1.2</strong>，所以在安装前，使用</p>
 <pre><code class="language-bash">conda search cudnn
 </code></pre>
-<p><img src="https://pic.downk.cc/item/5e980e14c2a9a83be559cec6.jpg" alt=""></p>
+<p><figure class="figure">
+    <a href="https://pic.downk.cc/item/5e980e14c2a9a83be559cec6.jpg" class="d-block" data-toggle="lightbox" data-gallery="post-gallery">
+        <img src="https://pic.downk.cc/item/5e980e14c2a9a83be559cec6.jpg"class="figure-img img-fluid"
+        /> 
+    </a>
+</figure>
+)</p>
 <p><strong>查询cuDNN与CUDA的对应关系。</strong></p>
 <p><strong>安装cuDNN 7.1.2：</strong></p>
 <pre><code class="language-bash">conda install cudnn==7.1.2
 </code></pre>
-<p><img src="https://pic.downk.cc/item/5e980693c2a9a83be5556703.png" alt=""></p>
+<figure class="figure">
+    <a href="https://pic.downk.cc/item/5e980693c2a9a83be5556703.png" class="d-block" data-toggle="lightbox" data-gallery="post-gallery">
+        <img src="https://pic.downk.cc/item/5e980693c2a9a83be5556703.png"class="figure-img img-fluid"
+        /> 
+    </a>
+</figure>
+
 <p>这种方法安装CUDA和cuDNN，没有单独形成文件夹，都是统一存放在虚拟环境中的<code>lib</code>、<code>include</code>文件夹下，查看<code>CUDA 9.0</code>和<code>cuDNN 7.1.2</code>是否被安装到虚拟环境<code>tensorflow16-gpu</code>中：</p>
 <pre><code class="language-bash">ls ~/anaconda3/envs/tensorflow16-gpu/lib/
 </code></pre>
 <p>输出</p>
-<p><img src="https://pic.downk.cc/item/5e98076bc2a9a83be555d9a8.png" alt=""></p>
+<figure class="figure">
+    <a href="https://pic.downk.cc/item/5e98076bc2a9a83be555d9a8.png" class="d-block" data-toggle="lightbox" data-gallery="post-gallery">
+        <img src="https://pic.downk.cc/item/5e98076bc2a9a83be555d9a8.png"class="figure-img img-fluid"
+        /> 
+    </a>
+</figure>
+
 <p>或者使用以下命令<strong>查看CUDA共享库</strong>的安装：</p>
 <pre><code class="language-bash">ls ~/anaconda3/envs/tensorflow16-gpu/lib/ | grep cuda
 </code></pre>
@@ -2341,9 +2504,21 @@ True
 </code></pre>
 <p>注意，<code>__</code>为两个<code>_</code>组合而成。</p>
 <h3 id="anaconda下安装tensorflow的gpu各个版本从16到21">Anaconda下安装Tensorflow的GPU各个版本（从1.6到2.1）</h3>
-<p><img src="https://pic.downk.cc/item/5e9137b1504f4bcb04541d52.png" alt="Tensorflow版本"></p>
+<figure class="figure">
+    <a href="https://pic.downk.cc/item/5e9137b1504f4bcb04541d52.png" class="d-block" data-toggle="lightbox" data-gallery="post-gallery">
+        <img src="https://pic.downk.cc/item/5e9137b1504f4bcb04541d52.png"class="figure-img img-fluid"
+        /> 
+    </a>
+</figure>
+
 <p>根据Tensorflow<a href="https://www.tensorflow.org/install/source#linux">官网</a>，在Anaconda环境下安装Tensorflow 1.6.0、1.11.1和2.1.0三个典型的GPU版本。使用<code>conda search cudnn</code>命令<strong>查询cuDNN与CUDA的对应关系。</strong></p>
-<p><img src="https://pic.downk.cc/item/5e97d82fc2a9a83be5361d52.png" alt=""></p>
+<figure class="figure">
+    <a href="https://pic.downk.cc/item/5e97d82fc2a9a83be5361d52.png" class="d-block" data-toggle="lightbox" data-gallery="post-gallery">
+        <img src="https://pic.downk.cc/item/5e97d82fc2a9a83be5361d52.png"class="figure-img img-fluid"
+        /> 
+    </a>
+</figure>
+
 <h4 id="tensorflow-160">Tensorflow 1.6.0</h4>
 <p>系统默认GCC为4.8.5，在正常的终端中输入</p>
 <pre><code class="language-bash">conda create -n tensorflow16-gpu pip python=3.6
@@ -2383,7 +2558,13 @@ pip install tensorflow-gpu==2.1.0
 </code></pre>
 <h3 id="anaconda下安装pytorch的gpu各个版本从04到14">Anaconda下安装PyTorch的GPU各个版本（从0.4到1.4）</h3>
 <p>数据来源于<a href="https://pytorch.org/get-started/previous-versions/">官网</a>，截止2020年4月11号，<code>PyTorch 1.4</code>版本需要配合<code>CUDA 10.1</code>或<code>CUDA9.2</code>配合使用。</p>
-<p><img src="https://pic.downk.cc/item/5e91390d504f4bcb04552f6c.png" alt="PyTorch"></p>
+<figure class="figure">
+    <a href="https://pic.downk.cc/item/5e91390d504f4bcb04552f6c.png" class="d-block" data-toggle="lightbox" data-gallery="post-gallery">
+        <img src="https://pic.downk.cc/item/5e91390d504f4bcb04552f6c.png"class="figure-img img-fluid"
+        /> 
+    </a>
+</figure>
+
 <h4 id="pytorch-041">PyTorch 0.4.1</h4>
 <pre><code class="language-bash">conda create -n pytorch041 pip python=3.6
 source activate pytorch041
@@ -2530,7 +2711,13 @@ sudo update-alternatives --set vi /usr/local/bin/vim
 <p>按照上述步骤完成后查看Vim**版本</p>
 <pre><code>vim --version
 </code></pre>
-<p><img src="https://pic.downk.cc/item/5e89ec78504f4bcb042f0550.png" alt="vim版本"></p>
+<figure class="figure">
+    <a href="https://pic.downk.cc/item/5e89ec78504f4bcb042f0550.png" class="d-block" data-toggle="lightbox" data-gallery="post-gallery">
+        <img src="https://pic.downk.cc/item/5e89ec78504f4bcb042f0550.png"class="figure-img img-fluid"
+        /> 
+    </a>
+</figure>
+
 <p>可以看到Vim版本是8.2版本，已开启<strong>python3支持</strong>，需要进行验证，在终端输入<code>vim</code>，接着在<strong>正常模式</strong>下输入<code>:echo has(&quot;python3&quot;)</code>，按一下回车键，若屏幕最下面输出<code>1</code>，则配置正确，Vim支持Python3。</p>
 <p>编译的时候可能会出现各种意想不到的问题，这个时候要多看专业的文档，比如官网文档、github及<strong>Issues（非常有用）</strong>、<a href="https://stackoverflow.com/">stackoverflow</a>等，其次再考虑其它出处，尽可能多看<strong>专业的英文文档</strong>，很多问题我们习惯看一些野路子中文解答，看似走了捷径但是花费了更多的时间，切记！一些优秀的项目有对应的中文文档，首推！</p>
 <p>该方法是全局设置方法。</p>
@@ -2769,7 +2956,13 @@ map R :source $MYVIMRC&lt;CR&gt;
 <li>窗口(window): 容纳多个窗格</li>
 <li>窗格(pane): 可以在窗口中分成多个窗格</li>
 </ul>
-<p><img src="https://pic.downk.cc/item/5e986635c2a9a83be5a21e27.jpg" alt=""></p>
+<p><figure class="figure">
+    <a href="https://pic.downk.cc/item/5e986635c2a9a83be5a21e27.jpg" class="d-block" data-toggle="lightbox" data-gallery="post-gallery">
+        <img src="https://pic.downk.cc/item/5e986635c2a9a83be5a21e27.jpg"class="figure-img img-fluid"
+        /> 
+    </a>
+</figure>
+)</p>
 <h4 id="安装-1">安装</h4>
 <ul>
 <li>
@@ -2792,7 +2985,13 @@ map R :source $MYVIMRC&lt;CR&gt;
 <p>在终端输入</p>
 <pre><code class="language-bash">tmux
 </code></pre>
-<p><img src="https://pic.downk.cc/item/5e982247c2a9a83be5672750.png" alt=""></p>
+<figure class="figure">
+    <a href="https://pic.downk.cc/item/5e982247c2a9a83be5672750.png" class="d-block" data-toggle="lightbox" data-gallery="post-gallery">
+        <img src="https://pic.downk.cc/item/5e982247c2a9a83be5672750.png"class="figure-img img-fluid"
+        /> 
+    </a>
+</figure>
+
 <p>启动 Tmux 窗口，底部有一个状态栏。状态栏的左侧是窗口信息（编号和名称），右侧是系统信息。</p>
 <p>按下<code>Ctrl+d</code>或者显式输入<code>exit</code>命令，就可以退出 Tmux 窗口。</p>
 <h4 id="前缀键">前缀键</h4>
@@ -2941,7 +3140,13 @@ root     ALL=(ALL)       ALL
 <p>此时用户<code>adoredee</code>从普通用户晋升为系统管理员。</p>
 <p><strong>系统管理员请尊重其他用户的隐私。</strong></p>
 <h3 id="修改登录界面显示">修改登录界面显示</h3>
-<p><img src="https://pic.downk.cc/item/5e989362c2a9a83be5ccd569.png" alt=""></p>
+<figure class="figure">
+    <a href="https://pic.downk.cc/item/5e989362c2a9a83be5ccd569.png" class="d-block" data-toggle="lightbox" data-gallery="post-gallery">
+        <img src="https://pic.downk.cc/item/5e989362c2a9a83be5ccd569.png"class="figure-img img-fluid"
+        /> 
+    </a>
+</figure>
+
 <p>远程连接服务器时，可以在登录成功后，显示欢迎界面，如上图，设置方法如下：</p>
 <pre><code class="language-bash"># CentOS
 sudo nvim /etc/motd

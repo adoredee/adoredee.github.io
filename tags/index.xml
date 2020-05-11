@@ -2,328 +2,328 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tags on adoredee</title>
-    <link>http://kangzhiheng.top/tags/</link>
+    <link>https://www.kangzhiheng.top/tags/</link>
     <description>Recent content in Tags on adoredee</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <copyright>Copyright © 2008–2020, Steve Francia and the Hugo Authors; All Rights Reserved.</copyright>
     <lastBuildDate>Fri, 17 Apr 2020 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="http://kangzhiheng.top/tags/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://www.kangzhiheng.top/tags/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Anaconda</title>
-      <link>http://kangzhiheng.top/tags/anaconda/</link>
+      <link>https://www.kangzhiheng.top/tags/anaconda/</link>
       <pubDate>Fri, 17 Apr 2020 00:00:00 +0000</pubDate>
       
-      <guid>http://kangzhiheng.top/tags/anaconda/</guid>
+      <guid>https://www.kangzhiheng.top/tags/anaconda/</guid>
       <description></description>
     </item>
     
     <item>
       <title>CUDA</title>
-      <link>http://kangzhiheng.top/tags/cuda/</link>
+      <link>https://www.kangzhiheng.top/tags/cuda/</link>
       <pubDate>Fri, 17 Apr 2020 00:00:00 +0000</pubDate>
       
-      <guid>http://kangzhiheng.top/tags/cuda/</guid>
+      <guid>https://www.kangzhiheng.top/tags/cuda/</guid>
       <description></description>
     </item>
     
     <item>
       <title>cuDNN</title>
-      <link>http://kangzhiheng.top/tags/cudnn/</link>
+      <link>https://www.kangzhiheng.top/tags/cudnn/</link>
       <pubDate>Fri, 17 Apr 2020 00:00:00 +0000</pubDate>
       
-      <guid>http://kangzhiheng.top/tags/cudnn/</guid>
+      <guid>https://www.kangzhiheng.top/tags/cudnn/</guid>
       <description></description>
     </item>
     
     <item>
       <title>GCC</title>
-      <link>http://kangzhiheng.top/tags/gcc/</link>
+      <link>https://www.kangzhiheng.top/tags/gcc/</link>
       <pubDate>Fri, 17 Apr 2020 00:00:00 +0000</pubDate>
       
-      <guid>http://kangzhiheng.top/tags/gcc/</guid>
+      <guid>https://www.kangzhiheng.top/tags/gcc/</guid>
       <description></description>
     </item>
     
     <item>
       <title>NeoVim</title>
-      <link>http://kangzhiheng.top/tags/neovim/</link>
+      <link>https://www.kangzhiheng.top/tags/neovim/</link>
       <pubDate>Fri, 17 Apr 2020 00:00:00 +0000</pubDate>
       
-      <guid>http://kangzhiheng.top/tags/neovim/</guid>
+      <guid>https://www.kangzhiheng.top/tags/neovim/</guid>
       <description></description>
     </item>
     
     <item>
       <title>NVIDIA</title>
-      <link>http://kangzhiheng.top/tags/nvidia/</link>
+      <link>https://www.kangzhiheng.top/tags/nvidia/</link>
       <pubDate>Fri, 17 Apr 2020 00:00:00 +0000</pubDate>
       
-      <guid>http://kangzhiheng.top/tags/nvidia/</guid>
+      <guid>https://www.kangzhiheng.top/tags/nvidia/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Opnecv</title>
-      <link>http://kangzhiheng.top/tags/opnecv/</link>
+      <link>https://www.kangzhiheng.top/tags/opnecv/</link>
       <pubDate>Fri, 17 Apr 2020 00:00:00 +0000</pubDate>
       
-      <guid>http://kangzhiheng.top/tags/opnecv/</guid>
+      <guid>https://www.kangzhiheng.top/tags/opnecv/</guid>
       <description></description>
     </item>
     
     <item>
       <title>pip</title>
-      <link>http://kangzhiheng.top/tags/pip/</link>
+      <link>https://www.kangzhiheng.top/tags/pip/</link>
       <pubDate>Fri, 17 Apr 2020 00:00:00 +0000</pubDate>
       
-      <guid>http://kangzhiheng.top/tags/pip/</guid>
+      <guid>https://www.kangzhiheng.top/tags/pip/</guid>
       <description></description>
     </item>
     
     <item>
       <title>PyTorch</title>
-      <link>http://kangzhiheng.top/tags/pytorch/</link>
+      <link>https://www.kangzhiheng.top/tags/pytorch/</link>
       <pubDate>Fri, 17 Apr 2020 00:00:00 +0000</pubDate>
       
-      <guid>http://kangzhiheng.top/tags/pytorch/</guid>
+      <guid>https://www.kangzhiheng.top/tags/pytorch/</guid>
       <description></description>
     </item>
     
     <item>
       <title>SSH</title>
-      <link>http://kangzhiheng.top/tags/ssh/</link>
+      <link>https://www.kangzhiheng.top/tags/ssh/</link>
       <pubDate>Fri, 17 Apr 2020 00:00:00 +0000</pubDate>
       
-      <guid>http://kangzhiheng.top/tags/ssh/</guid>
+      <guid>https://www.kangzhiheng.top/tags/ssh/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Tensorflow</title>
-      <link>http://kangzhiheng.top/tags/tensorflow/</link>
+      <link>https://www.kangzhiheng.top/tags/tensorflow/</link>
       <pubDate>Fri, 17 Apr 2020 00:00:00 +0000</pubDate>
       
-      <guid>http://kangzhiheng.top/tags/tensorflow/</guid>
+      <guid>https://www.kangzhiheng.top/tags/tensorflow/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Tmux</title>
-      <link>http://kangzhiheng.top/tags/tmux/</link>
+      <link>https://www.kangzhiheng.top/tags/tmux/</link>
       <pubDate>Fri, 17 Apr 2020 00:00:00 +0000</pubDate>
       
-      <guid>http://kangzhiheng.top/tags/tmux/</guid>
+      <guid>https://www.kangzhiheng.top/tags/tmux/</guid>
       <description></description>
     </item>
     
     <item>
       <title>vim</title>
-      <link>http://kangzhiheng.top/tags/vim/</link>
+      <link>https://www.kangzhiheng.top/tags/vim/</link>
       <pubDate>Mon, 30 Mar 2020 00:00:00 +0000</pubDate>
       
-      <guid>http://kangzhiheng.top/tags/vim/</guid>
+      <guid>https://www.kangzhiheng.top/tags/vim/</guid>
       <description></description>
     </item>
     
     <item>
       <title>BBR加速</title>
-      <link>http://kangzhiheng.top/tags/bbr%E5%8A%A0%E9%80%9F/</link>
+      <link>https://www.kangzhiheng.top/tags/bbr%E5%8A%A0%E9%80%9F/</link>
       <pubDate>Sat, 28 Mar 2020 00:00:00 +0000</pubDate>
       
-      <guid>http://kangzhiheng.top/tags/bbr%E5%8A%A0%E9%80%9F/</guid>
+      <guid>https://www.kangzhiheng.top/tags/bbr%E5%8A%A0%E9%80%9F/</guid>
       <description></description>
     </item>
     
     <item>
       <title>SSR</title>
-      <link>http://kangzhiheng.top/tags/ssr/</link>
+      <link>https://www.kangzhiheng.top/tags/ssr/</link>
       <pubDate>Sat, 28 Mar 2020 00:00:00 +0000</pubDate>
       
-      <guid>http://kangzhiheng.top/tags/ssr/</guid>
+      <guid>https://www.kangzhiheng.top/tags/ssr/</guid>
       <description></description>
     </item>
     
     <item>
       <title>谷歌云</title>
-      <link>http://kangzhiheng.top/tags/%E8%B0%B7%E6%AD%8C%E4%BA%91/</link>
+      <link>https://www.kangzhiheng.top/tags/%E8%B0%B7%E6%AD%8C%E4%BA%91/</link>
       <pubDate>Sat, 28 Mar 2020 00:00:00 +0000</pubDate>
       
-      <guid>http://kangzhiheng.top/tags/%E8%B0%B7%E6%AD%8C%E4%BA%91/</guid>
+      <guid>https://www.kangzhiheng.top/tags/%E8%B0%B7%E6%AD%8C%E4%BA%91/</guid>
       <description></description>
     </item>
     
     <item>
       <title>字符串</title>
-      <link>http://kangzhiheng.top/tags/%E5%AD%97%E7%AC%A6%E4%B8%B2/</link>
+      <link>https://www.kangzhiheng.top/tags/%E5%AD%97%E7%AC%A6%E4%B8%B2/</link>
       <pubDate>Mon, 09 Mar 2020 00:00:00 +0000</pubDate>
       
-      <guid>http://kangzhiheng.top/tags/%E5%AD%97%E7%AC%A6%E4%B8%B2/</guid>
+      <guid>https://www.kangzhiheng.top/tags/%E5%AD%97%E7%AC%A6%E4%B8%B2/</guid>
       <description></description>
     </item>
     
     <item>
       <title>线程</title>
-      <link>http://kangzhiheng.top/tags/%E7%BA%BF%E7%A8%8B/</link>
+      <link>https://www.kangzhiheng.top/tags/%E7%BA%BF%E7%A8%8B/</link>
       <pubDate>Sat, 22 Feb 2020 00:00:00 +0000</pubDate>
       
-      <guid>http://kangzhiheng.top/tags/%E7%BA%BF%E7%A8%8B/</guid>
+      <guid>https://www.kangzhiheng.top/tags/%E7%BA%BF%E7%A8%8B/</guid>
       <description></description>
     </item>
     
     <item>
       <title>进程</title>
-      <link>http://kangzhiheng.top/tags/%E8%BF%9B%E7%A8%8B/</link>
+      <link>https://www.kangzhiheng.top/tags/%E8%BF%9B%E7%A8%8B/</link>
       <pubDate>Sat, 22 Feb 2020 00:00:00 +0000</pubDate>
       
-      <guid>http://kangzhiheng.top/tags/%E8%BF%9B%E7%A8%8B/</guid>
+      <guid>https://www.kangzhiheng.top/tags/%E8%BF%9B%E7%A8%8B/</guid>
       <description></description>
     </item>
     
     <item>
       <title>面试</title>
-      <link>http://kangzhiheng.top/tags/%E9%9D%A2%E8%AF%95/</link>
+      <link>https://www.kangzhiheng.top/tags/%E9%9D%A2%E8%AF%95/</link>
       <pubDate>Sat, 22 Feb 2020 00:00:00 +0000</pubDate>
       
-      <guid>http://kangzhiheng.top/tags/%E9%9D%A2%E8%AF%95/</guid>
+      <guid>https://www.kangzhiheng.top/tags/%E9%9D%A2%E8%AF%95/</guid>
       <description></description>
     </item>
     
     <item>
       <title>C&#43;&#43;</title>
-      <link>http://kangzhiheng.top/tags/c&#43;&#43;/</link>
+      <link>https://www.kangzhiheng.top/tags/c&#43;&#43;/</link>
       <pubDate>Sat, 15 Feb 2020 00:00:00 +0000</pubDate>
       
-      <guid>http://kangzhiheng.top/tags/c&#43;&#43;/</guid>
+      <guid>https://www.kangzhiheng.top/tags/c&#43;&#43;/</guid>
       <description></description>
     </item>
     
     <item>
       <title>linux常用命令</title>
-      <link>http://kangzhiheng.top/tags/linux%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/</link>
+      <link>https://www.kangzhiheng.top/tags/linux%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/</link>
       <pubDate>Sat, 15 Feb 2020 00:00:00 +0000</pubDate>
       
-      <guid>http://kangzhiheng.top/tags/linux%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/</guid>
+      <guid>https://www.kangzhiheng.top/tags/linux%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Medium</title>
-      <link>http://kangzhiheng.top/tags/medium/</link>
+      <link>https://www.kangzhiheng.top/tags/medium/</link>
       <pubDate>Wed, 12 Feb 2020 00:00:00 +0000</pubDate>
       
-      <guid>http://kangzhiheng.top/tags/medium/</guid>
+      <guid>https://www.kangzhiheng.top/tags/medium/</guid>
       <description></description>
     </item>
     
     <item>
       <title>动态规划</title>
-      <link>http://kangzhiheng.top/tags/%E5%8A%A8%E6%80%81%E8%A7%84%E5%88%92/</link>
+      <link>https://www.kangzhiheng.top/tags/%E5%8A%A8%E6%80%81%E8%A7%84%E5%88%92/</link>
       <pubDate>Wed, 12 Feb 2020 00:00:00 +0000</pubDate>
       
-      <guid>http://kangzhiheng.top/tags/%E5%8A%A8%E6%80%81%E8%A7%84%E5%88%92/</guid>
+      <guid>https://www.kangzhiheng.top/tags/%E5%8A%A8%E6%80%81%E8%A7%84%E5%88%92/</guid>
       <description></description>
     </item>
     
     <item>
       <title>gallery</title>
-      <link>http://kangzhiheng.top/tags/gallery/</link>
+      <link>https://www.kangzhiheng.top/tags/gallery/</link>
       <pubDate>Thu, 02 Jan 2020 00:00:00 +0000</pubDate>
       
-      <guid>http://kangzhiheng.top/tags/gallery/</guid>
+      <guid>https://www.kangzhiheng.top/tags/gallery/</guid>
       <description></description>
     </item>
     
     <item>
       <title>lightbox</title>
-      <link>http://kangzhiheng.top/tags/lightbox/</link>
+      <link>https://www.kangzhiheng.top/tags/lightbox/</link>
       <pubDate>Thu, 02 Jan 2020 00:00:00 +0000</pubDate>
       
-      <guid>http://kangzhiheng.top/tags/lightbox/</guid>
+      <guid>https://www.kangzhiheng.top/tags/lightbox/</guid>
       <description></description>
     </item>
     
     <item>
       <title>css</title>
-      <link>http://kangzhiheng.top/tags/css/</link>
+      <link>https://www.kangzhiheng.top/tags/css/</link>
       <pubDate>Mon, 11 Mar 2019 00:00:00 +0000</pubDate>
       
-      <guid>http://kangzhiheng.top/tags/css/</guid>
+      <guid>https://www.kangzhiheng.top/tags/css/</guid>
       <description></description>
     </item>
     
     <item>
       <title>html</title>
-      <link>http://kangzhiheng.top/tags/html/</link>
+      <link>https://www.kangzhiheng.top/tags/html/</link>
       <pubDate>Mon, 11 Mar 2019 00:00:00 +0000</pubDate>
       
-      <guid>http://kangzhiheng.top/tags/html/</guid>
+      <guid>https://www.kangzhiheng.top/tags/html/</guid>
       <description></description>
     </item>
     
     <item>
       <title>markdown</title>
-      <link>http://kangzhiheng.top/tags/markdown/</link>
+      <link>https://www.kangzhiheng.top/tags/markdown/</link>
       <pubDate>Mon, 11 Mar 2019 00:00:00 +0000</pubDate>
       
-      <guid>http://kangzhiheng.top/tags/markdown/</guid>
+      <guid>https://www.kangzhiheng.top/tags/markdown/</guid>
       <description></description>
     </item>
     
     <item>
       <title>themes</title>
-      <link>http://kangzhiheng.top/tags/themes/</link>
+      <link>https://www.kangzhiheng.top/tags/themes/</link>
       <pubDate>Mon, 11 Mar 2019 00:00:00 +0000</pubDate>
       
-      <guid>http://kangzhiheng.top/tags/themes/</guid>
+      <guid>https://www.kangzhiheng.top/tags/themes/</guid>
       <description></description>
     </item>
     
     <item>
       <title>text</title>
-      <link>http://kangzhiheng.top/tags/text/</link>
+      <link>https://www.kangzhiheng.top/tags/text/</link>
       <pubDate>Sat, 09 Mar 2019 00:00:00 +0000</pubDate>
       
-      <guid>http://kangzhiheng.top/tags/text/</guid>
+      <guid>https://www.kangzhiheng.top/tags/text/</guid>
       <description></description>
     </item>
     
     <item>
       <title>emoji</title>
-      <link>http://kangzhiheng.top/tags/emoji/</link>
+      <link>https://www.kangzhiheng.top/tags/emoji/</link>
       <pubDate>Tue, 05 Mar 2019 00:00:00 +0000</pubDate>
       
-      <guid>http://kangzhiheng.top/tags/emoji/</guid>
+      <guid>https://www.kangzhiheng.top/tags/emoji/</guid>
       <description></description>
     </item>
     
     <item>
       <title>3D</title>
-      <link>http://kangzhiheng.top/tags/3d/</link>
+      <link>https://www.kangzhiheng.top/tags/3d/</link>
       <pubDate>Fri, 14 Dec 2018 00:00:00 +0000</pubDate>
       
-      <guid>http://kangzhiheng.top/tags/3d/</guid>
+      <guid>https://www.kangzhiheng.top/tags/3d/</guid>
       <description></description>
     </item>
     
     <item>
       <title>index</title>
-      <link>http://kangzhiheng.top/tags/index/</link>
+      <link>https://www.kangzhiheng.top/tags/index/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://kangzhiheng.top/tags/index/</guid>
+      <guid>https://www.kangzhiheng.top/tags/index/</guid>
       <description></description>
     </item>
     
     <item>
       <title>TCP/IP</title>
-      <link>http://kangzhiheng.top/tags/tcp/ip/</link>
+      <link>https://www.kangzhiheng.top/tags/tcp/ip/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://kangzhiheng.top/tags/tcp/ip/</guid>
+      <guid>https://www.kangzhiheng.top/tags/tcp/ip/</guid>
       <description></description>
     </item>
     

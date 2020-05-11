@@ -2,48 +2,48 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>index on adoredee</title>
-    <link>http://kangzhiheng.top/tags/index/</link>
+    <link>https://www.kangzhiheng.top/tags/index/</link>
     <description>Recent content in index on adoredee</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <copyright>Copyright © 2008–2020, Steve Francia and the Hugo Authors; All Rights Reserved.</copyright>
     
-	<atom:link href="http://kangzhiheng.top/tags/index/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://www.kangzhiheng.top/tags/index/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Poems</title>
-      <link>http://kangzhiheng.top/poems/</link>
+      <link>https://www.kangzhiheng.top/poems/</link>
       <pubDate>Tue, 21 Apr 2020 20:01:42 +0800</pubDate>
       
-      <guid>http://kangzhiheng.top/poems/</guid>
+      <guid>https://www.kangzhiheng.top/poems/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Posts</title>
-      <link>http://kangzhiheng.top/post/</link>
+      <link>https://www.kangzhiheng.top/post/</link>
       <pubDate>Fri, 17 Apr 2020 00:00:00 +0000</pubDate>
       
-      <guid>http://kangzhiheng.top/post/</guid>
+      <guid>https://www.kangzhiheng.top/post/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Algorithm</title>
-      <link>http://kangzhiheng.top/algorithm/</link>
+      <link>https://www.kangzhiheng.top/algorithm/</link>
       <pubDate>Mon, 09 Mar 2020 00:00:00 +0000</pubDate>
       
-      <guid>http://kangzhiheng.top/algorithm/</guid>
+      <guid>https://www.kangzhiheng.top/algorithm/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Life</title>
-      <link>http://kangzhiheng.top/life/</link>
+      <link>https://www.kangzhiheng.top/life/</link>
       <pubDate>Thu, 28 Feb 2019 00:00:00 +0000</pubDate>
       
-      <guid>http://kangzhiheng.top/life/</guid>
+      <guid>https://www.kangzhiheng.top/life/</guid>
       <description></description>
     </item>
     

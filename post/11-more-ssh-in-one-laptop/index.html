@@ -46,7 +46,7 @@
 <meta itemprop="description" content="在这篇文章中，使用Git服务器Github，来进行多SSH密钥的配置，介绍多个SSH密钥同时存在于同一台设备中的方法。">
 <meta itemprop="datePublished" content="2020-05-11T00:00:00&#43;00:00" />
 <meta itemprop="dateModified" content="2020-05-11T00:00:00&#43;00:00" />
-<meta itemprop="wordCount" content="6653">
+<meta itemprop="wordCount" content="6655">
 <meta itemprop="image" content="https://www.kangzhiheng.top/11-cover.png">
 
 
@@ -198,7 +198,7 @@
 <p>默认情况下，<!-- raw HTML omitted -->用户的 SSH 密钥存储在其 <code>~/.ssh</code> 目录下<sup id="fnref:3"><a href="#fn:3" class="footnote-ref" role="doc-noteref">3</a></sup><!-- raw HTML omitted --> 。 在<code>Windows</code>中打开<code>Git Bash</code>，在<code>Linux</code>和<code>Mac</code>打开任意<code>Terminal</code>（终端），输入</p>
 <pre><code class="language-bash">ls -al ~/.ssh
 </code></pre>
-<p>检查是否存在SSH密钥。默认情况下，公钥的文件名以<code>.pub</code>结尾。 查看是否以<code>id_dsa</code> 或 <code>id_rsa</code> 命名的文件，公钥和私钥的前缀名是一样的，其中公钥带有 <code>.pub</code> 扩展名，另一个则是与之对应的私钥，没有扩展名。例如<code>id_rsa.pub</code>是公钥，<code>id_rsa</code> 是私钥。</p>
+<p>检查是否存在SSH密钥。默认情况下，公钥的文件名以<code>.pub</code>结尾。 查看是否有以<code>id_dsa</code> 或 <code>id_rsa</code> 命名的文件，公钥和私钥的前缀名是一样的，其中公钥带有 <code>.pub</code> 扩展名，另一个则是与之对应的私钥，没有扩展名。例如<code>id_rsa.pub</code>是公钥，<code>id_rsa</code> 是私钥。</p>
 <blockquote>
 <p><strong>注意：</strong> DSA 密钥 (SSH-DSS) 不再受支持。 现有密钥将继续运行，但不能将新的 DSA 密钥添加到 GitHub 帐户上。</p>
 <p><strong>提示：</strong> 如果收到错误“<em>~/.ssh</em> 不存在”的信息，不要担心！ 在<a href="https://help.github.com/cn/articles/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent">生成新的 SSH 密钥</a>时会创建它。</p>
@@ -232,13 +232,14 @@
 <pre><code class="language-bash">Generating public/private rsa key pair.
 Enter file in which to save the key (/c/Users/Dell/.ssh/id_rsa):
 </code></pre>
-<p>这时可以不输入文件名，使用默认文件名<code>id_rsa</code>，那么就会生成<code> id_rsa</code> 和 <code>id_rsa.pub </code>两个秘钥文件。但一般情况下，不建议这么做，不利于管理，在这里命名格式建议为<code> id_rsa_用途_Git服务器名称</code>，比如我新建的SSH密钥用于hugo博客搭建，并且代码上传到Github上，所以取名为<code>id_rsa_hugo_github</code>。如果<code>~/.ssh</code>目录不存在，上述命令会自动新建<code>~/.ssh</code>目录。在上述提示后面，不要直接输入密钥名字，应该加上完整路径，如下：</p>
+<p>这时可以不输入文件名，使用默认文件名<code>id_rsa</code>，那么就会生成<code> id_rsa</code> 和 <code>id_rsa.pub </code>两个秘钥文件。但一般情况下，不建议这么做，不利于管理，在这里命名格式建议为<code> id_rsa_用途_Git服务器名称</code>，比如我新建的SSH密钥用于hugo博客搭建，并且代码上传到Github上，所以取名为<code>id_rsa_hugo_github</code>。如果<code>~/.ssh</code>目录不存在，上述命令会自动新建<code>~/.ssh</code>目录。</p>
+<p><strong>在上述提示后面，不要直接输入密钥名字，应该加上完整路径</strong>，如下：</p>
 <pre><code class="language-bash">~/.ssh/id_rsa_hugo_github
 </code></pre>
 <p>否则密钥会被创建在根目录<code>~</code>下，而不是<code>~/.ssh</code>目录下。</p>
 </li>
 <li>
-<p>提示输入两次密码，需要注意的是，该密码是你进行<code>git push</code>操作时输入的密码，而不是Github账号的密码, 当然，你也可以不输入密码，直接按回车。<strong>建议设置密码保证安全性，密码太短可能会创建失败，建议使用字母+数字的组合方式，且长度不要低于8位。</strong></p>
+<p>提示输入两次密码，需要注意的是，该密码是你进行<code>git push</code>操作时输入的密码，而不是Github账号的密码。当然，你也可以不输入密码，直接按回车。<strong>建议设置密码保证安全性，密码太短可能会创建失败，建议使用字母+数字的组合方式，且长度不要低于8位。</strong></p>
 <pre><code class="language-bash">Enter passphrase (empty for no passphrase):
 Enter same passphrase again:
 </code></pre>
@@ -342,7 +343,7 @@ Host adoredee.github.com
 <li><strong>HostName</strong>：服务器地址，Github地址为<code>github.com</code>、GitLab地址为<code>gitlab.com</code>、Gitee地址为<code>gitee.com</code>；</li>
 <li><strong>IdentityFile</strong>： 公钥文件所在的绝对路径；</li>
 </ul>
-<p>验证SSH密钥，注意@后面的<code>~/.ssh/config</code>文件中指定的&quot;Host&quot;项</p>
+<p>验证SSH密钥，注意@后面是在<code>~/.ssh/config</code>文件中指定的&quot;Host&quot;项</p>
 <p>先验证第一个Host：<code>github.com</code>，运行</p>
 <pre><code class="language-bash">ssh -T git@github.com
 </code></pre>
@@ -539,7 +540,7 @@ origin  https://github.com/USERNAME/REPOSITORY.git (push)
 <pre><code>
 其中origin为远程连接的别名，这取决于你为其取的名字。
 
-4. &lt;cite&gt;远程URL的SSH与HTTP之间的切换[^7]&lt;/cite&gt;
+4. 远程URL的SSH与HTTP之间的&lt;cite&gt;切换[^7]&lt;/cite&gt;
 
 `git remote set-url` 命令可更改现有远程仓库的 URL。
 

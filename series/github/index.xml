@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>GitHub on adoredee</title>
+    <link>https://www.kangzhiheng.top/series/github/</link>
+    <description>Recent content in GitHub on adoredee</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <copyright>Copyright © 2008–2020, Steve Francia and the Hugo Authors; All Rights Reserved.</copyright>
+    <lastBuildDate>Mon, 11 May 2020 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://www.kangzhiheng.top/series/github/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>多个SSH并存且连接到Github</title>
+      <link>https://www.kangzhiheng.top/post/11-more-ssh-in-one-laptop/</link>
+      <pubDate>Mon, 11 May 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.kangzhiheng.top/post/11-more-ssh-in-one-laptop/</guid>
+      <description>&lt;p&gt;在这篇文章中，使用Git服务器Github，来进行多SSH密钥的配置，介绍多个SSH密钥同时存在于同一台设备中的方法。&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

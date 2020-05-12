@@ -80,8 +80,6 @@
                 
                     <li class="nav-item"><a class="nav-link" href="/series/">Series</a></li>
                 
-                    <li class="nav-item"><a class="nav-link" href="/algorithm/">Algorithm</a></li>
-                
                     <li class="nav-item"><a class="nav-link" href="/system/">System</a></li>
                 
                     <li class="nav-item"><a class="nav-link" href="/share/">Share</a></li>
@@ -133,6 +131,7 @@
                                     <img data-src="/images/3-cover_hub435248f7df8091559689f1ef9e77952_76479_900x500_fit_box_2.png" class="img-fluid rounded mx-auto d-block" alt="C&#43;&#43;之查漏补缺">
                                 </div>
                             </div>
+<h4>目录</h4>
 <div class="post-toc" id="post-toc">
   <h2 class="post-toc-title"></h2>
   <div class="post-toc-content always-active">
@@ -246,6 +245,8 @@ int* const func7();					// 返回一个指向指针类型的常量，int* const 
 <p>修饰<strong>静态成员函数</strong>，静态成员函数为类服务，而不是某一个类的具体对象。</p>
 <ul>
 <li><strong>普通的成员函数一般都隐含了一个this指针</strong>，this指针指向类的对象本身，因为普通成员函数总是属于类的某个具体的对象；</li>
+</ul>
+<ul>
 <li>类的静态成员函数属于类本身，不作用于对象，因此不具有this指针，正因为它没有指向某一个对象，所以它无法访问属于类对象的非静态成员变量和非静态成员函数，它只能调用其余的静态成员函数和静态成员变量；</li>
 <li>由于没有this指针的额外开销，静态成员函数与类的全局函数相比速度上会稍快；</li>
 </ul>
@@ -856,11 +857,6 @@ class D: public B, public: C{};    // 此时类D只有类A的一份拷贝
                 <div class="row justify-content-center">
                     <div class="col-lg-8">
                         
-                    </div>
-                </div><div class="row justify-content-center my-3">
-                    <div class="col-lg-8">
-                        <div id="commento"></div>
-                        <script src="https://commento.io"></script>
                     </div>
                 </div></article>
             

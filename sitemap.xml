@@ -7,6 +7,56 @@
   </url>
   
   <url>
+    <loc>https://www.kangzhiheng.top/authors/kangzhiheng/</loc>
+    <lastmod>2020-05-11T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.kangzhiheng.top/authors/</loc>
+    <lastmod>2020-05-11T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.kangzhiheng.top/categories/</loc>
+    <lastmod>2020-05-11T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.kangzhiheng.top/series/github/</loc>
+    <lastmod>2020-05-11T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.kangzhiheng.top/categories/github/</loc>
+    <lastmod>2020-05-11T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.kangzhiheng.top/post/</loc>
+    <lastmod>2020-05-11T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.kangzhiheng.top/series/</loc>
+    <lastmod>2020-05-11T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.kangzhiheng.top/tags/ssh/</loc>
+    <lastmod>2020-05-11T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.kangzhiheng.top/tags/</loc>
+    <lastmod>2020-05-11T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.kangzhiheng.top/post/11-more-ssh-in-one-laptop/</loc>
+    <lastmod>2020-05-11T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://www.kangzhiheng.top/poems/libai/</loc>
     <lastmod>2020-04-21T20:01:42+08:00</lastmod>
   </url>
@@ -17,22 +67,7 @@
   </url>
   
   <url>
-    <loc>https://www.kangzhiheng.top/authors/kangzhiheng/</loc>
-    <lastmod>2020-04-17T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://www.kangzhiheng.top/tags/anaconda/</loc>
-    <lastmod>2020-04-17T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://www.kangzhiheng.top/authors/</loc>
-    <lastmod>2020-04-17T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://www.kangzhiheng.top/categories/</loc>
     <lastmod>2020-04-17T00:00:00+00:00</lastmod>
   </url>
   
@@ -82,27 +117,7 @@
   </url>
   
   <url>
-    <loc>https://www.kangzhiheng.top/post/</loc>
-    <lastmod>2020-04-17T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://www.kangzhiheng.top/tags/pytorch/</loc>
-    <lastmod>2020-04-17T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://www.kangzhiheng.top/series/</loc>
-    <lastmod>2020-04-17T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://www.kangzhiheng.top/tags/ssh/</loc>
-    <lastmod>2020-04-17T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://www.kangzhiheng.top/tags/</loc>
     <lastmod>2020-04-17T00:00:00+00:00</lastmod>
   </url>
   
@@ -182,17 +197,12 @@
   </url>
   
   <url>
-    <loc>https://www.kangzhiheng.top/algorithm/</loc>
-    <lastmod>2020-03-09T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://www.kangzhiheng.top/tags/%E5%AD%97%E7%AC%A6%E4%B8%B2/</loc>
     <lastmod>2020-03-09T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://www.kangzhiheng.top/algorithm/7-%E7%AE%97%E6%B3%95-%E5%88%A4%E6%96%ADip%E5%9C%B0%E5%9D%80%E6%98%AF%E5%90%A6%E5%B1%9E%E4%BA%8E%E5%90%8C%E4%B8%80%E7%BD%91%E6%AE%B5/</loc>
+    <loc>https://www.kangzhiheng.top/post/7-%E7%AE%97%E6%B3%95-%E5%88%A4%E6%96%ADip%E5%9C%B0%E5%9D%80%E6%98%AF%E5%90%A6%E5%B1%9E%E4%BA%8E%E5%90%8C%E4%B8%80%E7%BD%91%E6%AE%B5/</loc>
     <lastmod>2020-03-09T00:00:00+00:00</lastmod>
   </url>
   
@@ -277,7 +287,7 @@
   </url>
   
   <url>
-    <loc>https://www.kangzhiheng.top/algorithm/2-leetcode62-63%E4%B8%8D%E5%90%8C%E8%B7%AF%E5%BE%84/</loc>
+    <loc>https://www.kangzhiheng.top/post/2-leetcode62-63%E4%B8%8D%E5%90%8C%E8%B7%AF%E5%BE%84/</loc>
     <lastmod>2020-02-12T00:00:00+00:00</lastmod>
   </url>
   

@@ -22,6 +22,15 @@
     </item>
     
     <item>
+      <title>多个SSH并存且连接到Github</title>
+      <link>https://www.kangzhiheng.top/post/11-more-ssh-in-one-laptop/</link>
+      <pubDate>Mon, 11 May 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.kangzhiheng.top/post/11-more-ssh-in-one-laptop/</guid>
+      <description>&lt;p&gt;在这篇文章中，使用Git服务器Github，来进行多SSH密钥的配置，介绍多个SSH密钥同时存在于同一台设备中的方法。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
       <title>Libai</title>
       <link>https://www.kangzhiheng.top/poems/libai/</link>
       <pubDate>Tue, 21 Apr 2020 20:01:42 +0800</pubDate>
@@ -60,10 +69,10 @@
     
     <item>
       <title>算法：判断IP地址是否属于同一网段</title>
-      <link>https://www.kangzhiheng.top/algorithm/7-%E7%AE%97%E6%B3%95-%E5%88%A4%E6%96%ADip%E5%9C%B0%E5%9D%80%E6%98%AF%E5%90%A6%E5%B1%9E%E4%BA%8E%E5%90%8C%E4%B8%80%E7%BD%91%E6%AE%B5/</link>
+      <link>https://www.kangzhiheng.top/post/7-%E7%AE%97%E6%B3%95-%E5%88%A4%E6%96%ADip%E5%9C%B0%E5%9D%80%E6%98%AF%E5%90%A6%E5%B1%9E%E4%BA%8E%E5%90%8C%E4%B8%80%E7%BD%91%E6%AE%B5/</link>
       <pubDate>Mon, 09 Mar 2020 00:00:00 +0000</pubDate>
       
-      <guid>https://www.kangzhiheng.top/algorithm/7-%E7%AE%97%E6%B3%95-%E5%88%A4%E6%96%ADip%E5%9C%B0%E5%9D%80%E6%98%AF%E5%90%A6%E5%B1%9E%E4%BA%8E%E5%90%8C%E4%B8%80%E7%BD%91%E6%AE%B5/</guid>
+      <guid>https://www.kangzhiheng.top/post/7-%E7%AE%97%E6%B3%95-%E5%88%A4%E6%96%ADip%E5%9C%B0%E5%9D%80%E6%98%AF%E5%90%A6%E5%B1%9E%E4%BA%8E%E5%90%8C%E4%B8%80%E7%BD%91%E6%AE%B5/</guid>
       <description>&lt;p&gt;实用的算法题&lt;/p&gt;</description>
     </item>
     
@@ -106,10 +115,10 @@
     
     <item>
       <title>leetcode62-63不同路径</title>
-      <link>https://www.kangzhiheng.top/algorithm/2-leetcode62-63%E4%B8%8D%E5%90%8C%E8%B7%AF%E5%BE%84/</link>
+      <link>https://www.kangzhiheng.top/post/2-leetcode62-63%E4%B8%8D%E5%90%8C%E8%B7%AF%E5%BE%84/</link>
       <pubDate>Wed, 12 Feb 2020 00:00:00 +0000</pubDate>
       
-      <guid>https://www.kangzhiheng.top/algorithm/2-leetcode62-63%E4%B8%8D%E5%90%8C%E8%B7%AF%E5%BE%84/</guid>
+      <guid>https://www.kangzhiheng.top/post/2-leetcode62-63%E4%B8%8D%E5%90%8C%E8%B7%AF%E5%BE%84/</guid>
       <description>&lt;p&gt;Leetcode62题&lt;/p&gt;</description>
     </item>
     

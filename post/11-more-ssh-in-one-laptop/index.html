@@ -46,7 +46,7 @@
 <meta itemprop="description" content="在这篇文章中，使用Git服务器Github，来进行多SSH密钥的配置，介绍多个SSH密钥同时存在于同一台设备中的方法。">
 <meta itemprop="datePublished" content="2020-05-11T00:00:00&#43;00:00" />
 <meta itemprop="dateModified" content="2020-05-11T00:00:00&#43;00:00" />
-<meta itemprop="wordCount" content="6557">
+<meta itemprop="wordCount" content="6629">
 <meta itemprop="image" content="https://www.kangzhiheng.top/11-cover.png">
 
 
@@ -509,7 +509,7 @@ Please make sure you have the correct access rights and the repository exists.
 <li>找到SSH密钥在<code>~/.ssh/config</code>对应的<strong>Host</strong>，替换<code>github.com</code>为该Host；</li>
 </ol>
 <h3 id="番外">番外</h3>
-<p>介绍几条命令：</p>
+<p>介绍几条在实际操作本文方法可能需要的命令：</p>
 <ol>
 <li>
 <p>列出当前项目的配置信息，进入到本地项目根目录下，运行：</p>
@@ -530,16 +530,26 @@ origin  https://github.com/USERNAME/REPOSITORY.git (push)
 </code></pre>
 </li>
 <li>
-<p><!-- raw HTML omitted -->远程URL的SSH与HTTP之间的切换<sup id="fnref:7"><a href="#fn:7" class="footnote-ref" role="doc-noteref">7</a></sup><!-- raw HTML omitted --></p>
-<p><code>git remote set-url</code> 命令可更改现有远程仓库的 URL。</p>
-<p>SSH —&gt; HTTPS</p>
-<pre><code class="language-bash">git remote set-url origin https://github.com/USERNAME/REPOSITORY.git
+<p>删除远程连接</p>
+<pre><code class="language-bash"></code></pre>
+</li>
+</ol>
+<p>git remote remove origin</p>
+<pre><code>
+其中origin为远程连接的别名，这取决于你为其取的名字。
+
+4. &lt;cite&gt;远程URL的SSH与HTTP之间的切换[^7]&lt;/cite&gt;
+
+`git remote set-url` 命令可更改现有远程仓库的 URL。
+
+SSH —&gt; HTTPS
+
+```bash
+git remote set-url origin https://github.com/USERNAME/REPOSITORY.git
 </code></pre>
 <p>HTTPS —&gt; SSH</p>
 <pre><code class="language-bash">git remote set-url origin git@github.com:USERNAME/REPOSITORY.git
 </code></pre>
-</li>
-</ol>
 <h3 id="参考">参考</h3>
 <section class="footnotes" role="doc-endnotes">
 <hr>
@@ -561,9 +571,6 @@ origin  https://github.com/USERNAME/REPOSITORY.git (push)
 </li>
 <li id="fn:6" role="doc-endnote">
 <p><a href="http://shinancao.cn/2016/12/18/Programming-Git-1/">同一个Mac，配置多个SSH Key</a> <a href="#fnref:6" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
-</li>
-<li id="fn:7" role="doc-endnote">
-<p><a href="https://help.github.com/cn/github/using-git/changing-a-remotes-url">更改远程仓库的 URL</a> <a href="#fnref:7" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
 </li>
 </ol>
 </section>

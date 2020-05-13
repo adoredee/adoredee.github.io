@@ -6,7 +6,7 @@
 
 <title>
   
-     多个SSH并存且连接到Github | 
+     多个SSH密钥并存且连接到Github | 
     adoredee
   
 </title><meta name="description" content="谁知我知你，我知你之深。"><meta name="author" content="kangzhiheng">
@@ -34,7 +34,7 @@
 
 
 
-<link rel="canonical" href="https://www.kangzhiheng.top/post/11-more-ssh-in-one-laptop/"><meta property="og:title" content="多个SSH并存且连接到Github" />
+<link rel="canonical" href="https://www.kangzhiheng.top/post/11-more-ssh-in-one-laptop/"><meta property="og:title" content="多个SSH密钥并存且连接到Github" />
 <meta property="og:description" content="在这篇文章中，使用Git服务器Github，来进行多SSH密钥的配置，介绍多个SSH密钥同时存在于同一台设备中的方法。" />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://www.kangzhiheng.top/post/11-more-ssh-in-one-laptop/" />
@@ -42,11 +42,11 @@
 <meta property="article:published_time" content="2020-05-11T00:00:00+00:00" />
 <meta property="article:modified_time" content="2020-05-11T00:00:00+00:00" />
 
-<meta itemprop="name" content="多个SSH并存且连接到Github">
+<meta itemprop="name" content="多个SSH密钥并存且连接到Github">
 <meta itemprop="description" content="在这篇文章中，使用Git服务器Github，来进行多SSH密钥的配置，介绍多个SSH密钥同时存在于同一台设备中的方法。">
 <meta itemprop="datePublished" content="2020-05-11T00:00:00&#43;00:00" />
 <meta itemprop="dateModified" content="2020-05-11T00:00:00&#43;00:00" />
-<meta itemprop="wordCount" content="6655">
+<meta itemprop="wordCount" content="6674">
 <meta itemprop="image" content="https://www.kangzhiheng.top/11-cover.png">
 
 
@@ -54,7 +54,7 @@
 <meta itemprop="keywords" content="ssh," /><meta name="twitter:card" content="summary_large_image"/>
 <meta name="twitter:image" content="https://www.kangzhiheng.top/11-cover.png"/>
 
-<meta name="twitter:title" content="多个SSH并存且连接到Github"/>
+<meta name="twitter:title" content="多个SSH密钥并存且连接到Github"/>
 <meta name="twitter:description" content="在这篇文章中，使用Git服务器Github，来进行多SSH密钥的配置，介绍多个SSH密钥同时存在于同一台设备中的方法。"/>
 
 </head>
@@ -115,7 +115,7 @@
                             <span><i class="fas fa-clock mr-2"></i></span>
                         </div>
 
-                        <h1>多个SSH并存且连接到Github</h1>
+                        <h1>多个SSH密钥并存且连接到Github</h1>
 
                         <ul class="authors list-inline"><li class="list-inline-item mr-3">
                     <div class="media author"><div class="media-body">
@@ -128,7 +128,7 @@
                     </div>
                 </div><div class="row justify-content-center mb-3">
                                 <div class="col-lg-10">
-                                    <img data-src="/images/11-cover_hua3a24abfcf958c835600202c9637e6b9_41482_900x500_fit_box_2.png" class="img-fluid rounded mx-auto d-block" alt="多个SSH并存且连接到Github">
+                                    <img data-src="/images/11-cover_hua3a24abfcf958c835600202c9637e6b9_41482_900x500_fit_box_2.png" class="img-fluid rounded mx-auto d-block" alt="多个SSH密钥并存且连接到Github">
                                 </div>
                             </div>
 <h4>目录</h4>
@@ -495,7 +495,7 @@ Please make sure you have the correct access rights and the repository exists.
 <p><strong>在克隆远程仓库时</strong>，也将正常的代码中的<code>github.com</code>修改为对应的该Github账号里SSH密钥对应的Host</p>
 <pre><code class="language-bash">git clone git@adoredee.github.com:adoredee/GitlocalDoc.git
 </code></pre>
-<p>至此，</p>
+<p>至此问题解决，可以正常使用<code>git pull</code>、<code>git clone</code>、<code>git push</code>等操作。</p>
 <h3 id="总结">总结</h3>
 <p>这篇文章的初衷，主要是遇到了多SSH与多Github对应问题，即遇到了</p>
 <pre><code class="language-bash">ERROR: Permission to adoredee/GitlocalDoc.git denied to kangzhiheng. 
@@ -533,25 +533,21 @@ origin  https://github.com/USERNAME/REPOSITORY.git (push)
 </li>
 <li>
 <p>删除远程连接</p>
-<pre><code class="language-bash"></code></pre>
+<pre><code class="language-bash">git remote remove origin
+</code></pre>
+<p>其中origin为远程连接的别名，这取决于你为其取的名字。</p>
 </li>
-</ol>
-<p>git remote remove origin</p>
-<pre><code>
-其中origin为远程连接的别名，这取决于你为其取的名字。
-
-4. 远程URL的SSH与HTTP之间的&lt;cite&gt;切换[^7]&lt;/cite&gt;
-
-`git remote set-url` 命令可更改现有远程仓库的 URL。
-
-SSH —&gt; HTTPS
-
-```bash
-git remote set-url origin https://github.com/USERNAME/REPOSITORY.git
+<li>
+<p>远程URL的SSH与HTTP之间的<!-- raw HTML omitted -->切换<sup id="fnref:7"><a href="#fn:7" class="footnote-ref" role="doc-noteref">7</a></sup><!-- raw HTML omitted --></p>
+<p><code>git remote set-url</code> 命令可更改现有远程仓库的 URL。</p>
+<p>SSH —&gt; HTTPS</p>
+<pre><code class="language-bash">git remote set-url origin https://github.com/USERNAME/REPOSITORY.git
 </code></pre>
 <p>HTTPS —&gt; SSH</p>
 <pre><code class="language-bash">git remote set-url origin git@github.com:USERNAME/REPOSITORY.git
 </code></pre>
+</li>
+</ol>
 <h3 id="参考">参考</h3>
 <section class="footnotes" role="doc-endnotes">
 <hr>
@@ -574,33 +570,36 @@ git remote set-url origin https://github.com/USERNAME/REPOSITORY.git
 <li id="fn:6" role="doc-endnote">
 <p><a href="http://shinancao.cn/2016/12/18/Programming-Git-1/">同一个Mac，配置多个SSH Key</a> <a href="#fnref:6" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
 </li>
+<li id="fn:7" role="doc-endnote">
+<p><a href="https://help.github.com/cn/github/using-git/changing-a-remotes-url">更改远程仓库的 URL</a> <a href="#fnref:7" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
 </ol>
 </section>
                         </div><div class="tags my-3"><a class="badge badge-pill badge-light border mr-2" href="/tags/ssh">
                                     <i class="fas fa-tag mr-2"></i>ssh
                                 </a></div><ul class="share nav my-3 justify-content-end">
         <li class="nav-item">
-            <a class="nav-link" target="_blank" href="https://twitter.com/intent/tweet?url=https%3a%2f%2fwww.kangzhiheng.top%2fpost%2f11-more-ssh-in-one-laptop%2f&text=%e5%a4%9a%e4%b8%aaSSH%e5%b9%b6%e5%ad%98%e4%b8%94%e8%bf%9e%e6%8e%a5%e5%88%b0Github">
+            <a class="nav-link" target="_blank" href="https://twitter.com/intent/tweet?url=https%3a%2f%2fwww.kangzhiheng.top%2fpost%2f11-more-ssh-in-one-laptop%2f&text=%e5%a4%9a%e4%b8%aaSSH%e5%af%86%e9%92%a5%e5%b9%b6%e5%ad%98%e4%b8%94%e8%bf%9e%e6%8e%a5%e5%88%b0Github">
               <i class="fa-fw fab fa-twitter"></i>
           </a>
         </li>
         <li class="nav-item">
-            <a class="nav-link" target="_blank" href="https://www.linkedin.com/shareArticle?url=https%3a%2f%2fwww.kangzhiheng.top%2fpost%2f11-more-ssh-in-one-laptop%2f&title=%e5%a4%9a%e4%b8%aaSSH%e5%b9%b6%e5%ad%98%e4%b8%94%e8%bf%9e%e6%8e%a5%e5%88%b0Github">
+            <a class="nav-link" target="_blank" href="https://www.linkedin.com/shareArticle?url=https%3a%2f%2fwww.kangzhiheng.top%2fpost%2f11-more-ssh-in-one-laptop%2f&title=%e5%a4%9a%e4%b8%aaSSH%e5%af%86%e9%92%a5%e5%b9%b6%e5%ad%98%e4%b8%94%e8%bf%9e%e6%8e%a5%e5%88%b0Github">
                 <i class="fa-fw fab fa-linkedin-in"></i>
             </a>
         </li>
         <li class="nav-item">
-            <a class="nav-link" target="_blank" href="https://www.facebook.com/sharer.php?u=https%3a%2f%2fwww.kangzhiheng.top%2fpost%2f11-more-ssh-in-one-laptop%2f&t=%e5%a4%9a%e4%b8%aaSSH%e5%b9%b6%e5%ad%98%e4%b8%94%e8%bf%9e%e6%8e%a5%e5%88%b0Github">
+            <a class="nav-link" target="_blank" href="https://www.facebook.com/sharer.php?u=https%3a%2f%2fwww.kangzhiheng.top%2fpost%2f11-more-ssh-in-one-laptop%2f&t=%e5%a4%9a%e4%b8%aaSSH%e5%af%86%e9%92%a5%e5%b9%b6%e5%ad%98%e4%b8%94%e8%bf%9e%e6%8e%a5%e5%88%b0Github">
                 <i class="fa-fw fab fa-facebook-f"></i>
             </a>
         </li>
         <li class="nav-item">
-            <a class="nav-link" target="_blank" href="https://reddit.com/submit?url=https%3a%2f%2fwww.kangzhiheng.top%2fpost%2f11-more-ssh-in-one-laptop%2f&title=%e5%a4%9a%e4%b8%aaSSH%e5%b9%b6%e5%ad%98%e4%b8%94%e8%bf%9e%e6%8e%a5%e5%88%b0Github">
+            <a class="nav-link" target="_blank" href="https://reddit.com/submit?url=https%3a%2f%2fwww.kangzhiheng.top%2fpost%2f11-more-ssh-in-one-laptop%2f&title=%e5%a4%9a%e4%b8%aaSSH%e5%af%86%e9%92%a5%e5%b9%b6%e5%ad%98%e4%b8%94%e8%bf%9e%e6%8e%a5%e5%88%b0Github">
                 <i class="fa-fw fab fa-reddit-alien"></i>
             </a>
         </li>
         <li class="nav-item">
-            <a class="nav-link" target="_blank" href="https://github.com/kangzhiheng?url=https%3a%2f%2fwww.kangzhiheng.top%2fpost%2f11-more-ssh-in-one-laptop%2f&title=%e5%a4%9a%e4%b8%aaSSH%e5%b9%b6%e5%ad%98%e4%b8%94%e8%bf%9e%e6%8e%a5%e5%88%b0Github">
+            <a class="nav-link" target="_blank" href="https://github.com/kangzhiheng?url=https%3a%2f%2fwww.kangzhiheng.top%2fpost%2f11-more-ssh-in-one-laptop%2f&title=%e5%a4%9a%e4%b8%aaSSH%e5%af%86%e9%92%a5%e5%b9%b6%e5%ad%98%e4%b8%94%e8%bf%9e%e6%8e%a5%e5%88%b0Github">
                 <i class="fa-fw fab fa-github"></i>
             </a>
         </li>

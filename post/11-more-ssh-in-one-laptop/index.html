@@ -46,7 +46,7 @@
 <meta itemprop="description" content="在这篇文章中，使用Git服务器Github，来进行多SSH密钥的配置，介绍多个SSH密钥同时存在于同一台设备中的方法。">
 <meta itemprop="datePublished" content="2020-05-11T00:00:00&#43;00:00" />
 <meta itemprop="dateModified" content="2020-05-11T00:00:00&#43;00:00" />
-<meta itemprop="wordCount" content="6674">
+<meta itemprop="wordCount" content="7011">
 <meta itemprop="image" content="https://www.kangzhiheng.top/11-cover.png">
 
 
@@ -296,21 +296,30 @@ fi
 unset env
 </code></pre>
 <p>保存并退出后，输入<code>source ~/.profile</code>更新文件，这时Windows将自动运行 <code>ssh-agent</code>。</p>
+<p><strong>注</strong>：在Windows下开启<code>ssh-agent</code>的操作步骤仅供了解，先不要操作，请继续阅读。</p>
 <p>在<code>Linux/Mac</code>下，输入</p>
 <pre><code class="language-bash">eval $(ssh-agent -s)
 </code></pre>
 <p>成功开启后，会提示SSH代理线程号，如<code>Agent pid 1107</code>。</p>
-<p><code>ssh-agent</code> 进程将继续运行，直到您注销、关闭计算机或终止该进程。</p>
+<p><code>ssh-agent</code> <strong>进程将继续运行，直到您注销、关闭计算机或终止该进程。</strong></p>
 </li>
 <li>
 <p><strong>将 SSH 私钥添加到 ssh-agent</strong>。 如果创建了不同名称的密钥，或者要添加不同名称的现有密钥，将命令中的 <code>id_rsa</code>替换为私钥文件的名称，如<code>id_rsa_hugo_github</code>。SSH服务器默认是去找<code>id_rsa</code>，现在需要把这个密钥添加到<code>ssh-agent</code>中，这样ssh服务器才能认识<code>id_rsa_hugo_github</code>。</p>
-<p>在<code>Windows/Linux</code>下，输入</p>
-<pre><code class="language-bash">ssh-add ~/.ssh/id_rsa_hugo_github
-</code></pre>
 <p>在<code>Mac</code>下，输入</p>
 <pre><code class="language-bash">ssh-add -K ~/.ssh/id_rsa_hugo_github
 </code></pre>
 <p>因为在Mac上，当系统重启后会“忘记”这个密钥，所以通过指定<code>-K</code>把SSH密钥导入到密钥链中。</p>
+<p>在<code>Windows/Linux</code>下，输入</p>
+<pre><code class="language-bash">ssh-add ~/.ssh/id_rsa_hugo_github
+</code></pre>
+<p><strong>然而</strong>，在Windows下，<code>ssh-agent</code>  <strong>进程将继续运行，直到您注销、关闭计算机或终止该进程。</strong> 重启Windows后，如果按照第一步中的方法进行设置，可能每次打开Git Bash，需要手动添加私钥到ssh-agent。所以为了使我们每一次打开Git Bash时自动启动ssh-agent，进行如下设置：</p>
+<p>找到Git的安装目录，再在安装目录下找到<code>etc</code>文件夹，进入<code>etc</code>，打开<code>bash.bashrc</code>文件，在文件末尾添加</p>
+<pre><code class="language-bash"># ssh-add private-key
+eval &quot;$(ssh-agent -s)&quot;
+ssh-add ~/.ssh/私钥1
+ssh-add ~/.ssh/私钥2
+</code></pre>
+<p>其中私钥1、私钥2换成自己私钥的名称即可。保存文件并退出，这样每次打开Git Bash就会自动执行<code>ssh-agent</code>代理。</p>
 </li>
 <li>
 <p><strong>查看代理结果</strong></p>

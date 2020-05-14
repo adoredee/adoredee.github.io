@@ -152,6 +152,35 @@
             </article>
         </div>
     </div>
+    
+    <script type="text/javascript" async
+        src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+        MathJax.Hub.Config({
+        tex2jax: {
+          inlineMath: [['$','$'], ['\\(','\\)']],
+          displayMath: [['$$','$$']],
+          processEscapes: true,
+          processEnvironments: true,
+          skipTags: ['script', 'noscript', 'style', 'textarea', 'pre'],
+          TeX: { equationNumbers: { autoNumber: "AMS" },
+               extensions: ["AMSmath.js", "AMSsymbols.js"] }
+        }
+        });
+        MathJax.Hub.Queue(function() {
+          
+          
+          
+          var all = MathJax.Hub.getAllJax(), i;
+          for(i = 0; i < all.length; i += 1) {
+              all[i].SourceElement().parentNode.className += ' has-jax';
+          }
+        });
+      
+        MathJax.Hub.Config({
+        
+        TeX: { equationNumbers: { autoNumber: "AMS" } }
+        });
+      </script>
 </main>
 
 
@@ -240,7 +269,7 @@
 
                 <p class="text-muted">
                     
-                        Copyright © 2008–2020, Steve Francia and the Hugo Authors; All Rights Reserved.
+                        Copyright ? 2008?锟�2020, Steve Francia and the Hugo Authors; All Rights Reserved.
                     
                 </p>
 
@@ -248,7 +277,7 @@
                 Powered by <a href="https://gohugo.io" target="_blank">Hugo</a> with <a href="https://github.com/puresyntax71/hugo-theme-chunky-poster" target="_blank">Chunky Poster</a>.
                 Modified by <a href="https://github.com/kangzhiheng" target="_blank">Kangzhiheng</a>.
                 </p>
-
+                
                 <p class="text-muted">
                     <script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
                     本文总阅读量
@@ -256,18 +285,19 @@
                         <span id="busuanzi_value_page_pv"></span>
                     </span>
                     次，感谢
-                    <span id="busuanzi_container_site_pv">
-                        <span id="busuanzi_value_site_pv"></span>
-                    </span>
-                    位小伙伴的第
                     <span id="busuanzi_container_site_uv">
                         <span id="busuanzi_value_site_uv"></span>
+                    </span>
+                    位小伙伴的第
+                    <span id="busuanzi_container_site_pv">
+                        <span id="busuanzi_value_site_pv"></span>
                     </span>
                     次光临
                 </p>
             </div>
         </div>
     </div>  
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.2/MathJax.js?config=TeX-MML-AM_SVG"></script>
 </footer>
 
 

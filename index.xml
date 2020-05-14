@@ -22,6 +22,15 @@
     </item>
     
     <item>
+      <title>自建图床三驾马车：Typora、Gitee与PicGo</title>
+      <link>https://www.kangzhiheng.top/post/12-imagehost-gitee-picgo/</link>
+      <pubDate>Wed, 13 May 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.kangzhiheng.top/post/12-imagehost-gitee-picgo/</guid>
+      <description>&lt;p&gt;Typora写作，Gitee存放照片等资源，PicGo一键上传，自己动手搭建国内快速稳定的图床。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
       <title>多个SSH密钥并存且连接到Github</title>
       <link>https://www.kangzhiheng.top/post/11-more-ssh-in-one-laptop/</link>
       <pubDate>Mon, 11 May 2020 00:00:00 +0000</pubDate>

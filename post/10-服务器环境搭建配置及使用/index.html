@@ -48,7 +48,7 @@
 注意：标题右上角带有&rdquo;*&ldquo;标记的，意为这一部分内容需要管理员操作。">
 <meta itemprop="datePublished" content="2020-04-17T00:00:00&#43;00:00" />
 <meta itemprop="dateModified" content="2020-04-17T00:00:00&#43;00:00" />
-<meta itemprop="wordCount" content="34622">
+<meta itemprop="wordCount" content="34633">
 <meta itemprop="image" content="https://www.kangzhiheng.top/10-cover.png">
 
 
@@ -59,6 +59,16 @@
 <meta name="twitter:title" content="服务器环境搭建、配置及使用"/>
 <meta name="twitter:description" content="搭建和配置深度学习环境、Matlab环境，普通用户可以自由切换多版本CUDA、cuDNN版本，自由组合创建不同版本的Tensorflow、PyTorch等深度学习环境。
 注意：标题右上角带有&rdquo;*&ldquo;标记的，意为这一部分内容需要管理员操作。"/>
+
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-166758556-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-166758556-1');
+</script>
 
 </head>
 <body>
@@ -3106,7 +3116,7 @@ sudo deluser username --remove
 <pre><code class="language-bash">cat /etc/group | grep 'lab532'
 </code></pre>
 <p>输出</p>
-<pre><code class="language-bash">lab532:x:1002:
+<pre><code class="language-bash">lab532❌1002:
 </code></pre>
 <p>得知用户组<code>lab532</code>的组ID是<strong>1002</strong>，</p>
 <pre><code class="language-bash">awk -F&quot;:&quot; '{print $1&quot;\t\t&quot;$4}' /etc/passwd | grep '1002'
@@ -3850,7 +3860,7 @@ if (!doNotTrack) {
 	(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
 	m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
 	})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
-	ga('create', 'UA-XXXX', 'auto');
+	ga('create', 'UA-166758556-1', 'auto');
 	
 	ga('send', 'pageview');
 }

@@ -46,7 +46,7 @@
 <meta itemprop="description" content="在这篇文章中，使用Git服务器Github，来进行多SSH密钥的配置，介绍多个SSH密钥同时存在于同一台设备中的方法。">
 <meta itemprop="datePublished" content="2020-05-11T00:00:00&#43;00:00" />
 <meta itemprop="dateModified" content="2020-05-11T00:00:00&#43;00:00" />
-<meta itemprop="wordCount" content="7011">
+<meta itemprop="wordCount" content="7073">
 <meta itemprop="image" content="https://www.kangzhiheng.top/11-cover.png">
 
 
@@ -235,12 +235,18 @@
 </code></pre>
 <p>其中，</p>
 <ul>
-<li><code>-t</code>，设置密钥类型，默认是<code>ras</code>，可以省略；</li>
-<li><code>-b</code>，设置指定要创建的密钥中的位数，即密钥长度，对于RSA密钥，最小为768位，默认值为2048位。默认是2048位，<a href="https://help.github.com/cn/github/authenticating-to-github/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent">Github建议</a>设置为4096位；</li>
-<li><code>-C</code>，设置注释文字，比如邮箱；</li>
+<li>
+<p><code>-t</code>，设置密钥类型，默认是<code>rsa</code>，可以省略；</p>
+</li>
+<li>
+<p><code>-b</code>，设置指定要创建的密钥中的位数，即密钥长度，对于RSA密钥，最小为768位，默认是2048位，<a href="https://help.github.com/cn/github/authenticating-to-github/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent">Github建议</a>设置为4096位；</p>
+</li>
+<li>
+<p><code>-C</code>，设置注释文字，比如邮箱；</p>
+</li>
 </ul>
 <p><strong>提示：</strong> 要想查看id_rsa.pub的密钥长度，输入<code>ssh-keygen -l -f ~/.ssh/id_rsa.pub</code>。</p>
-<p>上述命令只需要更改引号里的邮件地址即可（引号是必须输入的），建议<a href="mailto:your_email@example.com">your_email@example.com</a>设置为注册Github时所使用的邮件地址。按下回车后，将创建以所提供的电子邮件地址（<a href="mailto:your_email@example.com">your_email@example.com</a>）为标签的新 SSH 密钥，在此我的邮件地址设置为kangzhiheng@live.com。</p>
+<p>上述命令<strong>只需要更改引号里的邮件地址</strong>即可（引号是必须输入的），建议<a href="mailto:your_email@example.com">your_email@example.com</a>设置为注册Github时所使用的邮件地址。按下回车后，将创建以所提供的电子邮件地址（<a href="mailto:your_email@example.com">your_email@example.com</a>）为标签的新 SSH 密钥，在此我的邮件地址设置为kangzhiheng@live.com。</p>
 </li>
 <li>
 <p>紧接着提示“Enter a file in which to save the key（输入要保存密钥的文件）”：</p>
@@ -249,7 +255,7 @@ Enter file in which to save the key (/c/Users/Dell/.ssh/id_rsa):
 </code></pre>
 <p>这时可以不输入文件名，使用默认文件名<code>id_rsa</code>，那么就会生成<code> id_rsa</code> 和 <code>id_rsa.pub </code>两个秘钥文件。但一般情况下，不建议这么做，不利于管理，在这里命名格式建议为<code> id_rsa_用途_Git服务器名称</code>，比如我新建的SSH密钥用于hugo博客搭建，并且代码上传到Github上，所以取名为<code>id_rsa_hugo_github</code>。如果<code>~/.ssh</code>目录不存在，上述命令会自动新建<code>~/.ssh</code>目录。</p>
 <p><strong>在上述提示后面，不要直接输入密钥名字，应该加上完整路径</strong>，如下：</p>
-<pre><code class="language-bash">~/.ssh/id_rsa_hugo_github
+<pre><code class="language-bash">Enter file in which to save the key (/c/Users/Dell/.ssh/id_rsa): ~/.ssh/id_rsa_hugo_github
 </code></pre>
 <p>否则密钥会被创建在根目录<code>~</code>下，而不是<code>~/.ssh</code>目录下。</p>
 </li>
@@ -348,7 +354,7 @@ ssh-add ~/.ssh/私钥2
 <p>现在有这么一种情况，我有两个Github账号，需要两组SSH密钥对，一个Github账号经常使用，创建了密钥对，名为<code>id_rsa_normal_github</code>和<code>id_rsa_normal_github.pub</code>，另一个Github账号因为某种原因，也必须使用，为其创建了密钥对，名为<code>id_rsa_hugo_github</code>和<code>id_rsa_hugo_github.pub</code>，为此编辑配置文件<code>~/.ssh/config</code></p>
 <pre><code class="language-bash">vim ~/.ssh/config
 </code></pre>
-<p>复制以下内容，在Vim里按下小写字母<code>p</code>，然后再按下<code>Eac</code>键，输入<code>:wq</code>即可保存并退出。</p>
+<p>复制以下内容，在Vim里按下小写字母<code>p</code>，然后再按下<code>Esc</code>键，输入<code>:wq</code>即可保存并退出。</p>
 <pre><code class="language-bash">Host github.com
     HostName github.com
     User git
@@ -426,7 +432,7 @@ xclip -sel clip &lt; ~/.ssh/id_rsa.pub
 <p><img src="https://gitee.com/kangzhiheng/ImageHosting/raw/master/Img/ssh-2.png" alt=""></p>
 </li>
 <li>
-<p>单击 **New SSH key（新 SSH 密钥）**或 <strong>Add SSH key（添加 SSH 密钥）</strong>；</p>
+<p>单击 <strong>New SSH key（新 SSH 密钥）</strong> 或 <strong>Add SSH key（添加 SSH 密钥）</strong>；</p>
 <p><img src="https://gitee.com/kangzhiheng/ImageHosting/raw/master/Img/ssh-3.png" alt=""></p>
 </li>
 <li>
@@ -445,7 +451,7 @@ xclip -sel clip &lt; ~/.ssh/id_rsa.pub
 <p><img src="https://gitee.com/kangzhiheng/ImageHosting/raw/master/Img/ssh-6.png" alt=""></p>
 </li>
 </ol>
-<p>其它公钥添加到Github里的方法与此相同，只需要改变一下公钥的名称即可。</p>
+<p>其它公钥添加到Github里的方法与此相同，只需要改变一下公钥的名称即可。<strong>注</strong>：这一小节的图片来自<a href="https://help.github.com/cn/github/authenticating-to-github/adding-a-new-ssh-key-to-your-github-account">Github官方</a>。</p>
 <h3 id="匹配多个github项目与多个ssh密钥非常重要">匹配多个Github项目与多个SSH密钥（非常重要）</h3>
 <p>正常情况下，推送本地项目到Github项目的操作如下：</p>
 <ol>
@@ -481,7 +487,7 @@ git commit -m &quot;commit code&quot;
 </code></pre>
 </li>
 </ol>
-<p>假设这么一种情况，我需要推送本地项目<strong>GitlocalDoc</strong>到另一个新的Github仓库<strong>GitlocalDoc</strong>中，经常使用的Github名称是<code>kangzhiheng</code>，另一个新的Github名称是<code>adoredee</code>，如果按照上述1、2、3个步骤来进行操作（第1步进行本地配置），在进行第4步<code>git push</code>的时候，会出现错误</p>
+<p>假设这么一种情况，我需要推送本地项目<strong>GitlocalDoc</strong>到另一个<strong>新的</strong>Github仓库<strong>GitlocalDoc</strong>中，经常使用的Github名称是<code>kangzhiheng</code>，另一个新的Github名称是<code>adoredee</code>，如果按照上述1、2、3个步骤来进行操作（第1步进行本地配置），在进行第4步<code>git push</code>的时候，会出现错误</p>
 <pre><code class="language-bash">ERROR: Permission to adoredee/GitlocalDoc.git denied to kangzhiheng. 
 fatal: Could not read from remote repository.
 
@@ -527,7 +533,7 @@ fatal: Could not read from remote repository.
 
 Please make sure you have the correct access rights and the repository exists.
 </code></pre>
-<p>这个问题，真的花费非常多的时间去解决，记得18年也碰到这个问题，我翻了翻笔记竟然没有记录，像这种疑难杂症，我都会记录防止以后再碰到。上次真的是失误，这次果断记录，其实就是改个<code>url</code>的问题，但是涉及到的内容却很丰富，逻辑上的相关性更强，还有借此机会，增补知识盲区，去除似懂非懂。</p>
+<p>这个问题，真的花费非常多的时间去解决，记得18年也碰到这个问题，我翻了翻笔记竟然没有记录，像这种疑难杂症，我都会记录防止以后再碰到。上次真的是失误，这次果断记录，其实就是改个<code>url</code>的问题，但是涉及到的内容却很丰富，逻辑上的相关性更强，还有借此机会，增补知识盲区，不要养成似懂非懂的习惯。</p>
 <p>总结经验如下：</p>
 <ol>
 <li>在<code>~/.ssh/</code>目录下，<a href="#%E7%94%9F%E6%88%90%E6%96%B0SSH%E5%AF%86%E9%92%A5%E5%B9%B6%E6%B7%BB%E5%8A%A0%E5%88%B0ssh-agent">创建多个SSH密钥</a>，并<a href="#%E7%AE%A1%E7%90%86%E5%A4%9A%E7%BB%84%E5%AF%86%E9%92%A5">配置</a><code>~/.ssh/config</code>；</li>
@@ -543,7 +549,7 @@ Please make sure you have the correct access rights and the repository exists.
 </code></pre>
 </li>
 <li>
-<p>列出现有远程仓库，进入到本地项目根目录下，运行：</p>
+<p>列出现有远程仓库，进入到本地项目根目录下，假设你的<strong>Host</strong>为<code>github.com</code>，运行：</p>
 <pre><code class="language-bash">git remote -v
 </code></pre>
 <p>提示<strong>远程URL为SSH</strong>：</p>
@@ -564,8 +570,9 @@ origin  https://github.com/USERNAME/REPOSITORY.git (push)
 <li>
 <p>远程URL的SSH与HTTP之间的<!-- raw HTML omitted -->切换<sup id="fnref:7"><a href="#fn:7" class="footnote-ref" role="doc-noteref">7</a></sup><!-- raw HTML omitted --></p>
 <p><code>git remote set-url</code> 命令可更改现有远程仓库的 URL。</p>
+<p>假设你的<strong>Host</strong>为<code>github.com</code>。</p>
 <p>SSH —&gt; HTTPS</p>
-<pre><code class="language-bash">git remote set-url origin https://github.com/USERNAME/REPOSITORY.git
+<pre><code class="language-bash"> git remote set-url origin https://github.com/USERNAME/REPOSITORY.git
 </code></pre>
 <p>HTTPS —&gt; SSH</p>
 <pre><code class="language-bash">git remote set-url origin git@github.com:USERNAME/REPOSITORY.git
@@ -754,7 +761,7 @@ origin  https://github.com/USERNAME/REPOSITORY.git (push)
 
                 <p class="text-muted">
                     
-                        Copyright ? 2008?锟�2020, Steve Francia and the Hugo Authors; All Rights Reserved.
+                        Copyright @ 2008 - 2020, Steve Francia and the Hugo Authors; All Rights Reserved.
                     
                 </p>
 

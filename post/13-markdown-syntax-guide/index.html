@@ -46,7 +46,7 @@
 <meta itemprop="description" content="Sample article showcasing basic Markdown syntax and formatting for HTML elements.">
 <meta itemprop="datePublished" content="2020-05-23T00:00:00&#43;00:00" />
 <meta itemprop="dateModified" content="2020-05-23T00:00:00&#43;00:00" />
-<meta itemprop="wordCount" content="10487">
+<meta itemprop="wordCount" content="10587">
 <meta itemprop="image" content="https://www.kangzhiheng.top/13-cover.png">
 
 
@@ -146,7 +146,6 @@
                                     <img data-src="/images/13-cover_hu87b11860bbf405a95fe3774c1cb203b3_34481_900x500_fit_box_2.png" class="img-fluid rounded mx-auto d-block" alt="Markdown Syntax Guide">
                                 </div>
                             </div>
-<h4>目录</h4>
 <div class="post-toc" id="post-toc">
   <h2 class="post-toc-title"></h2>
   <div class="post-toc-content always-active">
@@ -202,7 +201,7 @@
 <p>  由于<strong>Markdown</strong>的轻量化、易读易写特性，并且对于图片，图表、数学式都有支持，目前许多网站都广泛使用Markdown来撰写帮助文档或是用于<a href="https://zh.wikipedia.org/wiki/%E7%BD%91%E7%BB%9C%E8%AE%BA%E5%9D%9B">论坛</a>上发表消息。如<a href="https://zh.wikipedia.org/wiki/GitHub">GitHub</a>、<a href="https://zh.wikipedia.org/wiki/Reddit">Reddit</a>、<a href="https://zh.wikipedia.org/wiki/Diaspora">Diaspora</a>、<a href="https://zh.wikipedia.org/wiki/Stack_Exchange">Stack Exchange</a>、<a href="https://zh.wikipedia.org/wiki/OpenStreetMap">OpenStreetMap</a> 、<a href="https://zh.wikipedia.org/wiki/SourceForge">SourceForge</a>、<a href="https://gitbook.com">Gitbook</a>、<a href="https://gitlab.com">GitLab</a>、<a href="https://gitee.com">Gitee</a>、<a href="https://zh.wikipedia.org/wiki/%E7%AE%80%E4%B9%A6">简书</a>、<a href="https://juejin.im">掘金</a>、<a href="https://blog.csdn.net/">CSDN</a>等，甚至还能被使用来撰写<a href="https://zh.wikipedia.org/wiki/%E9%9B%BB%E5%AD%90%E6%9B%B8">电子书</a>。</p>
 <p>  <strong>Markdown</strong>具有一系列衍生版本，用于扩展Markdown的功能（如表格、脚注、内嵌HTML等等），这些功能原初的Markdown尚不具备，它们能让Markdown转换成更多的格式，例如LaTeX，Docbook。</p>
 <p>  <strong>Markdown</strong>增强版中比较有名的有Markdown Extra、MultiMarkdown、 Maruku等。这些衍生版本要么基于工具，如Pandoc；要么基于网站，如GitHub和Wikipedia，在语法上基本兼容，但在一些语法和渲染效果上有改动。</p>
-<p>  总结一下Markdown的特点<sup id="fnref:2"><a href="#fn:2" class="footnote-ref" role="doc-noteref">2</a></sup>：</p>
+<p>  总结一下Markdown的<a href="https://sspai.com/post/37263">特点</a>：</p>
 <ul>
 <li>
 <p>Markdown是一种<strong>轻量级</strong>的标记语言。</p>
@@ -224,6 +223,7 @@
 </li>
 </ul>
 <table><tr><td bgcolor=#54FF9F> 以下内容为<font color="red">Markdown</font>的<font color="blue" size = 5 face="华文楷体"> 基本语法</font>，结合各种<b>官方文档</b>和本人的<font color="#9B30F"><b>使用经验</b></font>使用经验而成。 </td></tr></table>
+<p><font size = 2 face="宋体"> 注：以下代码均在Typora中测试通过。</font></p>
 <h3 id="标题">标题</h3>
 <p><strong>语法：</strong> <kbd>#</kbd>的个数 + <kbd>space</kbd> + 文本</p>
 <p><strong>解释：</strong></p>
@@ -262,8 +262,8 @@
 <p><code>**加粗文本**</code>   <strong>加粗文本</strong></p>
 <p><code>__加粗文本__</code>   <strong>加粗文本</strong></p>
 <p>HTML方法</p>
-<p><mark>&lt;b&gt;加粗文本&lt;b&gt;</mark>   <b>加粗文本</b></p>
-<p><mark>&lt;strong&gt;加粗文本&lt;strong&gt;</mark>   <strong>加粗文本</strong></p>
+<p><mark>&lt;b&gt;加粗文本&lt;/b&gt;</mark>   <b>加粗文本</b></p>
+<p><mark>&lt;strong&gt;加粗文本&lt;/strong&gt;</mark>   <strong>加粗文本</strong></p>
 <p>Note：<code>__</code>由两个<code>_</code>组成。</p>
 <h4 id="强调并加粗">强调并加粗</h4>
 <p><code>***强调并加粗***</code>   <em><strong>强调并加粗</strong></em></p>
@@ -504,9 +504,15 @@ print(tf.__version__)
 <p><strong>总结</strong>：所以按照中文书写习惯，段首空两格，只需要在段首前面加<code>&amp;emsp;&amp;emsp;</code>就好；</p>
 <h4 id="居中">居中</h4>
 <p>Markdown本身没有居中的语法，需要HTML元素支持。</p>
-<p><strong>格式</strong>：<mark>&lt;center&gt;  人间有味是清欢  &lt;/center&gt;</mark></p>
+<p><strong>格式1</strong>：<mark>&lt;center&gt;  人间有味是清欢  &lt;/center&gt;</mark></p>
 <p><strong>输出</strong>：</p>
 <center> 人间有味是清欢 </center>
+<p><strong>格式2：</strong> <mark> &lt;p align=&quot;center&quot;&gt; 入淮清洛渐漫漫 &lt;/p&gt; </mark></p>
+<p><strong>输出：</strong></p>
+<p align="center"> 入淮清洛渐漫漫 </p>
+<p><strong>格式3：</strong> <mark> &lt;div align=center&gt; 一蓑烟雨任平生 &lt;/div&gt; </mark></p>
+<p><strong>输出：</strong></p>
+<div align=center> 一蓑烟雨任平生 </div>
 <h4 id="换行">换行</h4>
 <p>在Makrdown源代码模式下，有两种换行方法：</p>
 <ol>
@@ -832,19 +838,19 @@ print(tf.__version__)
 [^1]: 这里是脚注
 </code></pre>
 <p><strong>显示：</strong></p>
-<p>脚注<sup id="fnref:3"><a href="#fn:3" class="footnote-ref" role="doc-noteref">3</a></sup></p>
+<p>脚注<sup id="fnref:2"><a href="#fn:2" class="footnote-ref" role="doc-noteref">2</a></sup></p>
 <h4 id="方法二">方法二</h4>
 <p>如果希望被注释的文本是<em>斜体</em>，则追加<mark>&lt;cite&gt;&lt;/cite&gt;</mark>即可，如下：</p>
 <pre><code class="language-bash">&lt;cite&gt;脚注[^1]&lt;/cite&gt;
 [^1]: 这里是脚注
 </code></pre>
 <p><strong>显示：</strong></p>
-<p><cite>脚注<sup id="fnref:4"><a href="#fn:4" class="footnote-ref" role="doc-noteref">4</a></sup></cite></p>
+<p><cite>脚注<sup id="fnref:3"><a href="#fn:3" class="footnote-ref" role="doc-noteref">3</a></sup></cite></p>
 <p><strong>脚注的部分会在文章的末尾进行显示，并且支持跳转到指定位置。</strong></p>
 <hr>
 <h3 id="锚点跳转">锚点跳转</h3>
 <p>  有这么一种情况：浏览一个很长的文章时，可能只对其中几个章节感兴趣时，需要直接跳转到该章节，这时就需要<strong>锚点</strong>。</p>
-<p>  <strong>锚点</strong>是是网页制作中超级链接的一种，又叫<strong>命名锚记</strong>。使用命名锚记可以在文档中设置标记，这些标记通常放在文档的特定主题处或顶部。然后可以创建到这些命名锚记的链接，这些链接可快速将访问者带到指定位置<sup id="fnref:5"><a href="#fn:5" class="footnote-ref" role="doc-noteref">5</a></sup>。</p>
+<p>  <strong>锚点</strong>是是网页制作中超级链接的一种，又叫<strong>命名锚记</strong>。使用命名锚记可以在文档中设置标记，这些标记通常放在文档的特定主题处或顶部。然后可以创建到这些命名锚记的链接，这些链接可快速将访问者带到指定位置<sup id="fnref:4"><a href="#fn:4" class="footnote-ref" role="doc-noteref">4</a></sup>。</p>
 <p>  <strong>锚点跳转</strong>要注意首先要注意以下两点：</p>
 <ol>
 <li>
@@ -900,7 +906,7 @@ print(tf.__version__)
 </ul>
 <hr>
 <h3 id="mathjax公式">MathJax公式</h3>
-<p>  <a href="https://www.mathjax.org/">MathJax</a>和<a href="https://katex.org/">Katex</a>是两种支持HTML的轻量级的数学公式引擎，但<code>MathJax</code>对<strong>行内公式</strong>支持较好。它们的低层都是TEX，所以$\LaTeX$的语法，都可以在<kbd>$</kbd>和<kbd>$</kbd><kbd>$</kbd>中被渲染。在hugo中配置MathJax请参阅文章<sup id="fnref:6"><a href="#fn:6" class="footnote-ref" role="doc-noteref">6</a></sup></p>
+<p>  <a href="https://www.mathjax.org/">MathJax</a>和<a href="https://katex.org/">Katex</a>是两种支持HTML的轻量级的数学公式引擎，但<code>MathJax</code>对<strong>行内公式</strong>支持较好。它们的低层都是TEX，所以$\LaTeX$的语法，都可以在<kbd>$</kbd>和<kbd>$</kbd><kbd>$</kbd>中被渲染。在hugo中配置MathJax请参阅文章<sup id="fnref:5"><a href="#fn:5" class="footnote-ref" role="doc-noteref">5</a></sup></p>
 <h4 id="行内公式">行内公式</h4>
 <p>  使用一对<kbd>$</kbd>来区别正常文字和行内公式。如<code>$ x=\frac{-b\pm\sqrt{b^2-4ac}}{2a} $</code>，效果为$ x=\frac{-b\pm\sqrt{b^2-4ac}}{2a} $</p>
 <h4 id="块状公式">块状公式</h4>
@@ -952,10 +958,10 @@ a=&amp; b+c-d \cr
 \end{aligned}
 $$
 </code></pre>
-<p>  $\LaTeX$中的特殊符号<sup id="fnref:7"><a href="#fn:7" class="footnote-ref" role="doc-noteref">7</a></sup>，请参阅<a href="http://estudijas.lu.lv/pluginfile.php/14809/mod_page/content/16/instrukcijas/matematika_moodle/LaTeX_Symbols.pdf">链接</a>。</p>
+<p>  $\LaTeX$中的特殊符号<sup id="fnref:6"><a href="#fn:6" class="footnote-ref" role="doc-noteref">6</a></sup>，请参阅<a href="http://estudijas.lu.lv/pluginfile.php/14809/mod_page/content/16/instrukcijas/matematika_moodle/LaTeX_Symbols.pdf">链接</a>。</p>
 <hr>
 <h3 id="mermaid库">Mermaid库</h3>
-<p>  <a href="https://mermaid-js.github.io/mermaid">Mermaid</a> 是一个用于画流程图、状态图、时序图、甘特图的库，使用 JS 进行本地渲染，广泛集成于许多 Markdown 编辑器中。</p>
+<p>  <a href="https://mermaid-js.github.io/mermaid">Mermaid</a> 是一个用于画流程图、状态图、时序图、甘特图的库，使用 JS 进行本地渲染，广泛集成于许多 Markdown 编辑器中，可以尝试<a href="https://mermaid-js.github.io/mermaid-live-editor/">在线Mermaid编辑器</a>（<font color="red" > 推荐 </font>）。</p>
 <h4 id="甘特图gantt">甘特图Gantt</h4>
 <pre><code>​```mermaid
 gantt
@@ -1042,7 +1048,7 @@ C --> D
 
 </div>
 <p><strong>在Hugo中使用Mermaid库的注意事项：</strong></p>
-<p>  在hugo中，Markdown编译器是<a href="https://github.com/russross/blackfriday">Blackfriday</a>，并不直接支持<strong>Mermaid</strong>库，需要进行一定的配置，具体请参阅这篇<a href="https://kentxxq.com/contents/%E6%8B%93%E5%B1%95hugo%E7%9A%84markdown_%E6%B5%81%E7%A8%8B%E5%9B%BEmermaid/">文章</a><sup id="fnref:8"><a href="#fn:8" class="footnote-ref" role="doc-noteref">8</a></sup>。</p>
+<p>  在hugo中，Markdown编译器是<a href="https://github.com/russross/blackfriday">Blackfriday</a>，并不直接支持<strong>Mermaid</strong>库，需要进行一定的配置，具体请参阅这篇<a href="https://kentxxq.com/contents/%E6%8B%93%E5%B1%95hugo%E7%9A%84markdown_%E6%B5%81%E7%A8%8B%E5%9B%BEmermaid/">文章</a><sup id="fnref:7"><a href="#fn:7" class="footnote-ref" role="doc-noteref">7</a></sup>。</p>
 <p>  配置完成后，在使用时，利用<code>{{ &lt;mermaid&gt; }}</code>和<code>{{ &lt;/mermaid&gt; }}</code>框住mermaid代码，例如用<code>{{ &lt;mermaid&gt; }}</code>和<code>{{ &lt;/mermaid&gt; }}</code>框住以下代码即可：</p>
 <pre><code>graph TD;
     A--&gt;B;
@@ -1149,7 +1155,7 @@ graph TD;
 </tbody>
 </table>
 <blockquote>
-<p>更多Emoji表情，参考<a href="https://www.webfx.com/tools/emoji-cheat-sheet/">官方文档</a>。</p>
+<p>更多Emoji表情，参考<a href="https://www.webfx.com/tools/emoji-cheat-sheet/">官方文档</a>和<a href="https://github.com/ikatyang/emoji-cheat-sheet/blob/master/README.md">Github官方文档</a>。</p>
 </blockquote>
 <hr>
 <h3 id="转义字符">转义字符</h3>
@@ -1345,25 +1351,22 @@ graph TD;
 <p><a href="https://zh.wikipedia.org/wiki/Markdown">https://zh.wikipedia.org/wiki/Markdown</a> <a href="#fnref:1" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
 </li>
 <li id="fn:2" role="doc-endnote">
-<p><a href="https://sspai.com/post/37263">https://sspai.com/post/37263</a> <a href="#fnref:2" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+<p>这里是脚注 <a href="#fnref:2" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
 </li>
 <li id="fn:3" role="doc-endnote">
 <p>这里是脚注 <a href="#fnref:3" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
 </li>
 <li id="fn:4" role="doc-endnote">
-<p>这里是脚注 <a href="#fnref:4" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+<p><a href="https://baike.baidu.com/item/%E9%94%9A%E7%82%B9">https://baike.baidu.com/item/锚点</a> <a href="#fnref:4" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
 </li>
 <li id="fn:5" role="doc-endnote">
-<p><a href="https://baike.baidu.com/item/%E9%94%9A%E7%82%B9">https://baike.baidu.com/item/锚点</a> <a href="#fnref:5" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+<p><a href="https://xuchengpeng.com/hugo-blog/2018/05/25/mathjax-in-markdown-blog/">Markdown 博客中使用 MathJax 数学公式</a> <a href="#fnref:5" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
 </li>
 <li id="fn:6" role="doc-endnote">
-<p><a href="https://xuchengpeng.com/hugo-blog/2018/05/25/mathjax-in-markdown-blog/">Markdown 博客中使用 MathJax 数学公式</a> <a href="#fnref:6" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+<p><a href="https://drivingc.com/p/5b1bd56d2392ec23b91bab2e">Latex/MathJax/Katex数学公式手册</a> <a href="#fnref:6" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
 </li>
 <li id="fn:7" role="doc-endnote">
-<p><a href="https://drivingc.com/p/5b1bd56d2392ec23b91bab2e">Latex/MathJax/Katex数学公式手册</a> <a href="#fnref:7" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
-</li>
-<li id="fn:8" role="doc-endnote">
-<p>Mermaid: <a href="https://kentxxq.com/contents/%E6%8B%93%E5%B1%95hugo%E7%9A%84markdown_%E6%B5%81%E7%A8%8B%E5%9B%BEmermaid/">https://kentxxq.com/contents/拓展hugo的markdown_流程图mermaid/</a> <a href="#fnref:8" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+<p>Mermaid: <a href="https://kentxxq.com/contents/%E6%8B%93%E5%B1%95hugo%E7%9A%84markdown_%E6%B5%81%E7%A8%8B%E5%9B%BEmermaid/">https://kentxxq.com/contents/拓展hugo的markdown_流程图mermaid/</a> <a href="#fnref:7" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
 </li>
 </ol>
 </section>
@@ -1608,5 +1611,11 @@ if (!doNotTrack) {
 }
 </script>
 
+
+    <div class="back-to-top" id="back-to-top">
+        <i class="iconfont icon-up"></i>
+    </div>
+
 </body>
+
 </html>

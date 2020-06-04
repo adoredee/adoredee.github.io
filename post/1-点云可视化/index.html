@@ -83,11 +83,11 @@
                 
                     <li class="nav-item"><a class="nav-link" href="/post/">Archives</a></li>
                 
+                    <li class="nav-item"><a class="nav-link" href="/series/">Series</a></li>
+                
                     <li class="nav-item"><a class="nav-link" href="/categories/">Categories</a></li>
                 
                     <li class="nav-item"><a class="nav-link" href="/tags/">Tags</a></li>
-                
-                    <li class="nav-item"><a class="nav-link" href="/series/">Series</a></li>
                 
                     <li class="nav-item"><a class="nav-link" href="/system/">System</a></li>
                 
@@ -167,13 +167,13 @@
                             <p>点云可视化的探索。</p>
 <h3 id="前言">前言</h3>
 <blockquote>
-<p>目前点云方面的研究是一个热门方向，点云分类、零件分割、语义分割等研究正处于热门研究时期；
+<p>  目前点云方面的研究是一个热门方向，点云分类、零件分割、语义分割等研究正处于热门研究时期；
 深度学习大热以来，渐渐地把二维世界里的框架，或移植，或改进，运用到三维世界中来，那么如何将点云可视化呢？This is a question.
 下面让我们一起来探索。</p>
 </blockquote>
 <h3 id="可视化">可视化</h3>
 <h4 id="点云数据准备">点云数据准备</h4>
-<p>如无特别说明，本系列使用的数据是<a href="https://shapenet.cs.stanford.edu/media/modelnet40_ply_hdf5_2048.zip">ModelNet40</a>，ModelNet40包含了来自40类的12311个三维形状,其中9843个文件用来训练，2468个文件用来测试。</p>
+<p>  如无特别说明，本系列使用的数据是<a href="https://shapenet.cs.stanford.edu/media/modelnet40_ply_hdf5_2048.zip">ModelNet40</a>，ModelNet40包含了来自40类的12311个三维形状,其中9843个文件用来训练，2468个文件用来测试。</p>
 <h4 id="系统环境">系统环境</h4>
 <ul>
 <li><strong>操作系统</strong>：ubuntu16.04或者windows10，建议在Ubuntu下开发</li>
@@ -181,7 +181,7 @@
 <li><strong>语言环境</strong>：Python3.6</li>
 </ul>
 <h4 id="python包依赖">python包依赖</h4>
-<p>使用python3.6读取点云文件，需要提取安装<code>numpy</code>、<code>h5py</code>、<code>mayavi</code>、<code>matplotlib</code>，其中安装mayavi的方法如下(前提：python3.x和64位系统)：</p>
+<p>  使用python3.6读取点云文件，需要提取安装<code>numpy</code>、<code>h5py</code>、<code>mayavi</code>、<code>matplotlib</code>，其中安装mayavi的方法如下(前提：python3.x和64位系统)：</p>
 <pre><code class="language-python">pip install mayavi    # mayavi包
 pip install PyQt5     # GUI
 </code></pre>
@@ -231,7 +231,7 @@ if not os.path.exists(os.path.join(DATA_DIR, 'modelnet40_ply_hdf5_2048')):
 <p>运行代码或者解压文件夹，将在BASE_DIR/data/modelnet40_ply_hdf5_2048/文件夹里看到一下内容，注意BASE_DIR指的是当前py文件的路径。
 <img src="https://www.z4a.net/images/2018/12/29/ModelNet40.png" alt="ModelNet40.png"></p>
 <h4 id="读取点云">读取点云</h4>
-<p>由上图可以看到，点云文件由<code>.h5</code>文件格式来存储，有关h5格式的介绍请移步<a href="https://segmentfault.com/a/1190000016670881">这里</a>，下面我们就来读取点云文件，代码如下（以读取ply_data_train1.h5为例）：</p>
+<p>  由上图可以看到，点云文件由<code>.h5</code>文件格式来存储，有关h5格式的介绍请移步<a href="https://segmentfault.com/a/1190000016670881">这里</a>，下面我们就来读取点云文件，代码如下（以读取ply_data_train1.h5为例）：</p>
 <pre><code class="language-python">&quot;&quot;&quot;
     读取H5文件里的键值
 &quot;&quot;&quot;
@@ -267,12 +267,16 @@ print(&quot;key is : %s&quot; % keys)
     data = f['data'][:]
     label = f['label'][:]
 </code></pre>
-<p>由于数据集较大，所以是否读取成功，可以利用PyCharm里的<code>Scientific Mode</code>来查看，开启姿势位<code>View</code>——&gt;<code>Scientific Mode</code>，可追踪变量变化，如下图</p>
-<!-- raw HTML omitted -->
-<!-- raw HTML omitted -->
+<p>  由于数据集较大，所以是否读取成功，可以利用PyCharm里的<code>Scientific Mode</code>来查看，开启姿势位<code>View</code>——&gt;<code>Scientific Mode</code>，可追踪变量变化，如下图</p>
+<div align=center>
+<img src="https://www.z4a.net/images/2018/12/29/scientific-mode.png"/>
+</div>
+<div align =center><img src="https://www.z4a.net/images/2018/12/29/scientific-mode.png"/></div>
 <p>运行程序后，就会看到这样的情形，</p>
-<!-- raw HTML omitted -->
-<p>点击变量<code>data</code>后的**_View as Array_**，就可以在右边的SciView里看见数据，**ply_data_train1.h5**里共有 **2048**个物体的点云数据，所以范围在data[0]到data[2047]之间，每一个物体共有 **2048** 个点，每个点的坐标位(x, y, z).</p>
+<div align=center>
+<img src="https://www.z4a.net/images/2018/12/29/show.png"/>
+</div>
+<p>  点击变量<code>data</code>后的**_View as Array_**，就可以在右边的SciView里看见数据，**ply_data_train1.h5**里共有 **2048**个物体的点云数据，所以范围在data[0]到data[2047]之间，每一个物体共有 **2048** 个点，每个点的坐标位(x, y, z).</p>
 <p>可以打印出<code>data</code>和<code>label</code>的形状：</p>
 <pre><code class="language-python">print(data.shape)    # (2048, 2048, 3)
 print(label.shpae)   # (2048, 1)
@@ -311,9 +315,11 @@ fig = mlab.figure(bgcolor=(1, 1, 1), size=(450, 300))
 figure = mlab.points3d(x, y, z, s, mode=&quot;point&quot;, colormap='spectral', scale_factor=1)
 mlab.show()    # 显示3D点云图
 </code></pre>
-<p><strong>Notice</strong>: 使用这种方法，电脑较卡顿。
+<p>  <strong>Notice</strong>: 使用这种方法，电脑较卡顿。
 在这里，使用了mlab.points3d()函数来进行可视化，具体参数<a href="https://docs.enthought.com/mayavi/mayavi/auto/mlab_helper_functions.html#mayavi.mlab.points3d">这里</a>，需要注意的是，坐标(x, y, z)各为1D array，需要与mayavi里的surf等方法进行区别，在使用时，注意追踪变量变化，可视化结果</p>
-<!-- raw HTML omitted -->
+<div align=center>
+<img src="https://www.z4a.net/images/2018/12/30/visual_mayavi.png"/>
+</div>
 <ul>
 <li><strong>点云可视化方法一 —— matplotlib</strong></li>
 </ul>
@@ -328,7 +334,9 @@ ax.scatter(x, y, z)
 plt.show()
 </code></pre>
 <p>可视化结果</p>
-<!-- raw HTML omitted -->
+<div align=center>
+<img src="https://www.z4a.net/images/2018/12/30/visual_matplotlib.md.png" width="450" height="350"/>
+</div>
 <pre><code class="language-python"># shape_name.txt文件路径
 SHAPE_NAME = '../data/modelnet40_ply_hdf5_2048/shape_names.txt'
 # 显示对应物体的名称
@@ -345,13 +353,13 @@ print('label is: %s' % shape_name)
 <li>matplotlib库里的Axes3D对象可视化点云方法较为简单，自定义程度较低，在论文中要想显示精美的可视化效果图，不太建议用matplotlib库；</li>
 </ul>
 <h4 id="后续工作">后续工作</h4>
-<p>除了用这两个库，还有一些python工具可以进行可视化，如</p>
+<p>  除了用这两个库，还有一些python工具可以进行可视化，如</p>
 <ul>
 <li>python包：<a href="https://pyntcloud.readthedocs.io/en/latest/">pyntcloud</a>、<a href="https://heremaps.github.io/pptk/tutorials/viewer/tanks_and_temples.html">pptk</a>、<a href="http://www.open3d.org/docs/tutorial/Basic/pointcloud.html#">open3d</a>、<a href="https://docs.enthought.com/mayavi/mayavi/">vispy</a>等</li>
 <li>GUI工具：<a href="http://www.meshlab.net/">meshlab</a>、<a href="https://www.danielgm.net/cc/">CloudCompare</a>、Point Cloud Library库里的cloudviewer函数等</li>
 </ul>
-<p>我的研究发现时利用深度学习对点云数据集进行分类、场景分割、语义分割等，可视化工具是必不缺少的一环，下一步准备学习meshlab，思路是把点云及相关颜色信息保存成.obj文件，然后在meshlab里显示，具体工作请关注我的博客，如果志同道合者，十分欢迎与联系，这是我的<a href="kangzhiheng@sjru.edu.cn">邮箱</a>。</p>
-<p>本文的完整代码如下（已在win10环境下，在PyCharm里运行成功，数据集是提前下好的，建议在Ubuntu系统尝试，体会linux的命令）：</p>
+<p>  我的研究发现时利用深度学习对点云数据集进行分类、场景分割、语义分割等，可视化工具是必不缺少的一环，下一步准备学习meshlab，思路是把点云及相关颜色信息保存成.obj文件，然后在meshlab里显示，具体工作请关注我的博客，如果志同道合者，十分欢迎与联系，这是我的<a href="kangzhiheng@sjru.edu.cn">邮箱</a>。</p>
+<p>  本文的完整代码如下（已在win10环境下，在PyCharm里运行成功，数据集是提前下好的，建议在Ubuntu系统尝试，体会linux的命令）：</p>
 <pre><code class="language-python">#! python3
 # -*- coding:utf-8 -*-
 
@@ -616,7 +624,7 @@ print('label is: %s' % shape_name)
                 
                 <p class="text-muted">
                     <script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
-                    本文总阅读量
+                    本页总阅读量
                     <span id="busuanzi_container_page_pv">
                         <span id="busuanzi_value_page_pv"></span>
                     </span>
@@ -633,7 +641,14 @@ print('label is: %s' % shape_name)
             </div>
         </div>
     </div>  
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.2/MathJax.js?config=TeX-MML-AM_SVG"></script>
+
+    
+    
+
+    
+    <script src="https://cdn.bootcss.com/mermaid/8.0.0-rc.8/mermaid.min.js"></script>
+
+
 </footer>
 
 

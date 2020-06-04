@@ -8,32 +8,57 @@
   
   <url>
     <loc>https://www.kangzhiheng.top/authors/kangzhiheng/</loc>
-    <lastmod>2020-05-13T00:00:00+00:00</lastmod>
+    <lastmod>2020-05-23T00:00:00+00:00</lastmod>
   </url>
   
   <url>
     <loc>https://www.kangzhiheng.top/authors/</loc>
-    <lastmod>2020-05-13T00:00:00+00:00</lastmod>
+    <lastmod>2020-05-23T00:00:00+00:00</lastmod>
   </url>
   
   <url>
     <loc>https://www.kangzhiheng.top/categories/</loc>
-    <lastmod>2020-05-13T00:00:00+00:00</lastmod>
+    <lastmod>2020-05-23T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.kangzhiheng.top/categories/hugo/</loc>
+    <lastmod>2020-05-23T00:00:00+00:00</lastmod>
   </url>
   
   <url>
     <loc>https://www.kangzhiheng.top/tags/markdown/</loc>
-    <lastmod>2020-05-13T00:00:00+00:00</lastmod>
+    <lastmod>2020-05-23T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.kangzhiheng.top/series/markdown/</loc>
+    <lastmod>2020-05-23T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.kangzhiheng.top/categories/markdown/</loc>
+    <lastmod>2020-05-23T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.kangzhiheng.top/post/13-markdown-syntax-guide/</loc>
+    <lastmod>2020-05-23T00:00:00+00:00</lastmod>
   </url>
   
   <url>
     <loc>https://www.kangzhiheng.top/post/</loc>
-    <lastmod>2020-05-13T00:00:00+00:00</lastmod>
+    <lastmod>2020-05-23T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.kangzhiheng.top/series/</loc>
+    <lastmod>2020-05-23T00:00:00+00:00</lastmod>
   </url>
   
   <url>
     <loc>https://www.kangzhiheng.top/tags/</loc>
-    <lastmod>2020-05-13T00:00:00+00:00</lastmod>
+    <lastmod>2020-05-23T00:00:00+00:00</lastmod>
   </url>
   
   <url>
@@ -58,11 +83,6 @@
   
   <url>
     <loc>https://www.kangzhiheng.top/categories/github/</loc>
-    <lastmod>2020-05-11T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://www.kangzhiheng.top/series/</loc>
     <lastmod>2020-05-11T00:00:00+00:00</lastmod>
   </url>
   
@@ -339,66 +359,6 @@
   <url>
     <loc>https://www.kangzhiheng.top/tags/lightbox/</loc>
     <lastmod>2020-01-02T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://www.kangzhiheng.top/tags/css/</loc>
-    <lastmod>2019-03-11T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://www.kangzhiheng.top/tags/html/</loc>
-    <lastmod>2019-03-11T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://www.kangzhiheng.top/post/markdown-syntax/</loc>
-    <lastmod>2019-03-11T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://www.kangzhiheng.top/categories/syntax/</loc>
-    <lastmod>2019-03-11T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://www.kangzhiheng.top/tags/themes/</loc>
-    <lastmod>2019-03-11T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://www.kangzhiheng.top/categories/themes/</loc>
-    <lastmod>2019-03-11T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://www.kangzhiheng.top/series/themes-guide/</loc>
-    <lastmod>2019-03-11T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://www.kangzhiheng.top/post/placeholder-text/</loc>
-    <lastmod>2019-03-09T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://www.kangzhiheng.top/tags/text/</loc>
-    <lastmod>2019-03-09T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://www.kangzhiheng.top/tags/emoji/</loc>
-    <lastmod>2019-03-05T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://www.kangzhiheng.top/post/emoji-support/</loc>
-    <lastmod>2019-03-05T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://www.kangzhiheng.top/authors/john-doe/</loc>
-    <lastmod>2019-03-05T00:00:00+00:00</lastmod>
   </url>
   
   <url>

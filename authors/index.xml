@@ -7,7 +7,7 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <copyright>Copyright @ 2008 - 2020, Steve Francia and the Hugo Authors; All Rights Reserved.</copyright>
-    <lastBuildDate>Wed, 13 May 2020 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 23 May 2020 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://www.kangzhiheng.top/authors/index.xml" rel="self" type="application/rss+xml" />
     
@@ -15,7 +15,7 @@
     <item>
       <title></title>
       <link>https://www.kangzhiheng.top/authors/kangzhiheng/</link>
-      <pubDate>Wed, 13 May 2020 00:00:00 +0000</pubDate>
+      <pubDate>Sat, 23 May 2020 00:00:00 +0000</pubDate>
       
       <guid>https://www.kangzhiheng.top/authors/kangzhiheng/</guid>
       <description>一年后再介绍。</description>
@@ -27,15 +27,6 @@
       <pubDate>Thu, 02 Jan 2020 00:00:00 +0000</pubDate>
       
       <guid>https://www.kangzhiheng.top/authors/hugo-authors/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>John Doe</title>
-      <link>https://www.kangzhiheng.top/authors/john-doe/</link>
-      <pubDate>Tue, 05 Mar 2019 00:00:00 +0000</pubDate>
-      
-      <guid>https://www.kangzhiheng.top/authors/john-doe/</guid>
       <description></description>
     </item>
     

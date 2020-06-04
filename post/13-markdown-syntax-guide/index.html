@@ -1,0 +1,1612 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+<title>
+  
+     Markdown Syntax Guide | 
+    adoredee
+  
+</title><meta name="description" content="Sample article showcasing basic Markdown syntax and formatting for HTML elements."><meta name="author" content="kangzhiheng">
+
+<link rel="apple-touch-icon" href="/apple-touch-icon.png" sizes="180x180">
+<link rel="icon" href="/favicon-32x32.png " sizes="32x32" type="image/png">
+<link rel="icon" href="/favicon-16x16.png" sizes="16x16" type="image/png">
+<link rel="manifest" href="/manifest.json">
+<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#0c344b">
+<link rel="icon" href="/favicon.ico">
+
+
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.17.1/themes/prism.min.css">
+    
+
+
+
+    
+        
+            <link rel="stylesheet" href="/dist/main.37ab3f61b95417873748.min.css">
+        
+    
+
+
+
+
+<link rel="canonical" href="https://www.kangzhiheng.top/post/13-markdown-syntax-guide/"><meta property="og:title" content="Markdown Syntax Guide" />
+<meta property="og:description" content="Sample article showcasing basic Markdown syntax and formatting for HTML elements." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://www.kangzhiheng.top/post/13-markdown-syntax-guide/" />
+<meta property="og:image" content="https://www.kangzhiheng.top/13-cover.png" />
+<meta property="article:published_time" content="2020-05-23T00:00:00+00:00" />
+<meta property="article:modified_time" content="2020-05-23T00:00:00+00:00" />
+
+<meta itemprop="name" content="Markdown Syntax Guide">
+<meta itemprop="description" content="Sample article showcasing basic Markdown syntax and formatting for HTML elements.">
+<meta itemprop="datePublished" content="2020-05-23T00:00:00&#43;00:00" />
+<meta itemprop="dateModified" content="2020-05-23T00:00:00&#43;00:00" />
+<meta itemprop="wordCount" content="10487">
+<meta itemprop="image" content="https://www.kangzhiheng.top/13-cover.png">
+
+
+
+<meta itemprop="keywords" content="markdown," /><meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:image" content="https://www.kangzhiheng.top/13-cover.png"/>
+
+<meta name="twitter:title" content="Markdown Syntax Guide"/>
+<meta name="twitter:description" content="Sample article showcasing basic Markdown syntax and formatting for HTML elements."/>
+
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-166758556-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-166758556-1');
+</script>
+
+</head>
+<body>
+    
+<nav class="navbar navbar-expand-md navbar-light bg-light fixed-top shadow-sm" id="navbar-main-menu">
+    <div class="container">
+        <a class="navbar-brand font-weight-bold" href="https://www.kangzhiheng.top/">adoredee</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#main-menu" aria-controls="main-menu" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="main-menu">
+            <ul class="navbar-nav ml-auto">
+
+                
+                    <li class="nav-item"><a class="nav-link" href="/">Home</a></li>
+                
+                    <li class="nav-item"><a class="nav-link" href="/post/">Archives</a></li>
+                
+                    <li class="nav-item"><a class="nav-link" href="/series/">Series</a></li>
+                
+                    <li class="nav-item"><a class="nav-link" href="/categories/">Categories</a></li>
+                
+                    <li class="nav-item"><a class="nav-link" href="/tags/">Tags</a></li>
+                
+                    <li class="nav-item"><a class="nav-link" href="/system/">System</a></li>
+                
+                    <li class="nav-item"><a class="nav-link" href="/share/">Share</a></li>
+                
+                    <li class="nav-item"><a class="nav-link" href="/life/">Life</a></li>
+                
+                    <li class="nav-item"><a class="nav-link" href="/poems/">Poems</a></li>
+                
+                    <li class="nav-item"><a class="nav-link" href="/about/">About</a></li>
+                
+                    <li class="nav-item"><a class="nav-link" href="/search/">Search</a></li>
+                
+            
+            </ul>
+        </div>
+    </div>
+</nav>
+
+
+
+
+    
+<main class="content-page container pt-7 pb-5">
+    
+    <div class="row">
+        <div class="col">
+            <article>
+                <div class="row justify-content-center">
+                    <div class="col-lg-12">
+                        <div class="meta text-muted mb-3">
+                            <p class="created text-muted text-uppercase font-weight-bold mb-1">May 23, 2020</p>
+                            <span class="mr-2"><i class="fas fa-book-open mr-2"></i></span>
+                            <span><i class="fas fa-clock mr-2"></i></span>
+                        </div>
+
+                        <h1>Markdown Syntax Guide</h1>
+
+                        <ul class="authors list-inline"><li class="list-inline-item mr-3">
+                    <div class="media author"><a href="/authors/kangzhiheng/" class="mr-3">
+                                    <picture>
+                                        <source srcset="/authors/kangzhiheng/refrain_huc96af13c0d53ef6b21ac652a00d8e2ed_60914_64x0_resize_q75_box.jpg 1x, /authors/kangzhiheng/refrain_huc96af13c0d53ef6b21ac652a00d8e2ed_60914_128x0_resize_q100_box.jpg 2x, /authors/kangzhiheng/refrain_huc96af13c0d53ef6b21ac652a00d8e2ed_60914_192x0_resize_q100_box.jpg 3x">
+                                        <img src="/authors/kangzhiheng/refrain_huc96af13c0d53ef6b21ac652a00d8e2ed_60914_64x0_resize_q75_box.jpg" class="rounded-circle" alt="Kangzhiheng">
+                                    </picture>
+                                </a><div class="media-body">
+                            <h5 class="name my-0"><a href="/authors/kangzhiheng/" class="small">Kangzhiheng</a>
+                            </h5><p class="social small text-muted">
+                                    <a href="https://github.com/kangzhiheng">@kangzhiheng</a>
+                                </p></div>
+                    </div>
+                </li></ul>
+                    </div>
+                </div><div class="row justify-content-center mb-3">
+                                <div class="col-lg-10">
+                                    <img data-src="/images/13-cover_hu87b11860bbf405a95fe3774c1cb203b3_34481_900x500_fit_box_2.png" class="img-fluid rounded mx-auto d-block" alt="Markdown Syntax Guide">
+                                </div>
+                            </div>
+<h4>目录</h4>
+<div class="post-toc" id="post-toc">
+  <h2 class="post-toc-title"></h2>
+  <div class="post-toc-content always-active">
+    <nav id="TableOfContents">
+  <ul>
+    <li>
+      <ul>
+        <li><a href="#简介">简介</a></li>
+        <li><a href="#标题">标题</a></li>
+      </ul>
+    </li>
+  </ul>
+
+  <ul>
+    <li><a href="#二级标题">二级标题</a>
+      <ul>
+        <li><a href="#三级标题">三级标题</a></li>
+        <li><a href="#文本样式">文本样式</a></li>
+        <li><a href="#列表">列表</a></li>
+        <li><a href="#插入链接图片gif">插入链接＆图片&amp;GIF</a></li>
+        <li><a href="#代码">代码</a></li>
+        <li><a href="#段落">段落</a></li>
+        <li><a href="#表格">表格</a></li>
+        <li><a href="#脚注">脚注</a></li>
+        <li><a href="#锚点跳转">锚点跳转</a></li>
+        <li><a href="#mathjax公式">MathJax公式</a></li>
+        <li><a href="#mermaid库">Mermaid库</a></li>
+        <li><a href="#emoji表情">Emoji表情</a></li>
+        <li><a href="#转义字符">转义字符</a></li>
+        <li><a href="#其它html元素支持">其它HTML元素支持</a></li>
+        <li><a href="#特殊符号">特殊符号</a></li>
+        <li><a href="#typora功能快捷键">Typora功能快捷键</a></li>
+        <li><a href="#参考">参考</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+  </div>
+</div>                
+                <div class="row justify-content-center">
+                    <div class="col-lg-12">
+                        <div class="content">
+                            <p>  本文主要介绍了Markdown语法的基本语法，从而使<strong>Markdowners</strong>专注于内容和技术，不再担心排版问题。注意，以下介绍是通用语法，可能在其它平台，诸如在Hexo、Hugo等静态博客下的主题中，语法略显不同，注意区别。</p>
+<h3 id="简介">简介</h3>
+<blockquote>
+<p>  Markdown是为网络书写者而生的方便“text-to-HTML”工具，它允许人们用一种易读易写的纯文本格式进行书写，然后将其转化成XHTML（或HTML）。</p>
+<p>  Markdown 的特点是“易读易写”，其中<strong>可读性</strong>是最重要的。一份使用 Markdown 格式撰写的文件应该可以直接以纯文本发布，并且看起来不会像是由许多标签或是格式指令所构成。</p>
+<p>  Markdown 语法的目标是：成为一种适用于网络的书写语言。</p>
+<p>  Markdown 不是想要取代 HTML，甚至也没有要和它相近，它的语法种类很少，只对应 HTML 标记的一小部分。Markdown 的构想不是要使得 HTML 文档更容易书写。在我看来， HTML 已经很容易写了。Markdown 的理念是，能让文档更容易读、写和随意改。HTML 是一种发布的格式，Markdown 是一种书写的格式。就这样，Markdown 的格式语法只涵盖纯文本可以涵盖的范围。</p>
+<p>                                    —— John Gruber</p>
+</blockquote>
+<p>  <strong>Markdown</strong>是一种<a href="https://zh.wikipedia.org/wiki/%E8%BD%BB%E9%87%8F%E7%BA%A7%E6%A0%87%E8%AE%B0%E8%AF%AD%E8%A8%80">轻量级标记语言</a>，创始人为<a href="https://zh.wikipedia.org/wiki/%E7%B4%84%E7%BF%B0%C2%B7%E6%A0%BC%E9%AD%AF%E4%BC%AF">约翰·格鲁伯</a>（英语：John Gruber）。它允许人们使用易读易写的纯文本格式编写文档，然后转换成有效的<a href="https://zh.wikipedia.org/wiki/XHTML">XHTML</a>（或者<a href="https://zh.wikipedia.org/wiki/HTML">HTML</a>）文档，因此有些HTML语法也可以直接在Markdown中应用<sup id="fnref:1"><a href="#fn:1" class="footnote-ref" role="doc-noteref">1</a></sup>。</p>
+<p>  由于<strong>Markdown</strong>的轻量化、易读易写特性，并且对于图片，图表、数学式都有支持，目前许多网站都广泛使用Markdown来撰写帮助文档或是用于<a href="https://zh.wikipedia.org/wiki/%E7%BD%91%E7%BB%9C%E8%AE%BA%E5%9D%9B">论坛</a>上发表消息。如<a href="https://zh.wikipedia.org/wiki/GitHub">GitHub</a>、<a href="https://zh.wikipedia.org/wiki/Reddit">Reddit</a>、<a href="https://zh.wikipedia.org/wiki/Diaspora">Diaspora</a>、<a href="https://zh.wikipedia.org/wiki/Stack_Exchange">Stack Exchange</a>、<a href="https://zh.wikipedia.org/wiki/OpenStreetMap">OpenStreetMap</a> 、<a href="https://zh.wikipedia.org/wiki/SourceForge">SourceForge</a>、<a href="https://gitbook.com">Gitbook</a>、<a href="https://gitlab.com">GitLab</a>、<a href="https://gitee.com">Gitee</a>、<a href="https://zh.wikipedia.org/wiki/%E7%AE%80%E4%B9%A6">简书</a>、<a href="https://juejin.im">掘金</a>、<a href="https://blog.csdn.net/">CSDN</a>等，甚至还能被使用来撰写<a href="https://zh.wikipedia.org/wiki/%E9%9B%BB%E5%AD%90%E6%9B%B8">电子书</a>。</p>
+<p>  <strong>Markdown</strong>具有一系列衍生版本，用于扩展Markdown的功能（如表格、脚注、内嵌HTML等等），这些功能原初的Markdown尚不具备，它们能让Markdown转换成更多的格式，例如LaTeX，Docbook。</p>
+<p>  <strong>Markdown</strong>增强版中比较有名的有Markdown Extra、MultiMarkdown、 Maruku等。这些衍生版本要么基于工具，如Pandoc；要么基于网站，如GitHub和Wikipedia，在语法上基本兼容，但在一些语法和渲染效果上有改动。</p>
+<p>  总结一下Markdown的特点<sup id="fnref:2"><a href="#fn:2" class="footnote-ref" role="doc-noteref">2</a></sup>：</p>
+<ul>
+<li>
+<p>Markdown是一种<strong>轻量级</strong>的标记语言。</p>
+</li>
+<li>
+<p>Markdown的特点是<strong>易读易写</strong>。</p>
+</li>
+<li>
+<p>Markdown的<strong>内容与形式相分离</strong>。</p>
+</li>
+<li>
+<p>Markdown文档书写方式是<strong>源码</strong>书写，基本纯键盘输入。</p>
+</li>
+<li>
+<p>Markdown文档是纯文本文档，意味着图片独立于文档之外。</p>
+</li>
+<li>
+<p>Markdown是<strong>书写语言</strong>，不是发布语言，发布需要转换成Html。</p>
+</li>
+</ul>
+<table><tr><td bgcolor=#54FF9F> 以下内容为<font color="red">Markdown</font>的<font color="blue" size = 5 face="华文楷体"> 基本语法</font>，结合各种<b>官方文档</b>和本人的<font color="#9B30F"><b>使用经验</b></font>使用经验而成。 </td></tr></table>
+<h3 id="标题">标题</h3>
+<p><strong>语法：</strong> <kbd>#</kbd>的个数 + <kbd>space</kbd> + 文本</p>
+<p><strong>解释：</strong></p>
+<ul>
+<li>
+<p>直接格式1次<kbd>#</kbd>，并按下<kbd>space</kbd>后，再格式文本内容，将生成1级标题；</p>
+</li>
+<li>
+<p>格式2次<kbd>#</kbd>，并按下<kbd>space</kbd>后，再格式文本内容，将生成2级标题；</p>
+<p>以此类推，格式几个<kbd>#</kbd>，就生成几级标题，大部分Markdown最多支持<strong>6级标题</strong>。</p>
+</li>
+</ul>
+<p><strong>示例：</strong></p>
+<p>格式：</p>
+<p><code># 一级标题</code></p>
+<p><code>## 二级标题</code></p>
+<p><code>### 三级标题</code></p>
+<p><code>#### 四级标题</code></p>
+<p><code>##### 五级标题</code></p>
+<p><code>###### 六级标题</code></p>
+<p>输出：</p>
+<h1 id="一级标题">一级标题</h1>
+<h2 id="二级标题">二级标题</h2>
+<h3 id="三级标题">三级标题</h3>
+<h4 id="四级标题">四级标题</h4>
+<h5 id="五级标题">五级标题</h5>
+<h6 id="六级标题">六级标题</h6>
+<hr>
+<h3 id="文本样式">文本样式</h3>
+<h4 id="强调斜体">强调/斜体</h4>
+<p>前后各一个<code>*</code>（星号）或各一个<code>_</code>（下划线符）包围的文本是倾斜文本。</p>
+<p><code>*强调文本* </code>   <em>强调文本</em></p>
+<p><code>_强调文本_</code>   <em>强调文本</em></p>
+<h4 id="加粗">加粗</h4>
+<p>前后各两个<code>*</code>（星号）或各两个<code>_</code>（下划线符）包围的文本是加粗文本。</p>
+<p><code>**加粗文本**</code>   <strong>加粗文本</strong></p>
+<p><code>__加粗文本__</code>   <strong>加粗文本</strong></p>
+<p>HTML方法</p>
+<p><mark>&lt;b&gt;加粗文本&lt;b&gt;</mark>   <b>加粗文本</b></p>
+<p><mark>&lt;strong&gt;加粗文本&lt;strong&gt;</mark>   <strong>加粗文本</strong></p>
+<p>Note：<code>__</code>由两个<code>_</code>组成。</p>
+<h4 id="强调并加粗">强调并加粗</h4>
+<p><code>***强调并加粗***</code>   <em><strong>强调并加粗</strong></em></p>
+<p><code>**_强调并加粗_**</code>   <strong><em>强调并加粗</em></strong></p>
+<h4 id="删除">删除</h4>
+<p><code>~~删除文本~~ </code>  <del>删除文本</del></p>
+<h4 id="标记高亮">标记/高亮</h4>
+<p><code>==标记文本==</code>     ==标记文本==</p>
+<p>Note：该Hugo主题不支持渲染该功能，但支持HTML高亮语法，如下：</p>
+<p><code>&lt;mark&gt;标记文本&lt;/mark&gt;</code>   <mark>标记文本</mark></p>
+<h4 id="下划线">下划线</h4>
+<p><code>&lt;u&gt;下划线&lt;/u&gt;</code>  <u>下划线</u></p>
+<h4 id="引用">引用</h4>
+<p><strong>单次引用</strong></p>
+<p><code>&gt; 引用文本</code></p>
+<blockquote>
+<p>引用文本</p>
+</blockquote>
+<p><strong>嵌套引用</strong></p>
+<pre><code>&gt; 嵌套引用1
+&gt;&gt; 嵌套引用2
+&gt;&gt;&gt; 嵌套引用3
+&gt;&gt;
+&gt;&gt; 嵌套引用2
+&gt;
+&gt; 嵌套引用1
+</code></pre>
+<blockquote>
+<p>嵌套引用1</p>
+<blockquote>
+<p>嵌套引用2</p>
+<blockquote>
+<p>嵌套引用3</p>
+</blockquote>
+<p>嵌套引用2</p>
+</blockquote>
+<p>嵌套引用1</p>
+</blockquote>
+<p><strong>Note</strong>：</p>
+<ol>
+<li>在对文本进行操作时，<strong>注意在这些符号的两侧空一格</strong>，以免编译错误，尤其在中文编辑时。</li>
+<li>引用可以和列表相互调用。</li>
+</ol>
+<hr>
+<h3 id="列表">列表</h3>
+<p>  Markdown列表有<strong>有序列表</strong>、<strong>无序列表</strong>、<strong>任务列表</strong>、<strong>自定义列表</strong>四种。<strong>列表可以嵌套成多级列表</strong>。</p>
+<ul>
+<li>
+<p><strong>有序列表</strong></p>
+<p><strong><code>数字</code>+<kbd>.</kbd>+<code>空格</code>+<code>文本</code></strong></p>
+<p>格式：</p>
+<p><code>1. 文本一</code></p>
+<p><code>2. 文本二</code></p>
+<p><code>3. 文本三</code></p>
+<p>输出：</p>
+<ol>
+<li>
+<p>文本一</p>
+</li>
+<li>
+<p>文本二</p>
+</li>
+<li>
+<p>文本三</p>
+</li>
+</ol>
+</li>
+<li>
+<p><strong>无序列表</strong></p>
+<p><code>+</code>、<code>-</code>、<code>*</code>都可以用来标记无序列表。</p>
+<p>格式：<strong><code>-/+/*</code>+<code>空格</code>+<code>文本</code></strong></p>
+<p><code>- 文本一</code></p>
+<p><code>+ 文本二</code></p>
+<p><code>* 文本三</code></p>
+<p>输出：</p>
+<ul>
+<li>
+<p>文本一</p>
+</li>
+<li>
+<p>文本二</p>
+</li>
+<li>
+<p>文本三</p>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>任务列表</strong></p>
+<p>格式：<strong><code>-</code>+<code>空格</code>+<kbd>[</kbd>+<code>x(可选)</code>+<kbd>]</kbd>+<code>空格</code>+<code>文本</code></strong></p>
+<p><code>- [x] 已完成任务</code></p>
+<p><code>- [ ] 未完成任务</code></p>
+<p><code>- [ ] 未完成任务</code></p>
+<p>输出：</p>
+<ul>
+<li>
+<p><input checked="" disabled="" type="checkbox"> 已完成任务</p>
+</li>
+<li>
+<p><input disabled="" type="checkbox"> 未完成任务</p>
+</li>
+<li>
+<p><input disabled="" type="checkbox"> 未完成任务</p>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>嵌套列表</strong></p>
+<p>列表嵌套只需在子列表中的选项缩进四个空格即可，在Typora中，向右缩进的快捷键是<kbd>ctrl</kbd>+<kbd>]</kbd>。</p>
+<p>格式：</p>
+<pre><code>1. 任务一：
+    - 任务一嵌套的第一个元素
+    - 任务一嵌套的第二个元素
+2. 任务二：
+    - 任务二嵌套的第一个元素
+    - 任务二嵌套的第二个元素
+</code></pre>
+<p>输出：</p>
+<ol>
+<li>
+<p>任务一：</p>
+<ul>
+<li>
+<p>任务一嵌套的第一个元素</p>
+</li>
+<li>
+<p>任务一嵌套的第二个元素</p>
+</li>
+</ul>
+</li>
+<li>
+<p>任务二：</p>
+<ul>
+<li>
+<p>任务二嵌套的第一个元素</p>
+</li>
+<li>
+<p>任务二嵌套的第二个元素</p>
+</li>
+</ul>
+</li>
+</ol>
+</li>
+</ul>
+<hr>
+<h3 id="插入链接图片gif">插入链接＆图片&amp;GIF</h3>
+<p>  在Markdown里插入链接、图片和GIF，最常用的方法如下：</p>
+<h4 id="链接">链接</h4>
+<p>格式：<code>［显示文本］(链接地址URL)</code></p>
+<p>Typora快捷键：<kbd>ctrl</kbd>+<kbd>k</kbd></p>
+<p>举例：请点击这个<a href="htttps://www.baidu.com">链接</a>进行搜索。</p>
+<p>上述中的<strong>链接</strong>格式具体为：<code>[链接](https://www.baidu.com)</code></p>
+<h4 id="自动链接邮箱">自动链接/邮箱</h4>
+<p>  自动链接直接用一对<strong>尖括号</strong>包围即可。</p>
+<p><code>&lt;https://www.kangzhiheng.top&gt;</code>，显示<a href="https://www.kangzhiheng.top">https://www.kangzhiheng.top</a></p>
+<p>  电子邮件地址也可以被自动索引。</p>
+<p><code>&lt;kangzhiheng@live.cn&gt;</code>，显示<a href="mailto:kangzhiheng@live.cn">kangzhiheng@live.cn</a></p>
+<p>点击生成的链接会自动打开计算机上安装的电子邮件客户端程序。</p>
+<h4 id="图片">图片</h4>
+<p>Makrdown里的图片链接格式有两种：<strong>默认格式</strong>和<strong>HTML方法</strong>。</p>
+<ul>
+<li>
+<p><strong>默认格式</strong>：<code>![注释](图片链接)</code></p>
+<p>注意：<code>[]</code>里面的注释可有可无，建议最好加上这个图片的注释；<code>()</code>里的图片链接可以是<strong>本地图片链接</strong>，也可以是<strong>URL</strong>。关于这个图片的链接URL方法，具体参考我的另一篇博文<a href="https://kangzhiheng.top/post/12-imagehost-gitee-picgo/">《自建图床三驾马车：Typora、Gitee与PicGo》</a>。</p>
+<p>举例：<code>![Home](https://gitee.com/kangzhiheng/ImageHosting/raw/master/Img/adoredee.png)</code></p>
+<p><img src="https://gitee.com/kangzhiheng/ImageHosting/raw/master/Img/adoredee.png" alt="Home"></p>
+<p>上述图片链接方法，默认是图片URL的<strong>原始大小</strong>，且<strong>默认靠左显示</strong>。如果使图片的大小可变且居中，可使用下面的HTML方法。</p>
+</li>
+<li>
+<p><strong>HTML方法</strong>：<code>&lt;div align=center&gt; &lt;img width=&quot;150&quot; height=&quot;150&quot; src=&quot;URL&quot;/&gt; &lt;/div&gt;</code></p>
+<p>其中：</p>
+<ul>
+<li>
+<p><code>align</code>可选参数为：<code>left</code>、<code>center</code>、<code>right</code>；</p>
+</li>
+<li>
+<p><code>width</code>、<code>height</code>根据实际情况填写，可以是实际数字，也可以是百分比缩放。</p>
+</li>
+<li>
+<p><code>src</code>为图片URL。</p>
+</li>
+</ul>
+<p>举例1：调整图片宽度为650，高度为150；</p>
+<p><code>&lt;div align=center&gt; &lt;img width=&quot;150&quot; height=&quot;150&quot; src=&quot;https://gitee.com/kangzhiheng/ImageHosting/raw/master/Img/adoredee.png&quot;/&gt; &lt;/div&gt;</code></p>
+<div align=center> <img width="650" height="150" src="https://gitee.com/kangzhiheng/ImageHosting/raw/master/Img/adoredee.png"/> </div>
+<p>举例2：调整图片宽度为原来的30%，高度为原来的40%；</p>
+<p><code>&lt;div align=center&gt; &lt;img width=30% height=40% src=&quot;https://gitee.com/kangzhiheng/ImageHosting/raw/master/Img/adoredee.png&quot;/&gt; &lt;/div&gt;</code></p>
+<div align=center> <img width=30% height=40% src="https://gitee.com/kangzhiheng/ImageHosting/raw/master/Img/adoredee.png"/> </div>
+</li>
+</ul>
+<hr>
+<h3 id="代码">代码</h3>
+<p>  在Markdown中，代码分为两种：<strong>行内代码</strong>和<strong>代码块</strong>。</p>
+<h4 id="行内代码代码片段">行内代码/代码片段</h4>
+<p>格式：<kbb>`</kbd> 代码片段 <kbb>`</kbd></p>
+<p>输出：<code>代码片段</code></p>
+<h4 id="代码块">代码块</h4>
+<p>格式：</p>
+<pre>
+```代码语言
+   代码块
+```
+</pre>
+<p>举例：</p>
+<p>Python语言：</p>
+<pre>
+```python
+#!/usr/bin/env python3
+import tensorflow as tf
+
+print(tf.__version__)
+</pre>
+<p>输出：</p>
+<pre><code class="language-python">#!/usr/bin/env python3
+import tensorflow as tf
+
+print(tf.__version__)
+</code></pre>
+<hr>
+<h3 id="段落">段落</h3>
+<p>  如果是中文书写习惯，每一段的开头，都应该空4个英文字符的宽度。一般在word里，在段首可以直接按<kbd>Tab</kbd>键实现，但在Markdown中，这并不起作用。这时需要用到HTML里的空格方法。</p>
+<h4 id="缩进">缩进</h4>
+<p><code>&amp;emsp;</code>：全方大的空白，一个汉字（两个英文字符）的宽度，<code>&amp;#8195;</code>于此同义；</p>
+<p><code>&amp;ensp;</code>：半放大的空白，一个英文字符的宽度（½个汉字），<code>&amp;#8194;</code>于此同义；</p>
+<p><code>&amp;nbsp;</code>：不断行的空白，⅓个汉字的宽度，<code>&amp;#160;</code>于此同义；</p>
+<pre><code class="language-html">顶格；
+
+&amp;emsp;空一个汉字的宽度；
+
+&amp;ensp;空½个汉字的宽度；
+
+&amp;nbsp;空⅓个汉字的宽度；
+</code></pre>
+<p>顶格；</p>
+<p> 空一个汉字的宽度；</p>
+<p> 空½个汉字的宽度；</p>
+<p> 空⅓个汉字的宽度；</p>
+<p><strong>总结</strong>：所以按照中文书写习惯，段首空两格，只需要在段首前面加<code>&amp;emsp;&amp;emsp;</code>就好；</p>
+<h4 id="居中">居中</h4>
+<p>Markdown本身没有居中的语法，需要HTML元素支持。</p>
+<p><strong>格式</strong>：<mark>&lt;center&gt;  人间有味是清欢  &lt;/center&gt;</mark></p>
+<p><strong>输出</strong>：</p>
+<center> 人间有味是清欢 </center>
+<h4 id="换行">换行</h4>
+<p>在Makrdown源代码模式下，有两种换行方法：</p>
+<ol>
+<li>
+<p>在段末连续<strong>两次</strong>按下<kbd>Enter</kbd>，即两个段落之间空一行；</p>
+</li>
+<li>
+<p>在上一段的末尾加上HTML标签<mark>&lt;br&gt;</mark>即可换行；</p>
+</li>
+</ol>
+<p><strong>注意</strong>：在Typora中，直接在段末按下<kbd>Enter</kbd>即可换行；</p>
+<h4 id="字体">字体</h4>
+<p>格式：</p>
+<pre><code class="language-html">&lt;font face=&quot;华文行楷&quot;&gt;华文行楷&lt;/font&gt;  
+&lt;center&gt;&lt;font face=&quot;华文行楷&quot;&gt;华文行楷居中&lt;/font&gt;&lt;/center&gt; 
+&lt;font face=&quot;黑体&quot;&gt;我是黑体字&lt;/font&gt;
+&lt;font face=&quot;宋体&quot;&gt;我是宋体字&lt;/font&gt;
+&lt;font face=&quot;微软雅黑&quot;&gt;我是微软雅黑字&lt;/font&gt;
+&lt;font face=&quot;fantasy&quot;&gt;我是fantasy字&lt;/font&gt;
+&lt;font face=&quot;Helvetica&quot;&gt;我是Helvetica字&lt;/font&gt;
+&lt;font face=&quot;STCAIYUN&quot;&gt;我是华文彩云&lt;/font&gt;	
+</code></pre>
+<p>输出：</p>
+<p><font face="华文行楷">华文行楷</font></p>
+<center><font face="华文行楷">华文行楷居中</font></center> 
+<p><font face="黑体">我是黑体字</font></p>
+<p><font face="宋体">我是宋体字</font></p>
+<p><font face="微软雅黑">我是微软雅黑字</font></p>
+<p><font face="fantasy">我是fantasy字</font></p>
+<p><font face="Helvetica">我是Helvetica字</font></p>
+<p><font face="STCAIYUN">我是华文彩云</font></p>
+<h4 id="字号">字号</h4>
+<p>格式：</p>
+<pre><code class="language-html">&lt;font Size=1&gt;我是1号字&lt;/font&gt;  
+&lt;font Size=2&gt;我是2号字&lt;/font&gt;  
+&lt;font Size=3&gt;我是3号字&lt;/font&gt;  
+&lt;font Size=4&gt;我是4号字&lt;/font&gt;  
+&lt;font Size=5&gt;我是5号字&lt;/font&gt;  
+&lt;font Size=6&gt;我是6号字&lt;/font&gt;  
+&lt;font Size=7&gt;我是7号字&lt;/font&gt;
+</code></pre>
+<p>输出：</p>
+<p><font Size=1>我是1号字</font><br>
+<font Size=2>我是2号字</font><br>
+<font Size=3>我是3号字</font><br>
+<font Size=4>我是4号字</font><br>
+<font Size=5>我是5号字</font><br>
+<font Size=6>我是6号字</font><br>
+<font Size=7>我是7号字</font></p>
+<p><strong>注意</strong>：<strong>这里的字号与word里的不同，浏览器一般默认字号为<font color=red>3号</font>。</strong></p>
+<h4 id="颜色">颜色</h4>
+<p>查看颜色表： <a href="http://www.114la.com/other/rgb.htm">http://www.114la.com/other/rgb.htm</a>，选择需要的颜色所对应的RGB值（十六进制）。</p>
+<p>格式：</p>
+<pre><code class="language-html">&lt;font color=&quot;red&quot;&gt; 我是红色字体，color=red &lt;/font&gt;  
+&lt;font color=&quot;yellow&quot;&gt; 我是黄色字体，color=yellow &lt;/font&gt;   
+&lt;font color=&quot;blue&quot;&gt; 我是蓝色字体，color=blue &lt;/font&gt;  
+&lt;font color=&quot;green&quot;&gt; 我是绿色字体，color=green &lt;/font&gt;  
+&lt;font color=&quot;gray&quot;&gt; 我是灰色字体，color=gray &lt;/font&gt;  
+&lt;font color=&quot;orange&quot;&gt; 我是橙色字体，color=orange &lt;/font&gt;  
+&lt;font color=&quot;brown&quot;&gt; 我是棕色字体，color=brown &lt;/font&gt; 
+
+&lt;font color=&quot;#FF8C69&quot;&gt; 字体颜色，color=#FF8C69 &lt;/font&gt;  
+&lt;font color=&quot;#EE82EE&quot;&gt; 字体颜色，color=#EE82EE &lt;/font&gt;  
+&lt;font color=&quot;#C1FFC1&quot;&gt; 字体颜色，color=#C1FFC1 &lt;/font&gt;  
+&lt;font color=&quot;#9B30FF&quot;&gt; 字体颜色，color=#9B30FF &lt;/font&gt;  
+&lt;font color=&quot;#CD00CD&quot;&gt; 字体颜色，color=#CD00CD &lt;/font&gt;  
+&lt;font color=&quot;#00B2EE&quot;&gt; 字体颜色，color=#00B2EE &lt;/font&gt; 
+</code></pre>
+<p>输出：</p>
+<p><font color="red"> 我是红色字体，color=red </font><br>
+<font color="yellow"> 我是黄色字体，color=yellow </font><br>
+<font color="blue"> 我是蓝色字体，color=blue </font><br>
+<font color="green"> 我是绿色字体，color=green </font><br>
+<font color="gray"> 我是灰色字体，color=gray </font><br>
+<font color="orange"> 我是橙色字体，color=orange </font><br>
+<font color="brown"> 我是棕色字体，color=brown </font></p>
+<p><font color="#FF8C69"> 字体颜色，color=#FF8C69 </font><br>
+<font color="#EE82EE"> 字体颜色，color=#EE82EE </font><br>
+<font color="#C1FFC1"> 字体颜色，color=#C1FFC1 </font><br>
+<font color="#9B30FF"> 字体颜色，color=#9B30FF </font><br>
+<font color="#CD00CD"> 字体颜色，color=#CD00CD </font><br>
+<font color="#00B2EE"> 字体颜色，color=#00B2EE </font></p>
+<h4 id="同时改变字体字号和颜色">同时改变字体、字号和颜色</h4>
+<p>在HTML元素<mark>&lt;font&gt;&lt;/font&gt;</mark>中可选的属性有字体<code>face</code>、字号<code>size</code>和颜色<code>color</code>，可以自由组合，<strong>属性之间没有逗号</strong>。</p>
+<p>举例：</p>
+<p><code>&lt;font face=&quot;华文行楷&quot; size=5 color=#CD00CD &gt; 大小为5号，颜色为#CD00CD的华文行楷。 &lt;/font&gt; </code></p>
+<p>输出：</p>
+<p><font face="华文行楷" size=5 color=#CD00CD >大小为5号，颜色为#CD00CD的华文行楷。</font></p>
+<h4 id="背景色">背景色</h4>
+<p>查看颜色表： <a href="http://www.114la.com/other/rgb.htm">http://www.114la.com/other/rgb.htm</a>，选择需要的颜色所对应的RGB值（十六进制）。</p>
+<p>格式：</p>
+<pre><code class="language-html">&lt;table&gt;&lt;tr&gt;&lt;td bgcolor=#FF69B4&gt; 背景色由十六进制颜色值设置而成：#FF69B4 &lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;table&gt;&lt;tr&gt;&lt;td bgcolor=#FF83FA&gt; 背景色由十六进制颜色值设置而成：#FF83FA &lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;table&gt;&lt;tr&gt;&lt;td bgcolor=#40E0D0&gt; 背景色由十六进制颜色值设置而成：#40E0D0 &lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;table&gt;&lt;tr&gt;&lt;td bgcolor=#C0FF3E&gt; 背景色由十六进制颜色值设置而成：#C0FF3E &lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;table&gt;&lt;tr&gt;&lt;td bgcolor=#54FF9F&gt; 背景色由十六进制颜色值设置而成：#54FF9F &lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+</code></pre>
+<p>输出：</p>
+<table><tr><td bgcolor=#FF69B4>背景色由十六进制颜色值设置而成：#FF69B4</td></tr></table>
+<table><tr><td bgcolor=#FF83FA>背景色由十六进制颜色值设置而成：#FF83FA</td></tr></table>
+<table><tr><td bgcolor=#40E0D0>背景色由十六进制颜色值设置而成：#40E0D0</td></tr></table>
+<table><tr><td bgcolor=#C0FF3E>背景色由十六进制颜色值设置而成：#C0FF3E</td></tr></table>
+<table><tr><td bgcolor=#54FF9F>背景色由十六进制颜色值设置而成：#54FF9F</td></tr></table>
+<h4 id="分割线水平线">分割线/水平线</h4>
+<p>  在标准 Markdown 中，分割线/水平线一般由连续的<strong>3个</strong>同样的<kbd>-</kbd>、<kbd>+</kbd>、<kbd>*</kbd>组成，只需这三个符号在同一行且没有字符（除了空格）即可，符号之间有没有空格不影响分割线的生成。如<code>-- -</code>、<code>+  +      +</code>、<code>***</code>都可以。</p>
+<p>分割线的效果见每一小节之间，如下。</p>
+<hr>
+<h3 id="表格">表格</h3>
+<h4 id="基本表格">基本表格</h4>
+<p>基本的表格方法如下：</p>
+<pre><code class="language-bash">| Items | Prices|
+| :--: | : -- : |
+| Apple | 20$ |
+| Banana | 25$ |
+</code></pre>
+<p>详细介绍：</p>
+<ul>
+<li>
+<p>第一行：<strong>表头</strong>，两个符号<kbd>|</kbd>间的内容是标题；</p>
+</li>
+<li>
+<p>第二行：<strong>可选</strong>，<strong>设置表中内容的对齐方式</strong>，默认是靠近显示，如下：</p>
+<p><code>: --- :</code>设置内容<strong>水平居中对齐</strong>；</p>
+<p><code>: --- </code>设置内容<strong>左对齐</strong>；</p>
+<p><code> --- :</code>设置内容<strong>右对齐</strong>；</p>
+<p><strong>注意</strong>：</p>
+<ul>
+<li>
+<p>对齐方式依次用<kbd>|</kbd>进行间隔；</p>
+</li>
+<li>
+<p><mark>:</mark>是<strong>英文</strong>下的冒号，且旁边的<mark>-</mark>的个数不限制；</p>
+</li>
+<li>
+<p><strong>标题的对齐方式</strong>，与编辑器有关，有些编辑器里的标题对齐方式与内容一致，而有一些编辑器相反，这时如果想要使标题居中对齐，则需要HTML标签<mark>&lt;center&gt;&lt;/center&gt;</mark>。</p>
+</li>
+</ul>
+</li>
+<li>
+<p>下面几行，是表格的内容，也依次用<kbd>|</kbd>间隔，表格的内容与表头一一对应；</p>
+</li>
+</ul>
+<p>如下：</p>
+<pre><code class="language-bash">| &lt;center&gt; Items &lt;/center&gt; | &lt;center&gt; Processor &lt;/center&gt; | &lt;center&gt; Display &lt;/center&gt; | &lt;center&gt; B/C &lt;/center&gt; | &lt;center&gt; Camera &lt;/center&gt;  | &lt;center&gt; S/R &lt;/center&gt; |&lt;center&gt; Prices（RMB） &lt;/center&gt; |
+| :---: | :---: | :---: | :---: | :---: | :---: | :---: |
+| HuaWei P40 Pro | HUAWEI Kirin 990 5G | 6.58&quot;OLED / 2K / 90Hz | 4200mAh / 40W | 5000 / 3200 | 8G + 128G / 256G / 512G | 5988 /6498 / 7388 |
+| OPPO Find X2 Pro | Qualcomm® Snapdragon™ 865 | 6.67&quot;AMOLED / 3K QHD+/ 120Hz | 2*2130mAh / 65W | 4800 / 3200 | 12G + 256G | 6999 |
+| OnePlus 8 Pro | Qualcomm® Snapdragon™ 865 | 6.78&quot;AMOLED / 2K / 120Hz | 4510mAh / Warp Charge 30T Fast Charging (5V/6A) | 4800 / 1600 | 8G + 128G / 12G + 256G | 5399 / 5999 |
+| Xiaomi 10 Pro | Qualcomm® Snapdragon™ 865 | 6.67&quot;AMOLED / 90Hz | 4500mAh / 50W | 10000 / 2000 | 8G + 256G / 12G + 256G / 12G + 512G | 4999 / 5499 / 5999 |
+| Vivo NEX 3 |  Qualcomm® Snapdragon™ 865 Plus | 6.89''POLED /  2K FHD+ | 4500mAh /  22.5W | 6400 / 1600 | 8G + 256G | 4998 |
+</code></pre>
+<p>显示：</p>
+<table>
+<thead>
+<tr>
+<th align="center"><center> Items </center></th>
+<th align="center"><center> Processor </center></th>
+<th align="center"><center> Display </center></th>
+<th align="center"><center> B/C </center></th>
+<th align="center"><center> Camera </center></th>
+<th align="center"><center> S/R </center></th>
+<th align="center"><center> Prices（RMB） </center></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center">HuaWei P40 Pro</td>
+<td align="center">HUAWEI Kirin 990 5G</td>
+<td align="center">6.58&quot;OLED / 2K / 90Hz</td>
+<td align="center">4200mAh / 40W</td>
+<td align="center">5000 / 3200</td>
+<td align="center">8G + 128G / 256G / 512G</td>
+<td align="center">5988 /6498 / 7388</td>
+</tr>
+<tr>
+<td align="center">OPPO Find X2 Pro</td>
+<td align="center">Qualcomm® Snapdragon™ 865</td>
+<td align="center">6.67&quot;AMOLED / 3K QHD+/ 120Hz</td>
+<td align="center">2*2130mAh / 65W</td>
+<td align="center">4800 / 3200</td>
+<td align="center">12G + 256G</td>
+<td align="center">6999</td>
+</tr>
+<tr>
+<td align="center">OnePlus 8 Pro</td>
+<td align="center">Qualcomm® Snapdragon™ 865</td>
+<td align="center">6.78&quot;AMOLED / 2K / 120Hz</td>
+<td align="center">4510mAh / Warp Charge 30T Fast Charging (5V/6A)</td>
+<td align="center">4800 / 1600</td>
+<td align="center">8G + 128G / 12G + 256G</td>
+<td align="center">5399 / 5999</td>
+</tr>
+<tr>
+<td align="center">Xiaomi 10 Pro</td>
+<td align="center">Qualcomm® Snapdragon™ 865</td>
+<td align="center">6.67&quot;AMOLED / 90Hz</td>
+<td align="center">4500mAh / 50W</td>
+<td align="center">10000 / 2000</td>
+<td align="center">8G + 256G / 12G + 256G / 12G + 512G</td>
+<td align="center">4999 / 5499 / 5999</td>
+</tr>
+<tr>
+<td align="center">Vivo NEX 3</td>
+<td align="center">Qualcomm® Snapdragon™ 865 Plus</td>
+<td align="center">6.89'&lsquo;POLED /  2K FHD+</td>
+<td align="center">4500mAh /  22.5W</td>
+<td align="center">6400 / 1600</td>
+<td align="center">8G + 256G</td>
+<td align="center">4998</td>
+</tr>
+</tbody>
+</table>
+<p><font face="宋体" size=2 > 注：以上数据于2020年5月30号来源于各大官网。B/C表示Battery and Charge，S/R表示Storage and RAM。</font></p>
+<h4 id="合并单元格">合并单元格</h4>
+<ul>
+<li>
+<p><code>&lt;br&gt;</code><strong>方法</strong></p>
+<p>合并单元格，也即单元格内换行，使用<code>&lt;br&gt;</code>即可，其它设置与普通表格一致。</p>
+<pre><code class="language-bash">| &lt;center&gt; 姓名 &lt;/center&gt; | &lt;center&gt; 爱好 &lt;/center&gt;  |
+| :--: | :-----------------------: |
+| 张三 |      足球 &lt;br&gt; 篮球       |
+| 李四 |  羽毛球 &lt;br&gt; 乒乓球HTML方法 |
+</code></pre>
+<p><strong>显示：</strong></p>
+<table>
+<thead>
+<tr>
+<th align="center"><center> 姓名 </center></th>
+<th align="center"><center> 爱好 </center></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center">张三</td>
+<td align="center">足球 <br> 篮球</td>
+</tr>
+<tr>
+<td align="center">李四</td>
+<td align="center">羽毛球 <br>乒乓球HTML方法</td>
+</tr>
+</tbody>
+</table>
+</li>
+<li>
+<p><strong>HTML方法</strong></p>
+<pre><code class="language-bash">&lt;table&gt;
+  &lt;tr&gt;
+      &lt;th&gt;属性&lt;/th&gt;
+      &lt;th&gt;属性值&lt;/th&gt;
+      &lt;th&gt;描述&lt;/th&gt;  
+  &lt;/tr &gt;
+  &lt;tr &gt;
+      &lt;td rowspan=&quot;3&quot;&gt;type &lt;/td&gt;
+      &lt;td&gt;text&lt;/td&gt;
+      &lt;td&gt;单行文本输入框&lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+      &lt;td&gt;password&lt;/td&gt;
+      &lt;td&gt;密码输入框&lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+      &lt;td&gt;radio&lt;/td&gt;
+      &lt;td&gt;单选按钮&lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+      &lt;td  rowspan=&quot;2&quot;&gt;name&lt;/td&gt;
+      &lt;td&gt;用户自定义&lt;/td&gt;
+      &lt;td&gt;控件名称&lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+      &lt;td&gt; 用户自定义 &lt;/td&gt;
+      &lt;td&gt; 控件名称 &lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+      &lt;td &gt;value&lt;/td&gt;
+      &lt;td &gt;用户自定义&lt;/td&gt;
+      &lt;td &gt;默认文本值&lt;/td&gt;
+  &lt;/tr&gt;
+&lt;/table&gt;
+</code></pre>
+<p><strong>显示：</strong></p>
+<table>
+  <tr>
+      <th>属性</th>
+      <th>属性值</th>
+      <th>描述</th>  
+  </tr >
+  <tr >
+      <td rowspan="3">type </td>
+      <td>text</td>
+      <td>单行文本输入框</td>
+  </tr>
+  <tr>
+      <td>password</td>
+      <td>密码输入框</td>
+  </tr>
+  <tr>
+      <td>radio</td>
+      <td>单选按钮</td>
+  </tr>
+  <tr>
+      <td  rowspan="2">name</td>
+      <td>用户自定义</td>
+      <td>控件名称</td>
+  </tr>
+  <tr>
+      <td> 用户自定义 </td>
+      <td> 控件名称 </td>
+  </tr>
+  <tr>
+      <td >value</td>
+      <td >用户自定义</td>
+      <td >默认文本值</td>
+  </tr>
+</table>
+</li>
+</ul>
+<hr>
+<h3 id="脚注">脚注</h3>
+<p>Markdown的脚注功能有两种实现方法。</p>
+<h4 id="方法一">方法一</h4>
+<pre><code class="language-bash">脚注[^1]
+[^1]: 这里是脚注
+</code></pre>
+<p><strong>显示：</strong></p>
+<p>脚注<sup id="fnref:3"><a href="#fn:3" class="footnote-ref" role="doc-noteref">3</a></sup></p>
+<h4 id="方法二">方法二</h4>
+<p>如果希望被注释的文本是<em>斜体</em>，则追加<mark>&lt;cite&gt;&lt;/cite&gt;</mark>即可，如下：</p>
+<pre><code class="language-bash">&lt;cite&gt;脚注[^1]&lt;/cite&gt;
+[^1]: 这里是脚注
+</code></pre>
+<p><strong>显示：</strong></p>
+<p><cite>脚注<sup id="fnref:4"><a href="#fn:4" class="footnote-ref" role="doc-noteref">4</a></sup></cite></p>
+<p><strong>脚注的部分会在文章的末尾进行显示，并且支持跳转到指定位置。</strong></p>
+<hr>
+<h3 id="锚点跳转">锚点跳转</h3>
+<p>  有这么一种情况：浏览一个很长的文章时，可能只对其中几个章节感兴趣时，需要直接跳转到该章节，这时就需要<strong>锚点</strong>。</p>
+<p>  <strong>锚点</strong>是是网页制作中超级链接的一种，又叫<strong>命名锚记</strong>。使用命名锚记可以在文档中设置标记，这些标记通常放在文档的特定主题处或顶部。然后可以创建到这些命名锚记的链接，这些链接可快速将访问者带到指定位置<sup id="fnref:5"><a href="#fn:5" class="footnote-ref" role="doc-noteref">5</a></sup>。</p>
+<p>  <strong>锚点跳转</strong>要注意首先要注意以下两点：</p>
+<ol>
+<li>
+<p>锚点的标识名称，可使用任意字符，使用锚点跳转；</p>
+</li>
+<li>
+<p>锚点生成的链接，可以是页内跳转，也可以生成目录；</p>
+</li>
+<li>
+<p>锚点<strong>只对</strong><kbd>#</kbd>标注的标题生成锚点链接；</p>
+</li>
+<li>
+<p>锚点的基本格式是：<code>[跳转标题](#跳转标题)</code>，注意<code>()</code>里的<kbd>#</kbd>与后面的内容<strong>无空格</strong>，且只有一个<kbd>#</kbd>，该符号与正文里的多级标题无关（不管是几级标题，只需要一个<kbd>#URL</kbd>）；</p>
+</li>
+<li>
+<p><strong>非英文的锚点字符</strong>，在单击跳转时，在浏览器的URL中会按照规则进行<strong>编码</strong>和<strong>解码</strong>；</p>
+</li>
+</ol>
+<p>在使用时还需要记住以下几个问题：</p>
+<ul>
+<li>
+<p>任意 1-6 个<kbd>#</kbd>标注的标题都可设置为同名的锚点链接</p>
+<pre><code class="language-bash">[标题1](#标题1)  
+[标题2](#标题2)  
+[标题3](#标题3)  
+  
+# 标题1 
+## 标题2 
+### 标题3
+</code></pre>
+</li>
+<li>
+<p><strong>大写字母要转换成小写</strong></p>
+<pre><code class="language-bash">[Github标题](#github标题)
+  
+### Github标题
+</code></pre>
+</li>
+<li>
+<p>多单词锚点的<strong>空格</strong>用<kbd>-</kbd>代替</p>
+<pre><code class="language-bash">[Github Heading](#github-heading)
+  
+### Github Heading
+</code></pre>
+</li>
+<li>
+<p>多级序号需要去除<kbd>.</kbd></p>
+<pre><code class="language-bash">[2.3. Github Heading](#23-github-heading)
+  
+### 2.3. Github Heading
+</code></pre>
+</li>
+</ul>
+<hr>
+<h3 id="mathjax公式">MathJax公式</h3>
+<p>  <a href="https://www.mathjax.org/">MathJax</a>和<a href="https://katex.org/">Katex</a>是两种支持HTML的轻量级的数学公式引擎，但<code>MathJax</code>对<strong>行内公式</strong>支持较好。它们的低层都是TEX，所以$\LaTeX$的语法，都可以在<kbd>$</kbd>和<kbd>$</kbd><kbd>$</kbd>中被渲染。在hugo中配置MathJax请参阅文章<sup id="fnref:6"><a href="#fn:6" class="footnote-ref" role="doc-noteref">6</a></sup></p>
+<h4 id="行内公式">行内公式</h4>
+<p>  使用一对<kbd>$</kbd>来区别正常文字和行内公式。如<code>$ x=\frac{-b\pm\sqrt{b^2-4ac}}{2a} $</code>，效果为$ x=\frac{-b\pm\sqrt{b^2-4ac}}{2a} $</p>
+<h4 id="块状公式">块状公式</h4>
+<p>  块状公式由一对<kbd>$</kbd><kbd>$</kbd>进行区别，如下，欧拉积分表示为</p>
+<pre><code class="language-bash">$$
+\Gamma(z) = \int_0^\infty t^{z-1}e^{-t}dt\,.
+$$
+</code></pre>
+<p>$$
+\Gamma(z) = \int_0^\infty t^{z-1}e^{-t}dt,.
+$$</p>
+<p>  <strong>在hugo中使用MathJax需要注意的问题：</strong></p>
+<p><strong>多行公式</strong></p>
+<p>  如下图，多行公式
+$$
+\begin{aligned}
+a=&amp; b+c-d \cr
+&amp;+e-f \cr
+=&amp; g+h \cr
+=&amp; i
+\end{aligned}
+$$
+  正常的$\LaTeX$语法是</p>
+<pre><code class="language-bash">$$
+\begin{aligned}
+a=&amp; b+c-d \
+&amp;+e-f \
+=&amp; g+h \
+=&amp; i
+\end{aligned}
+$$
+</code></pre>
+<p>  可是却显示为一行，如下
+$$
+\begin{aligned}
+a=&amp; b+c-d<br>
+&amp;+e-f<br>
+=&amp; g+h<br>
+=&amp; i
+\end{aligned}
+$$
+  这是因为hugo的Markdwon渲染器是blackfriday，字符转义存在一些问题，解决方法是在每一行公式后的<kbd>\</kbd>，加<kbd>cr</kbd>，如下：</p>
+<pre><code class="language-bash">$$
+\begin{aligned}
+a=&amp; b+c-d \cr
+&amp;+e-f \cr
+=&amp; g+h \cr
+=&amp; i
+\end{aligned}
+$$
+</code></pre>
+<p>  $\LaTeX$中的特殊符号<sup id="fnref:7"><a href="#fn:7" class="footnote-ref" role="doc-noteref">7</a></sup>，请参阅<a href="http://estudijas.lu.lv/pluginfile.php/14809/mod_page/content/16/instrukcijas/matematika_moodle/LaTeX_Symbols.pdf">链接</a>。</p>
+<hr>
+<h3 id="mermaid库">Mermaid库</h3>
+<p>  <a href="https://mermaid-js.github.io/mermaid">Mermaid</a> 是一个用于画流程图、状态图、时序图、甘特图的库，使用 JS 进行本地渲染，广泛集成于许多 Markdown 编辑器中。</p>
+<h4 id="甘特图gantt">甘特图Gantt</h4>
+<pre><code>​```mermaid
+gantt
+        dateFormat  YYYY-MM-DD
+        title Adding GANTT diagram functionality to mermaid
+        section 现有任务
+        已完成               :done,    des1, 2014-01-06,2014-01-08
+        进行中               :active,  des2, 2014-01-09, 3d
+        计划一               :         des3, after des2, 5d
+        计划二               :         des4, after des3, 5d
+​```
+</code></pre>
+<p>显示</p>
+
+
+<div class="mermaid" align=" 
+                                center
+                            "> 
+    
+
+gantt
+        dateFormat  YYYY-MM-DD
+        title Adding GANTT diagram functionality to mermaid
+        section 现有任务
+        已完成               :done,    des1, 2014-01-06,2014-01-08
+        进行中               :active,  des2, 2014-01-09, 3d
+        计划一               :         des3, after des2, 5d
+        计划二               :         des4, after des3, 5d
+
+
+</div>
+<h4 id="时序图sequencediagram">时序图SequenceDiagram</h4>
+<pre><code>​```mermaid
+sequenceDiagram
+张三 -&gt;&gt; 李四: 你好！李四, 最近怎么样?
+李四--&gt;&gt;王五: 你最近怎么样，王五？
+李四--x 张三: 我很好，谢谢!
+李四-x 王五: 我很好，谢谢!
+Note right of 王五: 李四想了很长时间, 文字太长了&lt;br/&gt;不适合放在一行.
+
+李四--&gt;&gt;张三: 打量着王五...
+张三-&gt;&gt;王五: 很好... 王五, 你怎么样?
+​```
+</code></pre>
+<p>显示：</p>
+
+
+<div class="mermaid" align=" 
+                                center
+                            "> 
+    
+sequenceDiagram
+张三 ->> 李四: 你好！李四, 最近怎么样?
+李四-->>王五: 你最近怎么样，王五？
+李四--x 张三: 我很好，谢谢!
+李四-x 王五: 我很好，谢谢!
+Note right of 王五: 李四想了很长时间, 文字太长了<br/>不适合放在一行.
+
+李四-->>张三: 打量着王五...
+张三->>王五: 很好... 王五, 你怎么样?
+
+</div>
+<h4 id="流程图flowchat">流程图Flowchat</h4>
+<pre><code>​```mermaid
+graph LR
+A[长方形] -- 链接 --&gt; B((圆))
+A --&gt; C(圆角长方形)
+B --&gt; D{菱形}
+C --&gt; D
+​```
+</code></pre>
+<p>显示：</p>
+
+
+<div class="mermaid" align=" 
+                                center
+                            "> 
+    
+graph LR
+A[长方形] -- 链接 --> B((圆))
+A --> C(圆角长方形)
+B --> D{菱形}
+C --> D
+
+</div>
+<p><strong>在Hugo中使用Mermaid库的注意事项：</strong></p>
+<p>  在hugo中，Markdown编译器是<a href="https://github.com/russross/blackfriday">Blackfriday</a>，并不直接支持<strong>Mermaid</strong>库，需要进行一定的配置，具体请参阅这篇<a href="https://kentxxq.com/contents/%E6%8B%93%E5%B1%95hugo%E7%9A%84markdown_%E6%B5%81%E7%A8%8B%E5%9B%BEmermaid/">文章</a><sup id="fnref:8"><a href="#fn:8" class="footnote-ref" role="doc-noteref">8</a></sup>。</p>
+<p>  配置完成后，在使用时，利用<code>{{ &lt;mermaid&gt; }}</code>和<code>{{ &lt;/mermaid&gt; }}</code>框住mermaid代码，例如用<code>{{ &lt;mermaid&gt; }}</code>和<code>{{ &lt;/mermaid&gt; }}</code>框住以下代码即可：</p>
+<pre><code>graph TD;
+    A--&gt;B;
+    A--&gt;C;
+    B--&gt;D;
+    C--&gt;D;
+</code></pre>
+<p>显示：</p>
+
+
+<div class="mermaid" align=" 
+                                center
+                            "> 
+    
+graph TD;
+    A-->B;
+    A-->C;
+    B-->D;
+    C-->D;
+
+</div>
+<blockquote>
+<p>更多Mermaid语法，参考<a href="https://mermaid-js.github.io/mermaid/">官方文档</a>。</p>
+</blockquote>
+<hr>
+<h3 id="emoji表情">Emoji表情</h3>
+<p>  Markdown支持Emoji表情，比如</p>
+<table>
+<thead>
+<tr>
+<th align="center"><center>Items</center></th>
+<th align="center"><center> Syntax </center></th>
+<th align="center"><center> Preview </center></th>
+<th align="center"><center> Syntax </center></th>
+<th align="center"><center> Preview </center></th>
+<th align="center"><center> Syntax </center></th>
+<th><center> Preview </center></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center"><strong>Expression</strong></td>
+<td align="center"><mark>:hushed:</mark></td>
+<td align="center">😯</td>
+<td align="center"><mark>:smile:</mark></td>
+<td align="center">😄</td>
+<td align="center"><mark>:sweat:</mark></td>
+<td>😓</td>
+</tr>
+<tr>
+<td align="center"><strong>People</strong></td>
+<td align="center"><mark>:couple​:</mark></td>
+<td align="center">👫</td>
+<td align="center"><mark>:couple_with_heart​:</mark></td>
+<td align="center">👩‍❤️‍👨</td>
+<td align="center"><mark>:cupid​:</mark></td>
+<td>💘</td>
+</tr>
+<tr>
+<td align="center"><strong>Nature</strong></td>
+<td align="center"><mark>:sunny​:</mark></td>
+<td align="center">☀️</td>
+<td align="center"><mark>:earth_africa​:</mark></td>
+<td align="center">🌍</td>
+<td align="center"><mark>:zap​:</mark></td>
+<td>⚡</td>
+</tr>
+<tr>
+<td align="center"><strong>Animal</strong></td>
+<td align="center"><mark>:poodle​:</mark></td>
+<td align="center">🐩</td>
+<td align="center"><mark>:monkey​:</mark></td>
+<td align="center">🐒</td>
+<td align="center"><mark>:whale​:</mark></td>
+<td>🐳</td>
+</tr>
+<tr>
+<td align="center"><strong>Object</strong></td>
+<td align="center"><mark>:mailbox​:</mark></td>
+<td align="center">📫</td>
+<td align="center"><mark>:computer​:</mark></td>
+<td align="center">💻</td>
+<td align="center"><mark>:blue_book​:</mark></td>
+<td>📘</td>
+</tr>
+<tr>
+<td align="center"><strong>Places</strong></td>
+<td align="center"><mark>:mailbox​:</mark></td>
+<td align="center">🇨🇳</td>
+<td align="center"><mark>:airplane​:</mark></td>
+<td align="center">✈️</td>
+<td align="center"><mark>:tent​:</mark></td>
+<td>⛺</td>
+</tr>
+<tr>
+<td align="center"><strong>Symbols</strong></td>
+<td align="center"><mark>:ideograph_advantage​:</mark></td>
+<td align="center">🉐</td>
+<td align="center"><mark>:white_check_mark​:</mark></td>
+<td align="center">✅</td>
+<td align="center"><mark>:o​:</mark></td>
+<td>⭕</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p>更多Emoji表情，参考<a href="https://www.webfx.com/tools/emoji-cheat-sheet/">官方文档</a>。</p>
+</blockquote>
+<hr>
+<h3 id="转义字符">转义字符</h3>
+<p>  在Markdown中，有一些字符比较特殊，这些字符用来标识Markdown语法，比如加粗语法<code>**</code>，换行语法<code>&lt;br&gt;</code>等，如果需要显示特定的符号则需要使用<strong>转义字符</strong> — 反斜杠<kbd>\</kbd>。可能需要转义的字符有：</p>
+<pre><code>\\ 反斜杠
+\` 反引号
+\* 星号
+\_ 下划线
+\{\} 大括号
+\[\] 中括号
+\(\) 小括号
+\# 井号
+\+ 加号
+\- 减号
+\. 英文句号
+\! 感叹号
+</code></pre>
+<hr>
+<h3 id="其它html元素支持">其它HTML元素支持</h3>
+<p>  Markdown支持一些HTML元素，如下：</p>
+<ul>
+<li>
+<p><code>&lt;abbr&gt;</code>，<mark>缩略词</mark>，鼠标滑过时显示全名；</p>
+<p>举例：<code>&lt;abbr title=&quot;Graphics Interchange Format&quot;&gt;GIF&lt;/abbr&gt;</code> is a bitmap image format。</p>
+<p>结果：<abbr title="Graphics Interchange Format">GIF</abbr> is a bitmap image format。</p>
+</li>
+<li>
+<p><code>&lt;kbd&gt;</code>，<mark>键位显示</mark>；</p>
+<p>举例：使用 <code>&lt;kbd&gt;Ctrl&lt;/kbd&gt;</code>+<code>&lt;kbd&gt;Alt&lt;/kbd&gt;</code>+<code>&lt;kbd&gt;Del&lt;/kbd&gt; </code>重启电脑；</p>
+<p>结果：使用 <kbd>Ctrl</kbd>+<kbd>Alt</kbd>+<kbd>Del</kbd> 重启电脑；</p>
+</li>
+<li>
+<p><code>&lt;sub&gt;</code>，<mark>下标</mark>；<code>&lt;sup&gt;</code>，<mark>上标</mark></p>
+<p><code>H&lt;sub&gt;2&lt;/sub&gt;O</code>，H<sub>2</sub>O；</p>
+<p><code>n&lt;sup&gt;2&lt;/sup&gt;</code>，n<sup>2</sup>；</p>
+</li>
+<li>
+<p><code>&lt;mark&gt;</code>，<mark>标记/高亮</mark>；</p>
+<p>举例：被<code>&lt;mark&gt;标记&lt;/mark&gt;</code>的文字值得注意；</p>
+<p>结果：被<mark>标记</mark>的文字值得注意；</p>
+</li>
+<li>
+<p><code>&lt;code&gt;</code>，<mark>无边框代码块</mark>，相当于行内代码<mark>`</mark><mark>`</mark>；</p>
+<p>举例：<code>&lt;code&gt;&lt;iostream&gt;&lt;/code&gt;</code>是C++中的一个头文件。</p>
+<p>结果：<code>&lt;iostream&gt;</code>是C++中的一个头文件。</p>
+</li>
+<li>
+<p><code>&lt;b&gt;</code>，<mark>加粗</mark>；<code>&lt;i&gt;</code>，<mark>斜体</mark>；<code>&lt;em&gt;</code>，<mark>强调</mark>；<code>&lt;br&gt;</code>，<mark>换行</mark>；<code>&lt;pre&gt;</code>，<mark>形成代码块</mark>；<code>&lt;cite&gt;</code>，<mark>引用</mark>；</p>
+</li>
+</ul>
+<hr>
+<h3 id="特殊符号">特殊符号</h3>
+<p>  在Markdown中，同样支持一些HTML中的特殊符号，如下表：</p>
+<table>
+<thead>
+<tr>
+<th align="center"><center>符号</center></th>
+<th align="center"><center>描述</center></th>
+<th align="center"><center>编码</center></th>
+<th align="center"><center>符号</center></th>
+<th align="center"><center>说明</center></th>
+<th align="center"><center>编码</center></th>
+<th align="center"><center>符号</center></th>
+<th align="center"><center>说明</center></th>
+<th align="center"><center>编码</center></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center">§</td>
+<td align="center">章节section</td>
+<td align="center"><code>&amp;sect;</code></td>
+<td align="center">∞</td>
+<td align="center">无穷infinity</td>
+<td align="center"><code>&amp;infin;</code></td>
+<td align="center">μ</td>
+<td align="center">mu</td>
+<td align="center"><code>&amp;mu;</code></td>
+</tr>
+<tr>
+<td align="center">£</td>
+<td align="center">磅pound</td>
+<td align="center"><code>&amp;pound;</code></td>
+<td align="center">√</td>
+<td align="center">平方根</td>
+<td align="center"><code>&amp;radic;</code></td>
+<td align="center">ξ</td>
+<td align="center">xi</td>
+<td align="center"><code>&amp;xi;</code></td>
+</tr>
+<tr>
+<td align="center">®</td>
+<td align="center">版权copyright</td>
+<td align="center"><code>&amp;reg;</code></td>
+<td align="center">∇</td>
+<td align="center">向量算子</td>
+<td align="center"><code>&amp;nabla;</code></td>
+<td align="center">ρ</td>
+<td align="center">rho</td>
+<td align="center"><code>&amp;rho;</code></td>
+</tr>
+<tr>
+<td align="center">½</td>
+<td align="center">fraction 1/2</td>
+<td align="center"><code>&amp;frac12;</code></td>
+<td align="center">≈</td>
+<td align="center">约等于</td>
+<td align="center"><code>&amp;asymp;</code></td>
+<td align="center">σ</td>
+<td align="center">sigma</td>
+<td align="center"><code>&amp;sigma;</code></td>
+</tr>
+<tr>
+<td align="center">¼</td>
+<td align="center">fraction 1/4</td>
+<td align="center"><code>&amp;frac12;</code></td>
+<td align="center">≠</td>
+<td align="center">不等于</td>
+<td align="center"><code>&amp;ne;</code></td>
+<td align="center">π</td>
+<td align="center">圆周率pi</td>
+<td align="center"><code>&amp;piv;</code></td>
+</tr>
+<tr>
+<td align="center">¾</td>
+<td align="center">fraction 3/4</td>
+<td align="center"><code>&amp;frac34;</code></td>
+<td align="center">α</td>
+<td align="center">alpha</td>
+<td align="center"><code>&amp;alpha;</code></td>
+<td align="center">∵</td>
+<td align="center">because</td>
+<td align="center"><code>&amp;because;</code></td>
+</tr>
+<tr>
+<td align="center">¿</td>
+<td align="center">倒问号</td>
+<td align="center"><code>&amp;iquest;</code></td>
+<td align="center">β</td>
+<td align="center">beta</td>
+<td align="center"><code>&amp;beta;</code></td>
+<td align="center">∴</td>
+<td align="center">therefore</td>
+<td align="center"><code>&amp;there4;</code></td>
+</tr>
+<tr>
+<td align="center">×</td>
+<td align="center">乘号</td>
+<td align="center"><code>&amp;times;</code></td>
+<td align="center">δ</td>
+<td align="center">delta</td>
+<td align="center"><code>&amp;delta;</code></td>
+<td align="center">♫</td>
+<td align="center">音符</td>
+<td align="center"><code>&amp;#9835;</code></td>
+</tr>
+<tr>
+<td align="center">÷</td>
+<td align="center">除号</td>
+<td align="center"><code>&amp;divide;</code></td>
+<td align="center">eta</td>
+<td align="center">eta</td>
+<td align="center"><code>eta</code></td>
+<td align="center">☯</td>
+<td align="center">太极</td>
+<td align="center"><code>&amp;#9775;</code></td>
+</tr>
+</tbody>
+</table>
+<p>  <font color=red>更多HTML特殊符号，强烈建议参阅这篇文档：<a href="https://www.toptal.com/designers/htmlarrows/symbols/">https://www.toptal.com/designers/htmlarrows/symbols/</a></font></p>
+<hr>
+<h3 id="typora功能快捷键">Typora功能快捷键</h3>
+<p>  使用Typora编辑Markdown时，快捷键的使用使我们事半功倍。</p>
+<p>撤销：<kbd>Ctrl/Command</kbd> + <kbd>Z</kbd></p>
+<p>重做：<kbd>Ctrl/Command</kbd> + <kbd>Y</kbd></p>
+<p>加粗：<kbd>Ctrl/Command</kbd> + <kbd>B</kbd></p>
+<p>斜体：<kbd>Ctrl/Command</kbd> + <kbd>I</kbd></p>
+<p>标题：<kbd>Ctrl/Command</kbd> + <kbd>Shift</kbd> + <kbd>H</kbd></p>
+<p>无序列表：<kbd>Ctrl/Command</kbd> + <kbd>Shift</kbd> + <kbd>U</kbd></p>
+<p>有序列表：<kbd>Ctrl/Command</kbd> + <kbd>Shift</kbd> + <kbd>O</kbd></p>
+<p>检查列表：<kbd>Ctrl/Command</kbd> + <kbd>Shift</kbd> + <kbd>C</kbd></p>
+<p>插入代码：<kbd>Ctrl/Command</kbd> + <kbd>Shift</kbd> + <kbd>K</kbd></p>
+<p>插入链接：<kbd>Ctrl/Command</kbd> + <kbd>Shift</kbd> + <kbd>L</kbd></p>
+<p>插入图片：<kbd>Ctrl/Command</kbd> + <kbd>Shift</kbd> + <kbd>G</kbd></p>
+<p>查找：<kbd>Ctrl/Command</kbd> + <kbd>F</kbd></p>
+<p>替换：<kbd>Ctrl/Command</kbd> + <kbd>G</kbd></p>
+<hr>
+<h3 id="参考">参考</h3>
+<section class="footnotes" role="doc-endnotes">
+<hr>
+<ol>
+<li id="fn:1" role="doc-endnote">
+<p><a href="https://zh.wikipedia.org/wiki/Markdown">https://zh.wikipedia.org/wiki/Markdown</a> <a href="#fnref:1" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:2" role="doc-endnote">
+<p><a href="https://sspai.com/post/37263">https://sspai.com/post/37263</a> <a href="#fnref:2" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:3" role="doc-endnote">
+<p>这里是脚注 <a href="#fnref:3" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:4" role="doc-endnote">
+<p>这里是脚注 <a href="#fnref:4" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:5" role="doc-endnote">
+<p><a href="https://baike.baidu.com/item/%E9%94%9A%E7%82%B9">https://baike.baidu.com/item/锚点</a> <a href="#fnref:5" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:6" role="doc-endnote">
+<p><a href="https://xuchengpeng.com/hugo-blog/2018/05/25/mathjax-in-markdown-blog/">Markdown 博客中使用 MathJax 数学公式</a> <a href="#fnref:6" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:7" role="doc-endnote">
+<p><a href="https://drivingc.com/p/5b1bd56d2392ec23b91bab2e">Latex/MathJax/Katex数学公式手册</a> <a href="#fnref:7" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:8" role="doc-endnote">
+<p>Mermaid: <a href="https://kentxxq.com/contents/%E6%8B%93%E5%B1%95hugo%E7%9A%84markdown_%E6%B5%81%E7%A8%8B%E5%9B%BEmermaid/">https://kentxxq.com/contents/拓展hugo的markdown_流程图mermaid/</a> <a href="#fnref:8" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+</ol>
+</section>
+                        </div><div class="tags my-3"><a class="badge badge-pill badge-light border mr-2" href="/tags/markdown">
+                                    <i class="fas fa-tag mr-2"></i>markdown
+                                </a></div><ul class="share nav my-3 justify-content-end">
+        <li class="nav-item">
+            <a class="nav-link" target="_blank" href="https://twitter.com/intent/tweet?url=https%3a%2f%2fwww.kangzhiheng.top%2fpost%2f13-markdown-syntax-guide%2f&text=Markdown%20Syntax%20Guide">
+              <i class="fa-fw fab fa-twitter"></i>
+          </a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" target="_blank" href="https://www.linkedin.com/shareArticle?url=https%3a%2f%2fwww.kangzhiheng.top%2fpost%2f13-markdown-syntax-guide%2f&title=Markdown%20Syntax%20Guide">
+                <i class="fa-fw fab fa-linkedin-in"></i>
+            </a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" target="_blank" href="https://www.facebook.com/sharer.php?u=https%3a%2f%2fwww.kangzhiheng.top%2fpost%2f13-markdown-syntax-guide%2f&t=Markdown%20Syntax%20Guide">
+                <i class="fa-fw fab fa-facebook-f"></i>
+            </a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" target="_blank" href="https://reddit.com/submit?url=https%3a%2f%2fwww.kangzhiheng.top%2fpost%2f13-markdown-syntax-guide%2f&title=Markdown%20Syntax%20Guide">
+                <i class="fa-fw fab fa-reddit-alien"></i>
+            </a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" target="_blank" href="https://github.com/kangzhiheng?url=https%3a%2f%2fwww.kangzhiheng.top%2fpost%2f13-markdown-syntax-guide%2f&title=Markdown%20Syntax%20Guide">
+                <i class="fa-fw fab fa-github"></i>
+            </a>
+        </li>
+    </nav>
+                    </div>
+                </div>
+
+                <div class="row justify-content-center">
+                    <div class="col-lg-8">
+                        
+                    </div>
+                </div></article>
+            
+        </div>
+    </div>
+    
+    
+    <div id="gitalk-container"></div>
+    <link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css">
+    <script src="https://unpkg.com/gitalk/dist/gitalk.min.js"></script>
+    <script>
+        const gitalk = new Gitalk({
+            clientID: '63ea86b104bd9a73070a',
+            clientSecret: '9d66cbaf6cf4e5d6400f0d081883eb9dc60d987e',
+            repo: 'adoredee.github.io',
+            owner: 'adoredee',
+            admin: ['adoredee'],
+            id: location.pathname, 
+            distractionFreeMode: false 
+        });
+        (function() {
+            if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+                document.getElementById('gitalk-container').innerHTML = 'Gitalk comments not available by default when the website is previewed locally.';
+                return;
+            }
+            gitalk.render('gitalk-container');
+        })();
+    </script>
+
+
+    
+    
+</main>
+
+
+    <footer class="footer text-center bg-dark py-6">
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <ul class="list-inline">
+                    <li class="list-inline-item"><a href="https://www.kangzhiheng.top/index.xml" rel="alternate" type="application/rss+xml" class="icons d-block">
+                                    <span class="fa-stack fa-lg">
+                                        <i class="fa fa-circle fa-stack-2x"></i>
+                                        <i class="fa fa-rss fa-stack-1x fa-inverse"></i>
+                                    </span>
+                                </a></li><li class="list-inline-item">
+                        <a href="mailto:kangzhiheng@live.cn" class="icons d-block">
+                            <span class="fa-stack fa-lg">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa fa-envelope fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </a>
+                    </li><li class="list-inline-item">
+                            <a href="https://facebook.com" class="icons d-block">
+                                <span class="fa-stack fa-lg">
+                                    <i class="fa fa-circle fa-stack-2x"></i>
+                                    <i class="fab fa-facebook fa-stack-1x fa-inverse"></i>
+                                </span>
+                            </a>
+                        </li><li class="list-inline-item">
+                            <a href="https://github.com/kangzhiheng" class="icons d-block">
+                                <span class="fa-stack fa-lg">
+                                    <i class="fa fa-circle fa-stack-2x"></i>
+                                    <i class="fab fa-github fa-stack-1x fa-inverse"></i>
+                                </span>
+                            </a>
+                        </li><li class="list-inline-item">
+                            <a href="https://gitlab.com" class="icons d-block">
+                                <span class="fa-stack fa-lg">
+                                    <i class="fa fa-circle fa-stack-2x"></i>
+                                    <i class="fab fa-gitlab fa-stack-1x fa-inverse"></i>
+                                </span>
+                            </a>
+                        </li><li class="list-inline-item">
+                            <a href="https://stackoverflow.com" class="icons d-block">
+                                <span class="fa-stack fa-lg">
+                                    <i class="fa fa-circle fa-stack-2x"></i>
+                                    <i class="fab fa-instagram fa-stack-1x fa-inverse"></i>
+                                </span>
+                            </a>
+                        </li><li class="list-inline-item">
+                            <a href="https://linkedin.com" class="icons d-block">
+                                <span class="fa-stack fa-lg">
+                                    <i class="fa fa-circle fa-stack-2x"></i>
+                                    <i class="fab fa-linkedin fa-stack-1x fa-inverse"></i>
+                                </span>
+                            </a>
+                        </li><li class="list-inline-item">
+                            <a href="https://mastodon.social" class="icons d-block">
+                                <span class="fa-stack fa-lg">
+                                    <i class="fa fa-circle fa-stack-2x"></i>
+                                    <i class="fab fa-mastodon fa-stack-1x fa-inverse"></i>
+                                </span>
+                            </a>
+                        </li><li class="list-inline-item">
+                            <a href="https://reddit.com" class="icons d-block">
+                                <span class="fa-stack fa-lg">
+                                    <i class="fa fa-circle fa-stack-2x"></i>
+                                    <i class="fab fa-reddit fa-stack-1x fa-inverse"></i>
+                                </span>
+                            </a>
+                        </li><li class="list-inline-item">
+                            <a href="https://stackoverflow.com" class="icons d-block">
+                                <span class="fa-stack fa-lg">
+                                    <i class="fa fa-circle fa-stack-2x"></i>
+                                    <i class="fab fa-stack-overflow fa-stack-1x fa-inverse"></i>
+                                </span>
+                            </a>
+                        </li><li class="list-inline-item">
+                            <a href="https://twitter.com" class="icons d-block">
+                                <span class="fa-stack fa-lg">
+                                    <i class="fa fa-circle fa-stack-2x"></i>
+                                    <i class="fab fa-twitter fa-stack-1x fa-inverse"></i>
+                                </span>
+                            </a>
+                        </li>
+                </ul>
+
+                <p class="text-muted">
+                    
+                        Copyright @ 2008 - 2020, Steve Francia and the Hugo Authors; All Rights Reserved.
+                    
+                </p>
+
+                <p class="text-muted">
+                Powered by <a href="https://gohugo.io" target="_blank">Hugo</a> with <a href="https://github.com/puresyntax71/hugo-theme-chunky-poster" target="_blank">Chunky Poster</a>.
+                Modified by <a href="https://github.com/kangzhiheng" target="_blank">Kangzhiheng</a>.
+                </p>
+                
+                <p class="text-muted">
+                    <script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+                    本页总阅读量
+                    <span id="busuanzi_container_page_pv">
+                        <span id="busuanzi_value_page_pv"></span>
+                    </span>
+                    次，感谢
+                    <span id="busuanzi_container_site_uv">
+                        <span id="busuanzi_value_site_uv"></span>
+                    </span>
+                    位小伙伴的第
+                    <span id="busuanzi_container_site_pv">
+                        <span id="busuanzi_value_site_pv"></span>
+                    </span>
+                    次光临
+                </p>
+            </div>
+        </div>
+    </div>  
+
+    
+    
+    <script type="text/x-mathjax-config">
+        MathJax.Hub.Config({
+          tex2jax: {
+            inlineMath: [['$','$'], ['\\(','\\)']],
+            processEscapes: true
+          }
+        });
+    </script>
+    <script type="text/javascript"
+        src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+    </script>
+    
+
+    
+    <script src="https://cdn.bootcss.com/mermaid/8.0.0-rc.8/mermaid.min.js"></script>
+
+
+</footer>
+
+
+    
+    
+        
+            <script src="/dist/main.d608eadfe5ac0688902e.min.js"></script>
+        
+    
+
+
+
+<script>
+    window.Prism = window.Prism || {};
+    window.Prism.manual = true;
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.17.1/components/prism-core.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.17.1/plugins/autoloader/prism-autoloader.min.js"></script>
+
+
+
+
+
+
+    
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+	ga('create', 'UA-166758556-1', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+
+</body>
+</html>

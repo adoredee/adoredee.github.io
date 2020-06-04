@@ -45,7 +45,7 @@
 <meta itemprop="description" content="Guide to emoji usage in Hugo">
 <meta itemprop="datePublished" content="2019-03-05T00:00:00&#43;00:00" />
 <meta itemprop="dateModified" content="2019-03-05T00:00:00&#43;00:00" />
-<meta itemprop="wordCount" content="148">
+<meta itemprop="wordCount" content="154">
 <meta itemprop="image" content="https://www.kangzhiheng.top/emoji-support.jpg">
 
 
@@ -83,11 +83,11 @@
                 
                     <li class="nav-item"><a class="nav-link" href="/post/">Archives</a></li>
                 
+                    <li class="nav-item"><a class="nav-link" href="/series/">Series</a></li>
+                
                     <li class="nav-item"><a class="nav-link" href="/categories/">Categories</a></li>
                 
                     <li class="nav-item"><a class="nav-link" href="/tags/">Tags</a></li>
-                
-                    <li class="nav-item"><a class="nav-link" href="/series/">Series</a></li>
                 
                     <li class="nav-item"><a class="nav-link" href="/system/">System</a></li>
                 
@@ -156,7 +156,8 @@
                             <p>Emoji can be enabled in a Hugo project in a number of ways.</p>
 <p>The <a href="https://gohugo.io/functions/emojify/"><code>emojify</code></a> function can be called directly in templates or <a href="https://gohugo.io/templates/shortcode-templates/#inline-shortcodes">Inline Shortcodes</a>.</p>
 <p>To enable emoji globally, set <code>enableEmoji</code> to <code>true</code> in your site’s <a href="https://gohugo.io/getting-started/configuration/">configuration</a> and then you can type emoji shorthand codes directly in content files; e.g.</p>
-<!-- raw HTML omitted -->
+<p><span class="nowrap"><span class="emojify">🙈</span> <code>🙈</code></span>  <span class="nowrap"><span class="emojify">🙉</span> <code>🙉</code></span>  <span class="nowrap"><span class="emojify">🙊</span> <code>🙊</code></span></p>
+<br>
 <p>The <a href="http://www.emoji-cheat-sheet.com/">Emoji cheat sheet</a> is a useful reference for emoji shorthand codes.</p>
 <hr>
 <p><strong>N.B.</strong> The above steps enable Unicode Standard emoji characters and sequences in Hugo, however the rendering of these glyphs depends on the browser and the platform. To style the emoji you can either use a third party emoji font or a font stack; e.g.</p>
@@ -343,7 +344,7 @@ font-family: Apple Color Emoji,Segoe UI Emoji,NotoColorEmoji,Segoe UI Symbol,And
                 
                 <p class="text-muted">
                     <script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
-                    本文总阅读量
+                    本页总阅读量
                     <span id="busuanzi_container_page_pv">
                         <span id="busuanzi_value_page_pv"></span>
                     </span>
@@ -360,7 +361,14 @@ font-family: Apple Color Emoji,Segoe UI Emoji,NotoColorEmoji,Segoe UI Symbol,And
             </div>
         </div>
     </div>  
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.2/MathJax.js?config=TeX-MML-AM_SVG"></script>
+
+    
+    
+
+    
+    <script src="https://cdn.bootcss.com/mermaid/8.0.0-rc.8/mermaid.min.js"></script>
+
+
 </footer>
 
 

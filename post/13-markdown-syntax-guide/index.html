@@ -46,7 +46,7 @@
 <meta itemprop="description" content="Sample article showcasing basic Markdown syntax and formatting for HTML elements.">
 <meta itemprop="datePublished" content="2020-05-23T00:00:00&#43;00:00" />
 <meta itemprop="dateModified" content="2020-05-23T00:00:00&#43;00:00" />
-<meta itemprop="wordCount" content="10587">
+<meta itemprop="wordCount" content="10705">
 <meta itemprop="image" content="https://www.kangzhiheng.top/13-cover.png">
 
 
@@ -131,10 +131,10 @@
                     <div class="media author"><a href="/authors/kangzhiheng/" class="mr-3">
                                     <picture>
                                         <source srcset="/authors/kangzhiheng/refrain_huc96af13c0d53ef6b21ac652a00d8e2ed_60914_64x0_resize_q75_box.jpg 1x, /authors/kangzhiheng/refrain_huc96af13c0d53ef6b21ac652a00d8e2ed_60914_128x0_resize_q100_box.jpg 2x, /authors/kangzhiheng/refrain_huc96af13c0d53ef6b21ac652a00d8e2ed_60914_192x0_resize_q100_box.jpg 3x">
-                                        <img src="/authors/kangzhiheng/refrain_huc96af13c0d53ef6b21ac652a00d8e2ed_60914_64x0_resize_q75_box.jpg" class="rounded-circle" alt="Kangzhiheng">
+                                        <img src="/authors/kangzhiheng/refrain_huc96af13c0d53ef6b21ac652a00d8e2ed_60914_64x0_resize_q75_box.jpg" class="rounded-circle" alt="kangzhiheng">
                                     </picture>
                                 </a><div class="media-body">
-                            <h5 class="name my-0"><a href="/authors/kangzhiheng/" class="small">Kangzhiheng</a>
+                            <h5 class="name my-0"><a href="/authors/kangzhiheng/" class="small">kangzhiheng</a>
                             </h5><p class="social small text-muted">
                                     <a href="https://github.com/kangzhiheng">@kangzhiheng</a>
                                 </p></div>
@@ -502,8 +502,11 @@ print(tf.__version__)
 <p> 空½个汉字的宽度；</p>
 <p> 空⅓个汉字的宽度；</p>
 <p><strong>总结</strong>：所以按照中文书写习惯，段首空两格，只需要在段首前面加<code>&amp;emsp;&amp;emsp;</code>就好；</p>
-<h4 id="居中">居中</h4>
-<p>Markdown本身没有居中的语法，需要HTML元素支持。</p>
+<h4 id="对齐">对齐</h4>
+<p>Markdown本身没有<strong>对齐</strong>（居左，居中、居右）的语法，需要HTML元素支持。</p>
+<ul>
+<li>
+<p><strong>居中</strong></p>
 <p><strong>格式1</strong>：<mark>&lt;center&gt;  人间有味是清欢  &lt;/center&gt;</mark></p>
 <p><strong>输出</strong>：</p>
 <center> 人间有味是清欢 </center>
@@ -513,6 +516,15 @@ print(tf.__version__)
 <p><strong>格式3：</strong> <mark> &lt;div align=center&gt; 一蓑烟雨任平生 &lt;/div&gt; </mark></p>
 <p><strong>输出：</strong></p>
 <div align=center> 一蓑烟雨任平生 </div>
+</li>
+<li>
+<p><strong>居左、居右</strong></p>
+<p><strong>居左格式</strong>：<mark> &lt;p align=&quot;left&quot;&gt;我在左边&lt;/p&gt; </mark></p>
+<p align="left">我在左边</p>
+<p><strong>居右格式</strong>：<mark> &lt;p align=&quot;right&quot;&gt;我在右边&lt;/p&gt; </mark></p>
+<p align="right">我在右边</p>
+</li>
+</ul>
 <h4 id="换行">换行</h4>
 <p>在Makrdown源代码模式下，有两种换行方法：</p>
 <ol>

@@ -7,15 +7,7 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <copyright>Copyright @ 2008 - 2020, Steve Francia and the Hugo Authors; All Rights Reserved.</copyright>
-<<<<<<< HEAD
     <lastBuildDate>Sat, 23 May 2020 00:00:00 +0000</lastBuildDate><atom:link href="https://www.kangzhiheng.top/tags/index.xml" rel="self" type="application/rss+xml" />
-=======
-    <lastBuildDate>Sat, 23 May 2020 00:00:00 +0000</lastBuildDate>
-    
-	<atom:link href="https://www.kangzhiheng.top/tags/index.xml" rel="self" type="application/rss+xml" />
-    
-    
->>>>>>> 3ea2c54f5775ed280b9491f0d512f044b5a0a18e
     <item>
       <title>Markdown</title>
       <link>https://www.kangzhiheng.top/tags/markdown/</link>
@@ -152,36 +144,6 @@
     </item>
     
     <item>
-<<<<<<< HEAD
-=======
-      <title>BBR加速</title>
-      <link>https://www.kangzhiheng.top/tags/bbr%E5%8A%A0%E9%80%9F/</link>
-      <pubDate>Sat, 28 Mar 2020 00:00:00 +0000</pubDate>
-      
-      <guid>https://www.kangzhiheng.top/tags/bbr%E5%8A%A0%E9%80%9F/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>SSR</title>
-      <link>https://www.kangzhiheng.top/tags/ssr/</link>
-      <pubDate>Sat, 28 Mar 2020 00:00:00 +0000</pubDate>
-      
-      <guid>https://www.kangzhiheng.top/tags/ssr/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>谷歌云</title>
-      <link>https://www.kangzhiheng.top/tags/%E8%B0%B7%E6%AD%8C%E4%BA%91/</link>
-      <pubDate>Sat, 28 Mar 2020 00:00:00 +0000</pubDate>
-      
-      <guid>https://www.kangzhiheng.top/tags/%E8%B0%B7%E6%AD%8C%E4%BA%91/</guid>
-      <description></description>
-    </item>
-    
-    <item>
->>>>>>> 3ea2c54f5775ed280b9491f0d512f044b5a0a18e
       <title>字符串</title>
       <link>https://www.kangzhiheng.top/tags/%E5%AD%97%E7%AC%A6%E4%B8%B2/</link>
       <pubDate>Mon, 09 Mar 2020 00:00:00 +0000</pubDate>
@@ -299,8 +261,4 @@
     </item>
     
   </channel>
-<<<<<<< HEAD
 </rss>
-=======
-</rss>
->>>>>>> 3ea2c54f5775ed280b9491f0d512f044b5a0a18e

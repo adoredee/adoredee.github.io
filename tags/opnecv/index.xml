@@ -7,15 +7,7 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <copyright>Copyright @ 2008 - 2020, Steve Francia and the Hugo Authors; All Rights Reserved.</copyright>
-<<<<<<< HEAD
     <lastBuildDate>Fri, 17 Apr 2020 00:00:00 +0000</lastBuildDate><atom:link href="https://www.kangzhiheng.top/tags/opnecv/index.xml" rel="self" type="application/rss+xml" />
-=======
-    <lastBuildDate>Fri, 17 Apr 2020 00:00:00 +0000</lastBuildDate>
-    
-	<atom:link href="https://www.kangzhiheng.top/tags/opnecv/index.xml" rel="self" type="application/rss+xml" />
-    
-    
->>>>>>> 3ea2c54f5775ed280b9491f0d512f044b5a0a18e
     <item>
       <title>服务器环境搭建、配置及使用</title>
       <link>https://www.kangzhiheng.top/post/10-%E6%9C%8D%E5%8A%A1%E5%99%A8%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA%E9%85%8D%E7%BD%AE%E5%8F%8A%E4%BD%BF%E7%94%A8/</link>
@@ -23,16 +15,8 @@
       
       <guid>https://www.kangzhiheng.top/post/10-%E6%9C%8D%E5%8A%A1%E5%99%A8%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA%E9%85%8D%E7%BD%AE%E5%8F%8A%E4%BD%BF%E7%94%A8/</guid>
       <description>&lt;p&gt;  搭建和配置&lt;strong&gt;深度学习环境&lt;/strong&gt;、&lt;strong&gt;Matlab环境&lt;/strong&gt;，普通用户可以自由切换多版本CUDA、cuDNN版本，自由组合创建不同版本的Tensorflow、PyTorch等深度学习环境。&lt;/p&gt;
-<<<<<<< HEAD
 &lt;p&gt;  注意：标题右上角带有&amp;quot;*&lt;strong&gt;&lt;strong&gt;&amp;ldquo;标记的，意为这一部分内容需要&lt;/strong&gt;管理员&lt;/strong&gt;操作。&lt;/p&gt;</description>
     </item>
     
   </channel>
 </rss>
-=======
-&lt;p&gt;  注意：标题右上角带有&amp;rdquo;*&lt;strong&gt;&lt;strong&gt;&amp;ldquo;标记的，意为这一部分内容需要&lt;/strong&gt;管理员&lt;/strong&gt;操作。&lt;/p&gt;</description>
-    </item>
-    
-  </channel>
-</rss>
->>>>>>> 3ea2c54f5775ed280b9491f0d512f044b5a0a18e

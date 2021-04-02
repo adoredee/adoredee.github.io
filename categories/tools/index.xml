@@ -7,15 +7,7 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <copyright>Copyright @ 2008 - 2020, Steve Francia and the Hugo Authors; All Rights Reserved.</copyright>
-<<<<<<< HEAD
     <lastBuildDate>Wed, 13 May 2020 00:00:00 +0000</lastBuildDate><atom:link href="https://www.kangzhiheng.top/categories/tools/index.xml" rel="self" type="application/rss+xml" />
-=======
-    <lastBuildDate>Wed, 13 May 2020 00:00:00 +0000</lastBuildDate>
-    
-	<atom:link href="https://www.kangzhiheng.top/categories/tools/index.xml" rel="self" type="application/rss+xml" />
-    
-    
->>>>>>> 3ea2c54f5775ed280b9491f0d512f044b5a0a18e
     <item>
       <title>自建图床三驾马车：Typora、Gitee与PicGo</title>
       <link>https://www.kangzhiheng.top/post/12-imagehost-gitee-picgo/</link>
@@ -26,8 +18,4 @@
     </item>
     
   </channel>
-<<<<<<< HEAD
 </rss>
-=======
-</rss>
->>>>>>> 3ea2c54f5775ed280b9491f0d512f044b5a0a18e

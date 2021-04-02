@@ -7,15 +7,7 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <copyright>Copyright @ 2008 - 2020, Steve Francia and the Hugo Authors; All Rights Reserved.</copyright>
-<<<<<<< HEAD
     <lastBuildDate>Tue, 07 Jul 2020 00:00:00 +0000</lastBuildDate><atom:link href="https://www.kangzhiheng.top/categories/index.xml" rel="self" type="application/rss+xml" />
-=======
-    <lastBuildDate>Tue, 07 Jul 2020 00:00:00 +0000</lastBuildDate>
-    
-	<atom:link href="https://www.kangzhiheng.top/categories/index.xml" rel="self" type="application/rss+xml" />
-    
-    
->>>>>>> 3ea2c54f5775ed280b9491f0d512f044b5a0a18e
     <item>
       <title>Poems</title>
       <link>https://www.kangzhiheng.top/categories/poems/</link>
@@ -89,18 +81,6 @@
     </item>
     
     <item>
-<<<<<<< HEAD
-=======
-      <title>科学上网</title>
-      <link>https://www.kangzhiheng.top/categories/%E7%A7%91%E5%AD%A6%E4%B8%8A%E7%BD%91/</link>
-      <pubDate>Sat, 28 Mar 2020 00:00:00 +0000</pubDate>
-      
-      <guid>https://www.kangzhiheng.top/categories/%E7%A7%91%E5%AD%A6%E4%B8%8A%E7%BD%91/</guid>
-      <description></description>
-    </item>
-    
-    <item>
->>>>>>> 3ea2c54f5775ed280b9491f0d512f044b5a0a18e
       <title>Algorithm</title>
       <link>https://www.kangzhiheng.top/categories/algorithm/</link>
       <pubDate>Mon, 09 Mar 2020 00:00:00 +0000</pubDate>
@@ -173,8 +153,4 @@
     </item>
     
   </channel>
-<<<<<<< HEAD
 </rss>
-=======
-</rss>
->>>>>>> 3ea2c54f5775ed280b9491f0d512f044b5a0a18e

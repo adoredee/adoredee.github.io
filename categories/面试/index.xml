@@ -7,7 +7,15 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <copyright>Copyright @ 2008 - 2020, Steve Francia and the Hugo Authors; All Rights Reserved.</copyright>
+<<<<<<< HEAD
     <lastBuildDate>Sat, 15 Feb 2020 00:00:00 +0000</lastBuildDate><atom:link href="https://www.kangzhiheng.top/categories/%E9%9D%A2%E8%AF%95/index.xml" rel="self" type="application/rss+xml" />
+=======
+    <lastBuildDate>Sat, 15 Feb 2020 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://www.kangzhiheng.top/categories/%E9%9D%A2%E8%AF%95/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+>>>>>>> 3ea2c54f5775ed280b9491f0d512f044b5a0a18e
     <item>
       <title>C&#43;&#43;之查漏补缺</title>
       <link>https://www.kangzhiheng.top/post/3-c&#43;&#43;%E7%9F%A5%E8%AF%86%E7%82%B9/</link>
@@ -18,4 +26,8 @@
     </item>
     
   </channel>
+<<<<<<< HEAD
 </rss>
+=======
+</rss>
+>>>>>>> 3ea2c54f5775ed280b9491f0d512f044b5a0a18e

@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+<title>
+  
+     leetcode62-63不同路径 | 
+    adoredee
+  
+</title><meta name="description" content="谁知我知你，我知你之深。"><meta name="author" content="kangzhiheng">
+
+<link rel="apple-touch-icon" href="/apple-touch-icon.png" sizes="180x180">
+<link rel="icon" href="/favicon-32x32.png " sizes="32x32" type="image/png">
+<link rel="icon" href="/favicon-16x16.png" sizes="16x16" type="image/png">
+<link rel="manifest" href="/manifest.json">
+<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#0c344b">
+<link rel="icon" href="/favicon.ico">
+
+
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.17.1/themes/prism.min.css">
+    
+
+
+
+    
+        
+            <link rel="stylesheet" href="/dist/main.37ab3f61b95417873748.min.css">
+        
+    
+
+
+
+
+<link rel="canonical" href="https://www.kangzhiheng.top/algorithm/2-leetcode62-63%E4%B8%8D%E5%90%8C%E8%B7%AF%E5%BE%84/"><meta property="og:title" content="leetcode62-63不同路径" />
+<meta property="og:description" content="Leetcode62题" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://www.kangzhiheng.top/algorithm/2-leetcode62-63%E4%B8%8D%E5%90%8C%E8%B7%AF%E5%BE%84/" />
+<meta property="og:image" content="https://www.kangzhiheng.top/2-cover.png" />
+<meta property="article:published_time" content="2020-02-12T00:00:00+00:00" />
+<meta property="article:modified_time" content="2020-02-12T00:00:00+00:00" />
+
+<meta itemprop="name" content="leetcode62-63不同路径">
+<meta itemprop="description" content="Leetcode62题">
+<meta itemprop="datePublished" content="2020-02-12T00:00:00&#43;00:00" />
+<meta itemprop="dateModified" content="2020-02-12T00:00:00&#43;00:00" />
+<meta itemprop="wordCount" content="403">
+<meta itemprop="image" content="https://www.kangzhiheng.top/2-cover.png">
+
+
+
+<meta itemprop="keywords" content="动态规划,Medium," /><meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:image" content="https://www.kangzhiheng.top/2-cover.png"/>
+
+<meta name="twitter:title" content="leetcode62-63不同路径"/>
+<meta name="twitter:description" content="Leetcode62题"/>
+
+</head>
+<body>
+    
+<nav class="navbar navbar-expand-md navbar-light bg-light fixed-top shadow-sm" id="navbar-main-menu">
+    <div class="container">
+        <a class="navbar-brand font-weight-bold" href="https://www.kangzhiheng.top/">adoredee</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#main-menu" aria-controls="main-menu" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="main-menu">
+            <ul class="navbar-nav ml-auto">
+
+                
+                    <li class="nav-item"><a class="nav-link" href="/">Home</a></li>
+                
+                    <li class="nav-item"><a class="nav-link" href="/post/">Archives</a></li>
+                
+                    <li class="nav-item"><a class="nav-link" href="/categories/">Categories</a></li>
+                
+                    <li class="nav-item"><a class="nav-link" href="/tags/">Tags</a></li>
+                
+                    <li class="nav-item"><a class="nav-link" href="/series/">Series</a></li>
+                
+                    <li class="nav-item"><a class="nav-link" href="/algorithm/">Algorithm</a></li>
+                
+                    <li class="nav-item"><a class="nav-link" href="/system/">System</a></li>
+                
+                    <li class="nav-item"><a class="nav-link" href="/share/">Share</a></li>
+                
+                    <li class="nav-item"><a class="nav-link" href="/life/">Life</a></li>
+                
+                    <li class="nav-item"><a class="nav-link" href="/poems/">Poems</a></li>
+                
+                    <li class="nav-item"><a class="nav-link" href="/about/">About</a></li>
+                
+                    <li class="nav-item"><a class="nav-link" href="/search/">Search</a></li>
+                
+            
+            </ul>
+        </div>
+    </div>
+</nav>
+
+
+
+
+    
+<main class="content-page container pt-7 pb-5">
+    <div class="row">
+        <div class="col">
+            <article>
+                <div class="row justify-content-center">
+                    <div class="col-lg-12">
+                        <h2 class="mb-3">leetcode62-63不同路径</h2>
+                        
+                        <div class="content">
+                            <p>Leetcode62题</p>
+<pre><code class="language-C++">//-----------------------------------------------------------------------------
+// 作    者：adoredee
+// 创建时间： 2020.01.15
+// 描    述：不同路径
+// 版    本：
+// 链    接：https://leetcode-cn.com/problems/unique-paths/
+// Copyright (C) 2019 Shanghai Jiao Tong University
+
+/*
+思路：
+1. 组合优化：向右或向左的步数都是固定的，因此总步数也是固定的，一共需要 m + n - 2 步，
+   向右的步数为 m - 1，向下的步数为 n - 1，因此总共有C(m+n-2,m-1)或者C(m+n-2,n-1)路径
+2. 动态规划:2D DP优化为1D DP
+*/
+
+#include &lt;iostream&gt;
+#include &lt;vector&gt;
+
+using namespace std;
+
+// 二维动态规划
+int uniquePaths_DP_2D(int m, int n)
+{
+	// 异常检测
+	if (m &lt; 0 || n &lt; 0)
+		return 0;
+
+	vector&lt;vector&lt;int&gt;&gt; DP(n, vector&lt;int&gt;(m));
+
+	for (int i = 0; i &lt; n; ++i)
+	{
+		for (int j = 0; j &lt; m; ++j)
+		{
+			if (i == 0 || j == 0)
+				DP[i][j] = 1;
+			else
+			    DP[i][j] = DP[i - 1][j] + DP[i][j - 1];
+		}
+	}
+
+	return DP[n - 1][m - 1];
+}
+
+// 一维动态规划
+int uniquePaths_DP_1D(int m, int n)
+{
+	// 异常检测
+	if (m &lt; 0 || n &lt; 0)
+		return 0;
+
+	vector&lt;int&gt; DP(m);
+
+	for (int i = 0; i &lt; n; ++i)
+	{
+		for (int j = 0; j &lt; m; ++j)
+		{
+			if (i == 0 || j == 0)
+				DP[j] = 1;
+			else
+				DP[j] = DP[j] + DP[j - 1];
+		}
+	}
+
+	return DP[m - 1];
+}
+
+int main()
+{
+	int m, n;
+	cin &gt;&gt; m &gt;&gt; n;
+
+	int nPaths = uniquePaths_DP_1D(m, n);
+	cout &lt;&lt; nPaths &lt;&lt; endl;
+
+}
+</code></pre>
+                        </div>        
+                    </div>
+                </div>                
+            </article>
+        </div>
+    </div>
+</main>
+
+
+    <footer class="footer text-center bg-dark py-6">
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <ul class="list-inline">
+                    <li class="list-inline-item"><a href="https://www.kangzhiheng.top/index.xml" rel="alternate" type="application/rss+xml" class="icons d-block">
+                                    <span class="fa-stack fa-lg">
+                                        <i class="fa fa-circle fa-stack-2x"></i>
+                                        <i class="fa fa-rss fa-stack-1x fa-inverse"></i>
+                                    </span>
+                                </a></li><li class="list-inline-item">
+                        <a href="mailto:kangzhiheng@live.cn" class="icons d-block">
+                            <span class="fa-stack fa-lg">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa fa-envelope fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </a>
+                    </li><li class="list-inline-item">
+                            <a href="https://facebook.com" class="icons d-block">
+                                <span class="fa-stack fa-lg">
+                                    <i class="fa fa-circle fa-stack-2x"></i>
+                                    <i class="fab fa-facebook fa-stack-1x fa-inverse"></i>
+                                </span>
+                            </a>
+                        </li><li class="list-inline-item">
+                            <a href="https://github.com/kangzhiheng" class="icons d-block">
+                                <span class="fa-stack fa-lg">
+                                    <i class="fa fa-circle fa-stack-2x"></i>
+                                    <i class="fab fa-github fa-stack-1x fa-inverse"></i>
+                                </span>
+                            </a>
+                        </li><li class="list-inline-item">
+                            <a href="https://gitlab.com" class="icons d-block">
+                                <span class="fa-stack fa-lg">
+                                    <i class="fa fa-circle fa-stack-2x"></i>
+                                    <i class="fab fa-gitlab fa-stack-1x fa-inverse"></i>
+                                </span>
+                            </a>
+                        </li><li class="list-inline-item">
+                            <a href="https://stackoverflow.com" class="icons d-block">
+                                <span class="fa-stack fa-lg">
+                                    <i class="fa fa-circle fa-stack-2x"></i>
+                                    <i class="fab fa-instagram fa-stack-1x fa-inverse"></i>
+                                </span>
+                            </a>
+                        </li><li class="list-inline-item">
+                            <a href="https://linkedin.com" class="icons d-block">
+                                <span class="fa-stack fa-lg">
+                                    <i class="fa fa-circle fa-stack-2x"></i>
+                                    <i class="fab fa-linkedin fa-stack-1x fa-inverse"></i>
+                                </span>
+                            </a>
+                        </li><li class="list-inline-item">
+                            <a href="https://mastodon.social" class="icons d-block">
+                                <span class="fa-stack fa-lg">
+                                    <i class="fa fa-circle fa-stack-2x"></i>
+                                    <i class="fab fa-mastodon fa-stack-1x fa-inverse"></i>
+                                </span>
+                            </a>
+                        </li><li class="list-inline-item">
+                            <a href="https://reddit.com" class="icons d-block">
+                                <span class="fa-stack fa-lg">
+                                    <i class="fa fa-circle fa-stack-2x"></i>
+                                    <i class="fab fa-reddit fa-stack-1x fa-inverse"></i>
+                                </span>
+                            </a>
+                        </li><li class="list-inline-item">
+                            <a href="https://stackoverflow.com" class="icons d-block">
+                                <span class="fa-stack fa-lg">
+                                    <i class="fa fa-circle fa-stack-2x"></i>
+                                    <i class="fab fa-stack-overflow fa-stack-1x fa-inverse"></i>
+                                </span>
+                            </a>
+                        </li><li class="list-inline-item">
+                            <a href="https://twitter.com" class="icons d-block">
+                                <span class="fa-stack fa-lg">
+                                    <i class="fa fa-circle fa-stack-2x"></i>
+                                    <i class="fab fa-twitter fa-stack-1x fa-inverse"></i>
+                                </span>
+                            </a>
+                        </li>
+                </ul>
+
+                <p class="text-muted">
+                    
+                        Copyright © 2008–2020, Steve Francia and the Hugo Authors; All Rights Reserved.
+                    
+                </p>
+
+                <p class="text-muted">
+                Powered by <a href="https://gohugo.io" target="_blank">Hugo</a> with <a href="https://github.com/puresyntax71/hugo-theme-chunky-poster" target="_blank">Chunky Poster</a>.
+                Modified by <a href="https://github.com/kangzhiheng" target="_blank">Kangzhiheng</a>.
+                </p>
+
+                <p class="text-muted">
+                    <script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+                    本文总阅读量
+                    <span id="busuanzi_container_page_pv">
+                        <span id="busuanzi_value_page_pv"></span>
+                    </span>
+                    次，感谢
+                    <span id="busuanzi_container_site_pv">
+                        <span id="busuanzi_value_site_pv"></span>
+                    </span>
+                    位小伙伴的第
+                    <span id="busuanzi_container_site_uv">
+                        <span id="busuanzi_value_site_uv"></span>
+                    </span>
+                    次光临
+                </p>
+            </div>
+        </div>
+    </div>  
+</footer>
+
+
+    
+    
+        
+            <script src="/dist/main.d608eadfe5ac0688902e.min.js"></script>
+        
+    
+
+
+
+<script>
+    window.Prism = window.Prism || {};
+    window.Prism.manual = true;
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.17.1/components/prism-core.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.17.1/plugins/autoloader/prism-autoloader.min.js"></script>
+
+
+
+
+
+
+    
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+	ga('create', 'UA-XXXX', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+
+</body>
+</html>

@@ -7,7 +7,15 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <copyright>Copyright @ 2008 - 2020, Steve Francia and the Hugo Authors; All Rights Reserved.</copyright>
+<<<<<<< HEAD
     <lastBuildDate>Sat, 15 Feb 2020 00:00:00 +0000</lastBuildDate><atom:link href="https://www.kangzhiheng.top/categories/web/index.xml" rel="self" type="application/rss+xml" />
+=======
+    <lastBuildDate>Sat, 15 Feb 2020 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://www.kangzhiheng.top/categories/web/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+>>>>>>> 3ea2c54f5775ed280b9491f0d512f044b5a0a18e
     <item>
       <title>TCP/IP之知识点梳理</title>
       <link>https://www.kangzhiheng.top/post/6-tcp-ip%E7%9F%A5%E8%AF%86%E7%82%B9%E6%A2%B3%E7%90%86/</link>
@@ -18,4 +26,8 @@
     </item>
     
   </channel>
+<<<<<<< HEAD
 </rss>
+=======
+</rss>
+>>>>>>> 3ea2c54f5775ed280b9491f0d512f044b5a0a18e

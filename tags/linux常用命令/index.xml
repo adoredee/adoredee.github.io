@@ -7,7 +7,15 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <copyright>Copyright @ 2008 - 2020, Steve Francia and the Hugo Authors; All Rights Reserved.</copyright>
+<<<<<<< HEAD
     <lastBuildDate>Sat, 15 Feb 2020 00:00:00 +0000</lastBuildDate><atom:link href="https://www.kangzhiheng.top/tags/linux%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/index.xml" rel="self" type="application/rss+xml" />
+=======
+    <lastBuildDate>Sat, 15 Feb 2020 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://www.kangzhiheng.top/tags/linux%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+>>>>>>> 3ea2c54f5775ed280b9491f0d512f044b5a0a18e
     <item>
       <title>Linux之常用命令</title>
       <link>https://www.kangzhiheng.top/post/4-linux%E4%B9%8B%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/</link>
@@ -18,4 +26,8 @@
     </item>
     
   </channel>
+<<<<<<< HEAD
 </rss>
+=======
+</rss>
+>>>>>>> 3ea2c54f5775ed280b9491f0d512f044b5a0a18e

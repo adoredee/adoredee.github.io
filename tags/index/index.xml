@@ -6,7 +6,15 @@
     <description>Recent content in index on adoredee</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
+<<<<<<< HEAD
     <copyright>Copyright @ 2008 - 2020, Steve Francia and the Hugo Authors; All Rights Reserved.</copyright><atom:link href="https://www.kangzhiheng.top/tags/index/index.xml" rel="self" type="application/rss+xml" />
+=======
+    <copyright>Copyright @ 2008 - 2020, Steve Francia and the Hugo Authors; All Rights Reserved.</copyright>
+    
+	<atom:link href="https://www.kangzhiheng.top/tags/index/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+>>>>>>> 3ea2c54f5775ed280b9491f0d512f044b5a0a18e
     <item>
       <title>Life</title>
       <link>https://www.kangzhiheng.top/life/</link>
@@ -35,4 +43,8 @@
     </item>
     
   </channel>
+<<<<<<< HEAD
 </rss>
+=======
+</rss>
+>>>>>>> 3ea2c54f5775ed280b9491f0d512f044b5a0a18e

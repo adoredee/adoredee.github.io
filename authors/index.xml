@@ -7,7 +7,15 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <copyright>Copyright @ 2008 - 2020, Steve Francia and the Hugo Authors; All Rights Reserved.</copyright>
+<<<<<<< HEAD
     <lastBuildDate>Tue, 07 Jul 2020 00:00:00 +0000</lastBuildDate><atom:link href="https://www.kangzhiheng.top/authors/index.xml" rel="self" type="application/rss+xml" />
+=======
+    <lastBuildDate>Tue, 07 Jul 2020 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://www.kangzhiheng.top/authors/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+>>>>>>> 3ea2c54f5775ed280b9491f0d512f044b5a0a18e
     <item>
       <title></title>
       <link>https://www.kangzhiheng.top/authors/kangzhiheng/</link>
@@ -27,4 +35,8 @@
     </item>
     
   </channel>
+<<<<<<< HEAD
 </rss>
+=======
+</rss>
+>>>>>>> 3ea2c54f5775ed280b9491f0d512f044b5a0a18e

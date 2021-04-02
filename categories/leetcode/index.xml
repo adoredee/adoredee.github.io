@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>LeetCode on adoredee</title>
+    <link>https://www.kangzhiheng.top/categories/leetcode/</link>
+    <description>Recent content in LeetCode on adoredee</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <copyright>Copyright @ 2008 - 2020, Steve Francia and the Hugo Authors; All Rights Reserved.</copyright>
+    <lastBuildDate>Wed, 12 Feb 2020 00:00:00 +0000</lastBuildDate><atom:link href="https://www.kangzhiheng.top/categories/leetcode/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>leetcode62-63不同路径</title>
+      <link>https://www.kangzhiheng.top/post/2-leetcode62-63%E4%B8%8D%E5%90%8C%E8%B7%AF%E5%BE%84/</link>
+      <pubDate>Wed, 12 Feb 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.kangzhiheng.top/post/2-leetcode62-63%E4%B8%8D%E5%90%8C%E8%B7%AF%E5%BE%84/</guid>
+      <description>&lt;p&gt;Leetcode62题&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

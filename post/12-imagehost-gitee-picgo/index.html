@@ -1,0 +1,564 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+<title>
+  
+     自建图床三驾马车：Typora、Gitee与PicGo | 
+    adoredee
+  
+</title><meta name="description" content="Thy know not I knew thee"><meta name="author" content="kangzhiheng">
+
+<link rel="apple-touch-icon" href="/apple-touch-icon.png" sizes="180x180">
+<link rel="icon" href="/favicon-32x32.png " sizes="32x32" type="image/png">
+<link rel="icon" href="/favicon-16x16.png" sizes="16x16" type="image/png">
+<link rel="manifest" href="/manifest.json">
+<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#0c344b">
+<link rel="icon" href="/favicon.ico">
+
+
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.17.1/themes/prism.min.css">
+    
+
+
+
+    
+        
+            <link rel="stylesheet" href="/dist/main.37ab3f61b95417873748.min.css">
+        
+    
+
+
+
+
+<link rel="canonical" href="https://www.kangzhiheng.top/post/12-imagehost-gitee-picgo/"><meta property="og:title" content="自建图床三驾马车：Typora、Gitee与PicGo" />
+<meta property="og:description" content="  Typora写作，Gitee存放照片等资源，PicGo一键上传，自己动手搭建国内快速稳定的图床。" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://www.kangzhiheng.top/post/12-imagehost-gitee-picgo/" /><meta property="og:image" content="https://www.kangzhiheng.top/12-cover.png" /><meta property="article:section" content="post" />
+<meta property="article:published_time" content="2020-05-13T00:00:00&#43;00:00" />
+<meta property="article:modified_time" content="2020-05-13T00:00:00&#43;00:00" />
+
+<meta itemprop="name" content="自建图床三驾马车：Typora、Gitee与PicGo">
+<meta itemprop="description" content="  Typora写作，Gitee存放照片等资源，PicGo一键上传，自己动手搭建国内快速稳定的图床。"><meta itemprop="datePublished" content="2020-05-13T00:00:00&#43;00:00" />
+<meta itemprop="dateModified" content="2020-05-13T00:00:00&#43;00:00" />
+<meta itemprop="wordCount" content="3683"><meta itemprop="image" content="https://www.kangzhiheng.top/12-cover.png">
+<meta itemprop="keywords" content="图床,Markdown," /><meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:image" content="https://www.kangzhiheng.top/12-cover.png"/>
+
+<meta name="twitter:title" content="自建图床三驾马车：Typora、Gitee与PicGo"/>
+<meta name="twitter:description" content="  Typora写作，Gitee存放照片等资源，PicGo一键上传，自己动手搭建国内快速稳定的图床。"/>
+
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-166758556-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-166758556-1');
+</script>
+
+</head>
+<body>
+    
+<nav class="navbar navbar-expand-md navbar-light bg-light fixed-top shadow-sm" id="navbar-main-menu">
+    <div class="container">
+        <a class="navbar-brand font-weight-bold" href="https://www.kangzhiheng.top/">adoredee</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#main-menu" aria-controls="main-menu" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="main-menu">
+            <ul class="navbar-nav ml-auto">
+
+                
+                    <li class="nav-item"><a class="nav-link" href="/">Home</a></li>
+                
+                    <li class="nav-item"><a class="nav-link" href="/post/">Archives</a></li>
+                
+                    <li class="nav-item"><a class="nav-link" href="/series/">Series</a></li>
+                
+                    <li class="nav-item"><a class="nav-link" href="/categories/">Categories</a></li>
+                
+                    <li class="nav-item"><a class="nav-link" href="/tags/">Tags</a></li>
+                
+                    <li class="nav-item"><a class="nav-link" href="/system/">System</a></li>
+                
+                    <li class="nav-item"><a class="nav-link" href="/share/">Share</a></li>
+                
+                    <li class="nav-item"><a class="nav-link" href="/life/">Life</a></li>
+                
+                    <li class="nav-item"><a class="nav-link" href="/poems/">Poems</a></li>
+                
+                    <li class="nav-item"><a class="nav-link" href="/about/">About</a></li>
+                
+                    <li class="nav-item"><a class="nav-link" href="/search/">Search</a></li>
+                
+            
+            </ul>
+        </div>
+    </div>
+</nav>
+
+
+
+
+    
+<main class="content-page container pt-7 pb-5">
+    
+    <div class="row">
+        <div class="col">
+            <article>
+                <div class="row justify-content-center">
+                    <div class="col-lg-12">
+                        <div class="meta text-muted mb-3">
+                            <p class="created text-muted text-uppercase font-weight-bold mb-1">May 13, 2020</p>
+                            <span class="mr-2"><i class="fas fa-book-open mr-2"></i>3683 words</span>
+                            <span><i class="fas fa-clock mr-2"></i>8 mins read</span>
+                        </div>
+
+                        <h1>自建图床三驾马车：Typora、Gitee与PicGo</h1>
+
+                        <ul class="authors list-inline"><li class="list-inline-item mr-3">
+                    <div class="media author"><a href="/authors/kangzhiheng/" class="mr-3">
+                                    <picture>
+                                        <source srcset="/authors/kangzhiheng/refrain_huc96af13c0d53ef6b21ac652a00d8e2ed_60914_64x0_resize_q75_box.jpg 1x, /authors/kangzhiheng/refrain_huc96af13c0d53ef6b21ac652a00d8e2ed_60914_128x0_resize_q100_box.jpg 2x, /authors/kangzhiheng/refrain_huc96af13c0d53ef6b21ac652a00d8e2ed_60914_192x0_resize_q100_box.jpg 3x">
+                                        <img src="/authors/kangzhiheng/refrain_huc96af13c0d53ef6b21ac652a00d8e2ed_60914_64x0_resize_q75_box.jpg" class="rounded-circle" alt="kangzhiheng">
+                                    </picture>
+                                </a><div class="media-body">
+                            <h5 class="name my-0"><a href="/authors/kangzhiheng/" class="small">kangzhiheng</a>
+                            </h5><p class="social small text-muted">
+                                    <a href="https://github.com/kangzhiheng">@kangzhiheng</a>
+                                </p></div>
+                    </div>
+                </li></ul>
+                    </div>
+                </div><div class="row justify-content-center mb-3">
+                                <div class="col-lg-10">
+                                    <img data-src="/images/12-cover_hu79c1fcf187741f3df39e9514b6c7ca71_15207_900x500_fit_box_2.png" class="img-fluid rounded mx-auto d-block" alt="自建图床三驾马车：Typora、Gitee与PicGo">
+                                </div>
+                            </div>
+<div class="post-toc" id="post-toc">
+  <h2 class="post-toc-title"></h2>
+  <div class="post-toc-content always-active">
+    <nav id="TableOfContents">
+  <ul>
+    <li>
+      <ul>
+        <li><a href="#前世今生">前世今生</a></li>
+        <li><a href="#三个好伙伴">三个好伙伴</a></li>
+        <li><a href="#牵线搭桥">牵线搭桥</a></li>
+        <li><a href="#一键上传">一键上传</a></li>
+        <li><a href="#总结">总结</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+  </div>
+</div>                
+                <div class="row justify-content-center">
+                    <div class="col-lg-12">
+                        <div class="content">
+                            <p>  Typora写作，Gitee存放照片等资源，PicGo一键上传，自己动手搭建国内快速稳定的图床。</p>
+<h3 id="前世今生">前世今生</h3>
+<p>  自从搭建了博客之后，从Hexo到Hugo，Markdown自身对照片的支持有多种方法，但是部署到网站上，尤其是部署到Github上，如果直接上传本地原始图片，速度慢的让人心碎。起初找了几个不错的<strong>图床</strong>，在本站导航栏里的<a href="https://kangzhiheng.top/share/#%E8%89%AF%E5%BF%83%E5%9B%BE%E5%BA%8A">Share</a>界面里进行了分享，聚合图床不错，但是偶尔偶尔有失效链接，七牛云虽说有10个G的容量，但是只有一个月的免费域名，否则需要自己已经备案的域名，域名备案略麻烦。当然分享的图床都非常好用，但始终不得我心，直到<strong>Typora、Gitee与PicGo</strong>发生了奇妙的化学反应，至此老夫心态祥和，不再口吐芬芳。</p>
+<h3 id="三个好伙伴">三个好伙伴</h3>
+<ul>
+<li>
+<p><strong>Typora</strong>：Markdown写作终极形态</p>
+<p><strong>链接</strong>：<a href="https://www.typora.io/">https://www.typora.io/</a></p>
+<p><strong>推荐</strong>：它，跨越三大操作系统；它，颜值与功能齐飞，它，让你沉浸在写作的海洋中，不能自拔。它就是Typora，新一代Markdown写作神器，简约，时尚，<strong>完全免费</strong>，功能之强大、体验之美妙、理念之先进，让人爱不释手，墙裂推荐；</p>
+</li>
+<li>
+<p><strong>Gitee</strong>：Github的孪生（假）兄弟，国产Git服务器</p>
+<p><strong>链接</strong>：<a href="https://gitee.com">https://gitee.com</a></p>
+<p><strong>推荐</strong>：功能与Github基本无异，<strong>全中文操作界面</strong>，<strong>国内访问速度超快</strong>，很多在Github上下载难产的项目，只需要一键克隆到Gitee，那速度，就像单车变摩托，你说快不快。其实之前很多人在Github上存放资源，但是碍于速度。Gitee的出现完美解决了这个问题，个人认为Gitee其实还是非常不错的，中文支持友好，对于国内的同学来说Gitee是一个不错的学习平台，通过使用Gitee，对Gitee和Github都会有所收获，毕竟两者十分相似，支持Gitee。</p>
+<p><strong>容量</strong>：<a href="https://gitee.com/help/articles/4283">根据Gitee官方</a>介绍，个人用户，Gitee单个仓库的容量上限是500M，总容量是5G，所以，<strong>在上传资源时，比如图片，尽可能无损压缩</strong>，压缩的方法在本站导航栏里的<a href="https://kangzhiheng.top/share/">Share</a>界面里的<a href="https://kangzhiheng.top/share/#%E5%8E%8B%E7%BC%A9%E7%BD%91%E7%AB%99">压缩网站</a>里进行了介绍，这样就可以保证图片的质量，以及数量。</p>
+</li>
+<li>
+<p><strong>PicGo</strong>：一个用于快速上传图片并获取图片URL链接的工具</p>
+<p><strong>链接</strong>：<a href="https://github.com/Molunerfinn/PicGo/releases">https://github.com/Molunerfinn/PicGo/releases</a></p>
+<p><strong>推荐</strong>：实现<strong>自动上传</strong>图片并返回markdown格式的图片URL，十分好用，不用一个个上传照片，在Windows下，<strong>PicGo功能在Windows/Mac系统中还被集成在鼠标右键中</strong>，真正实现，只需轻轻一点，即可轻松上传，返回的图片URL已经自动被复制到剪切板里，在需要的地方，直接粘贴即可。</p>
+<p><strong>默认支持图床</strong>：<a href="https://github.com/Molunerfinn/PicGo/">来源PicGo官方说明</a>，截止2020年5月14日的数据。</p>
+<ul>
+<li>
+<p><del><code>微博图床</code> v1.0</del> <strong>微博图床从 2019 年 4 月开始进行防盗链，不建议继续使用</strong></p>
+</li>
+<li>
+<p><code>七牛图床</code> v1.0</p>
+</li>
+<li>
+<p><code>腾讯云 COS v4\v5版本</code> v1.1 &amp; v1.5.0</p>
+</li>
+<li>
+<p><code>又拍云</code> v1.2.0</p>
+</li>
+<li>
+<p><code>GitHub</code> v1.5.0</p>
+</li>
+<li>
+<p><del><code>SM.MS</code> v1.5.1</del> <strong>由于官方不再支持V1版本，暂时请使用<a href="https://github.com/xlzy520/picgo-plugin-smms-user">smms-user</a>插件</strong></p>
+</li>
+<li>
+<p><code>阿里云 OSS</code> v1.6.0</p>
+</li>
+<li>
+<p><code>Imgur</code> v1.6.0</p>
+<p><strong>本体不再增加默认的图床支持，可以自行开发第三方图床插件。详见 <a href="https://picgo.github.io/PicGo-Core-Doc/">PicGo-Core</a></strong>。已有插件<strong>支持Gitee</strong>、青云等第三方图床。</p>
+</li>
+</ul>
+</li>
+</ul>
+<p>  因此，<strong>Typora</strong>可以进行Markdown写作，<strong>Gitee</strong>存放照片等资源，<strong>PicGo</strong>一键上传，自己动手搭建国内快速稳定的图床。</p>
+<h3 id="牵线搭桥">牵线搭桥</h3>
+<h4 id="安装typora">安装Typora</h4>
+<p>链接为<a href="https://www.typora.io/">https://www.typora.io/</a>，选择操作系统，直接安装即可。</p>
+<h4 id="新建gitee仓库"><strong>新建Gitee仓库</strong></h4>
+<p>假设已经注册了Gitee账户，在你的Gitee空间下，单击个人资料照片，选择<strong>新建仓库</strong>；</p>
+<p><img src="https://gitee.com/kangzhiheng/ImageHosting/raw/master/Img/gitee-new-repo.png" alt=""></p>
+<p>填写仓库信息，注意下图红色框框的提示：</p>
+<ul>
+<li>
+<p>新建仓库名为<strong>Image</strong>（<strong>必须</strong>）</p>
+</li>
+<li>
+<p>简单介绍一下这个仓库：自建图床（<strong>非必须</strong>）</p>
+</li>
+<li>
+<p>选择<strong>开源</strong>（<strong>必须</strong>）</p>
+</li>
+<li></li>
+</ul>
+<p>单击<strong>创建</strong>即可，建议将Readme文件补充完整，养成好习惯。</p>
+<p>  正常操作是在本地新建一个目录，把图片等资源放到该目录下，然后利用git相关操作进行上传，本着能省就省一步的我来说，这些步骤将由PicGo来完成，一键上传资源到Gitee仓库中。</p>
+<h4 id="安装并配置picgo">安装并配置PicGo</h4>
+<ul>
+<li>
+<p><strong>安装PicGo</strong></p>
+<p><strong>PicGo</strong>软件的链接：<a href="https://github.com/Molunerfinn/PicGo/releases">https://github.com/Molunerfinn/PicGo/releases</a>，Windows 用户请下载最新版本的 <code>exe</code> 文件，Linux用户请下载 <code>AppImage</code> 文件，macOS 用户请下载最新版本的 <code>dmg</code> 文件。</p>
+<ul>
+<li>
+<p>如果是 Arch 类的 Linux 用户，可以直接通过 <code>aurman -S picgo-appimage</code> 来安装 PicGo；</p>
+</li>
+<li>
+<p>Mac用户使用 <code>brew cask</code> 来安装 PicGo：<code>brew cask install picgo</code>。</p>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>配置PicGo与Gitee</strong></p>
+<p>打开PicGo</p>
+<p><img src="https://gitee.com/kangzhiheng/ImageHosting/raw/master/Img/PicGo-home.png" alt=""></p>
+<p>在侧边栏里的<strong>插件设置</strong>中，搜索<strong>gitee-uploader</strong>，点击进行安装；</p>
+<p><img src="https://gitee.com/kangzhiheng/ImageHosting/raw/master/Img/PicGo-gitee-plugin.png" alt=""></p>
+<p>紧接着，在侧边栏里的<strong>图床设置</strong>中，找到<strong>gitee</strong>，进行设置</p>
+<p><img src="https://gitee.com/kangzhiheng/ImageHosting/raw/master/Img/PicGo-gitee-plugin-settings.png" alt=""></p>
+<p>解释如下：</p>
+<ul>
+<li>
+<p><strong>repo</strong>：用户名/仓库名，比如我的Gitee账户名为kangzhiheng，新建的仓库Image作为图床，所以在这一栏填写<code>kangzhiheng/Image</code>；</p>
+</li>
+<li>
+<p><strong>branch</strong>：上传资源的仓库分支，填写<strong>master</strong>即可；</p>
+</li>
+<li>
+<p><strong>token</strong>：Gitee的私人令牌，获取方法下一小节《<a href="#Gitee%E7%A7%81%E4%BA%BA%E4%BB%A4%E7%89%8Ctoken%E8%8E%B7%E5%8F%96%E6%96%B9%E6%B3%95">Gitee私人令牌token获取方法</a>》中详细介绍；</p>
+</li>
+<li>
+<p><strong>path</strong>：选填，最好填写，比如<strong>Img</strong>，这样上传的资源都会保存在这个Gitee仓库下的Img文件夹下，避免所有文件显示在仓库首页；</p>
+</li>
+<li>
+<p>customPath和customUrl：不用填写，这个的作用就像我们使用<code>git commit -m &quot;commit message&quot;</code>一样，显示提交消息，插件默认提交，格式一般是<code>Upload 资源名称 by picGo - 时间</code>，资源名称中外文都行，时间精确到秒。</p>
+</li>
+</ul>
+<p>点击<strong>确定</strong>，然后在PicGo首页选择<strong>默认图床为Gitee</strong>，如图，即可配置完成。</p>
+<p><img src="https://gitee.com/kangzhiheng/ImageHosting/raw/master/Img/PicGo-select-gitee.png" alt=""></p>
+</li>
+</ul>
+<h4 id="gitee私人令牌token获取方法">Gitee私人令牌token获取方法</h4>
+<p>进入Gitee个人空间，点击头像，再点击<strong>设置</strong>；</p>
+<p><img src="https://gitee.com/kangzhiheng/ImageHosting/raw/master/Img/PicGo-gitee-token-1.png" alt=""></p>
+<p>在左边的侧边栏，点击<strong>私人令牌</strong>；</p>
+<p><img src="https://gitee.com/kangzhiheng/ImageHosting/raw/master/Img/PicGo-gitee-token-2.png" alt=""></p>
+<p>然后在页面的右上角，点击**+生成新令牌**；</p>
+<p><img src="https://gitee.com/kangzhiheng/ImageHosting/raw/master/Img/PicGo-gitee-token-3.png" alt=""></p>
+<p>按照下图进行设置，注意<strong>私人令牌描述</strong>必填；</p>
+<p><img src="https://gitee.com/kangzhiheng/ImageHosting/raw/master/Img/PicGo-gitee-token-4.png" alt=""></p>
+<p>点击<strong>提交</strong>，然后生成私人令牌，这时提示输入Gitee账户的密码；</p>
+<p><img src="https://gitee.com/kangzhiheng/ImageHosting/raw/master/Img/PicGo-gitee-token-5.png" alt=""></p>
+<p>然后成功生成<strong>私人令牌</strong>。</p>
+<p><img src="https://gitee.com/kangzhiheng/ImageHosting/raw/master/Img/PicGo-gitee-token-6.png" alt=""></p>
+<h3 id="一键上传">一键上传</h3>
+<p>  至此我们已经配置完成了，现在进行测试。需要知道的是，在Windows/Mac，<strong>PicGo功能被集成在鼠标右键中</strong>——<code>Upload pictures with PicGo</code>。</p>
+<p><img src="https://gitee.com/kangzhiheng/ImageHosting/raw/master/Img/PicGo-upload.png" alt=""></p>
+<p>  PicGo支持5种链接格式：<code>Markdown</code>、<code>HTML</code>、<code>URL</code>、<code>UBB</code>、<code>Custom</code>，默认链接是<code>Markdown</code>，至于<code>Custom</code>，在软件的<strong>PicGo设置</strong>里进行自定义设置，另外在<strong>PicGo设置</strong>里打开<strong>上传提示</strong>开关。</p>
+<p>  更多设置，请关注PicGo官方文档：《<a href="https://picgo.github.io/PicGo-Doc/">PicGo配置手册</a>》。</p>
+<p>  现在右键点击一张图片，选择<code>Upload pictures with PicGo</code>，系统在后台默认上传操作，并返回<strong>链接格式</strong>。直接在Markdown里进行粘贴即可，速度很快，且链接不会失效。</p>
+<h3 id="总结">总结</h3>
+<h4 id="关于picgo">关于PicGo</h4>
+<p>  PicGo里还有一个很好用的功能就是在<strong>相册</strong>里查看你上传成功的所有图片。点击图片可以预览。点击图片下面的图标可以复制链接或者删除图片（只是删除本地数据，使其不在相册区里出现）。</p>
+<p>有些时候可能上传的图片，需要再次更改URL&lt;比如修改http到https，或者加上一些操作后缀（例：七牛图床支持的<code>?imgslim</code>）等等。另外还可以更改链接格式。</p>
+<p><img src="https://gitee.com/kangzhiheng/ImageHosting/raw/master/Img/PicGo-edit-info.gif" alt=""></p>
+<h4 id="关于gitee">关于Gitee</h4>
+<p>  在前文中提过，<a href="https://gitee.com/help/articles/4283">根据Gitee官方</a>介绍，个人用户，Gitee单个仓库的容量上限是500M，总容量是5G，所以，<strong>在上传资源时，比如图片，尽可能无损压缩</strong>，压缩的方法在本站导航栏里的<a href="https://kangzhiheng.top/share/">Share</a>界面里的<a href="https://kangzhiheng.top/share/#%E5%8E%8B%E7%BC%A9%E7%BD%91%E7%AB%99">压缩网站</a>里进行了介绍，这样就可以保证图片的质量，以及数量。</p>
+<p>  那么5G容量，到底有多大？我们来捋一捋。</p>
+<p>  我博客中大部分图片，原始大小都是几十或者几百KB，经过压缩网站<a href="https://picgo.github.io/PicGo-Doc/">recompressor</a>处理，基本上都是在50KB以下（其实绝大多数图片只有十几KB），就按照50KB大小计算，Gitee单个仓库容量上限是500M，那么可以存放<code>500 x 1024 / 50 = 10240</code>张图片，一篇博客平均15张图片（很多了），单个仓库大概用于将近680篇博客了，按照一周2篇，一个月8篇，一年96篇，偷个懒一年也就90篇（一半就不错了），大约可以写7年半；</p>
+<p>  如果一个Gitee账户下的所有空间全部用来当作图床，仓库总容量上限是5G，单个仓库容量上限是500M，那么大约可以建立10个满容量的仓库，那么可以存放<code>5 x 1024 x 1024 / 50 = 104857.6</code>张图片，也按照一篇博客平均15张图片，大概用于将近7000篇博客了，按照一周2篇，一个月8篇，一年96篇，偷个懒一年也就90篇（一半就不错了），大约可以写78年，且不论这只是一个Gitee空间下的容量，你品，你仔细品。</p>
+<p>  如果是一张图片平均大小是500KB，一个Gitee空间可以使用7年多，所以绝对够用了。</p>
+<h4 id="约定">约定</h4>
+<p>本着节约资源的想法，对于一张图片或者GIF，约定：</p>
+<ul>
+<li>
+<p>博客中的图片或者GIF长度<strong>不能超过900像素</strong>；</p>
+</li>
+<li>
+<p>每一张图片尽可能在<strong>50KB</strong>以下，经过压缩网站如<a href="https://picgo.github.io/PicGo-Doc/">recompressor</a>，处理掉图片中的多余信息；</p>
+</li>
+<li>
+<p>每一个GIF，大小尽可能在1M以下，GIF压缩网站有：<a href="https://img.top/">img.top</a>、<a href="https://docsmall.com/">docsmall</a>等；</p>
+</li>
+<li>
+<p>每一个资源，命名时要注意习惯，利于管理，规则建议<code>软件名/项目-使用场景/注释/[操作方法]-[1...n]</code>；</p>
+</li>
+</ul>
+                        </div><div class="tags my-3"><a class="badge badge-pill badge-light border mr-2" href="/tags/%E5%9B%BE%E5%BA%8A">
+                                    <i class="fas fa-tag mr-2"></i>图床
+                                </a><a class="badge badge-pill badge-light border mr-2" href="/tags/markdown">
+                                    <i class="fas fa-tag mr-2"></i>Markdown
+                                </a></div><ul class="share nav my-3 justify-content-end">
+        <li class="nav-item">
+            <a class="nav-link" target="_blank" href="https://twitter.com/intent/tweet?url=https%3a%2f%2fwww.kangzhiheng.top%2fpost%2f12-imagehost-gitee-picgo%2f&text=%e8%87%aa%e5%bb%ba%e5%9b%be%e5%ba%8a%e4%b8%89%e9%a9%be%e9%a9%ac%e8%bd%a6%ef%bc%9aTypora%e3%80%81Gitee%e4%b8%8ePicGo">
+              <i class="fa-fw fab fa-twitter"></i>
+          </a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" target="_blank" href="https://www.linkedin.com/shareArticle?url=https%3a%2f%2fwww.kangzhiheng.top%2fpost%2f12-imagehost-gitee-picgo%2f&title=%e8%87%aa%e5%bb%ba%e5%9b%be%e5%ba%8a%e4%b8%89%e9%a9%be%e9%a9%ac%e8%bd%a6%ef%bc%9aTypora%e3%80%81Gitee%e4%b8%8ePicGo">
+                <i class="fa-fw fab fa-linkedin-in"></i>
+            </a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" target="_blank" href="https://www.facebook.com/sharer.php?u=https%3a%2f%2fwww.kangzhiheng.top%2fpost%2f12-imagehost-gitee-picgo%2f&t=%e8%87%aa%e5%bb%ba%e5%9b%be%e5%ba%8a%e4%b8%89%e9%a9%be%e9%a9%ac%e8%bd%a6%ef%bc%9aTypora%e3%80%81Gitee%e4%b8%8ePicGo">
+                <i class="fa-fw fab fa-facebook-f"></i>
+            </a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" target="_blank" href="https://reddit.com/submit?url=https%3a%2f%2fwww.kangzhiheng.top%2fpost%2f12-imagehost-gitee-picgo%2f&title=%e8%87%aa%e5%bb%ba%e5%9b%be%e5%ba%8a%e4%b8%89%e9%a9%be%e9%a9%ac%e8%bd%a6%ef%bc%9aTypora%e3%80%81Gitee%e4%b8%8ePicGo">
+                <i class="fa-fw fab fa-reddit-alien"></i>
+            </a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" target="_blank" href="https://github.com/kangzhiheng?url=https%3a%2f%2fwww.kangzhiheng.top%2fpost%2f12-imagehost-gitee-picgo%2f&title=%e8%87%aa%e5%bb%ba%e5%9b%be%e5%ba%8a%e4%b8%89%e9%a9%be%e9%a9%ac%e8%bd%a6%ef%bc%9aTypora%e3%80%81Gitee%e4%b8%8ePicGo">
+                <i class="fa-fw fab fa-github"></i>
+            </a>
+        </li>
+    </nav>
+                    </div>
+                </div>
+
+                <div class="row justify-content-center">
+                    <div class="col-lg-8">
+                        
+                    </div>
+                </div></article>
+            
+        </div>
+    </div>
+    
+    
+    <div id="gitalk-container"></div>
+    <link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css">
+    <script src="https://unpkg.com/gitalk/dist/gitalk.min.js"></script>
+    <script>
+        const gitalk = new Gitalk({
+            clientID: '63ea86b104bd9a73070a',
+            clientSecret: '9d66cbaf6cf4e5d6400f0d081883eb9dc60d987e',
+            repo: 'adoredee.github.io',
+            owner: 'adoredee',
+            admin: ['adoredee'],
+            id: location.pathname, 
+            distractionFreeMode: false 
+        });
+        (function() {
+            if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+                document.getElementById('gitalk-container').innerHTML = 'Gitalk comments not available by default when the website is previewed locally.';
+                return;
+            }
+            gitalk.render('gitalk-container');
+        })();
+    </script>
+
+
+    
+    
+</main>
+
+
+    <footer class="footer text-center bg-dark py-6">
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <ul class="list-inline">
+                    <li class="list-inline-item"><a href="https://www.kangzhiheng.top/index.xml" rel="alternate" type="application/rss+xml" class="icons d-block">
+                                    <span class="fa-stack fa-lg">
+                                        <i class="fa fa-circle fa-stack-2x"></i>
+                                        <i class="fa fa-rss fa-stack-1x fa-inverse"></i>
+                                    </span>
+                                </a></li><li class="list-inline-item">
+                        <a href="mailto:kangzhiheng@live.cn" class="icons d-block">
+                            <span class="fa-stack fa-lg">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa fa-envelope fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </a>
+                    </li><li class="list-inline-item">
+                            <a href="https://facebook.com" class="icons d-block">
+                                <span class="fa-stack fa-lg">
+                                    <i class="fa fa-circle fa-stack-2x"></i>
+                                    <i class="fab fa-facebook fa-stack-1x fa-inverse"></i>
+                                </span>
+                            </a>
+                        </li><li class="list-inline-item">
+                            <a href="https://github.com/kangzhiheng" class="icons d-block">
+                                <span class="fa-stack fa-lg">
+                                    <i class="fa fa-circle fa-stack-2x"></i>
+                                    <i class="fab fa-github fa-stack-1x fa-inverse"></i>
+                                </span>
+                            </a>
+                        </li><li class="list-inline-item">
+                            <a href="https://gitlab.com" class="icons d-block">
+                                <span class="fa-stack fa-lg">
+                                    <i class="fa fa-circle fa-stack-2x"></i>
+                                    <i class="fab fa-gitlab fa-stack-1x fa-inverse"></i>
+                                </span>
+                            </a>
+                        </li><li class="list-inline-item">
+                            <a href="https://stackoverflow.com" class="icons d-block">
+                                <span class="fa-stack fa-lg">
+                                    <i class="fa fa-circle fa-stack-2x"></i>
+                                    <i class="fab fa-instagram fa-stack-1x fa-inverse"></i>
+                                </span>
+                            </a>
+                        </li><li class="list-inline-item">
+                            <a href="https://linkedin.com" class="icons d-block">
+                                <span class="fa-stack fa-lg">
+                                    <i class="fa fa-circle fa-stack-2x"></i>
+                                    <i class="fab fa-linkedin fa-stack-1x fa-inverse"></i>
+                                </span>
+                            </a>
+                        </li><li class="list-inline-item">
+                            <a href="https://mastodon.social" class="icons d-block">
+                                <span class="fa-stack fa-lg">
+                                    <i class="fa fa-circle fa-stack-2x"></i>
+                                    <i class="fab fa-mastodon fa-stack-1x fa-inverse"></i>
+                                </span>
+                            </a>
+                        </li><li class="list-inline-item">
+                            <a href="https://reddit.com" class="icons d-block">
+                                <span class="fa-stack fa-lg">
+                                    <i class="fa fa-circle fa-stack-2x"></i>
+                                    <i class="fab fa-reddit fa-stack-1x fa-inverse"></i>
+                                </span>
+                            </a>
+                        </li><li class="list-inline-item">
+                            <a href="https://stackoverflow.com" class="icons d-block">
+                                <span class="fa-stack fa-lg">
+                                    <i class="fa fa-circle fa-stack-2x"></i>
+                                    <i class="fab fa-stack-overflow fa-stack-1x fa-inverse"></i>
+                                </span>
+                            </a>
+                        </li><li class="list-inline-item">
+                            <a href="https://twitter.com" class="icons d-block">
+                                <span class="fa-stack fa-lg">
+                                    <i class="fa fa-circle fa-stack-2x"></i>
+                                    <i class="fab fa-twitter fa-stack-1x fa-inverse"></i>
+                                </span>
+                            </a>
+                        </li>
+                </ul>
+
+                <p class="text-muted">
+                    
+                        Copyright @ 2008 - 2020, Steve Francia and the Hugo Authors; All Rights Reserved.
+                    
+                </p>
+
+                <p class="text-muted">
+                Powered by <a href="https://gohugo.io" target="_blank">Hugo</a> with <a href="https://github.com/puresyntax71/hugo-theme-chunky-poster" target="_blank">Chunky Poster</a>.
+                Modified by <a href="https://github.com/kangzhiheng" target="_blank">Kangzhiheng</a>.
+                </p>
+                
+                <p class="text-muted">
+                    <script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+                    本页总阅读量
+                    <span id="busuanzi_container_page_pv">
+                        <span id="busuanzi_value_page_pv"></span>
+                    </span>
+                    次，感谢
+                    <span id="busuanzi_container_site_uv">
+                        <span id="busuanzi_value_site_uv"></span>
+                    </span>
+                    位小伙伴的第
+                    <span id="busuanzi_container_site_pv">
+                        <span id="busuanzi_value_site_pv"></span>
+                    </span>
+                    次光临
+                </p>
+            </div>
+        </div>
+    </div>  
+
+    
+    
+
+    
+    <script src="https://cdn.bootcss.com/mermaid/8.0.0-rc.8/mermaid.min.js"></script>
+
+
+</footer>
+
+
+    
+    
+        
+            <script src="/dist/main.d608eadfe5ac0688902e.min.js"></script>
+        
+    
+
+
+
+<script>
+    window.Prism = window.Prism || {};
+    window.Prism.manual = true;
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.17.1/components/prism-core.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.17.1/plugins/autoloader/prism-autoloader.min.js"></script>
+
+
+
+
+
+
+    
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+	ga('create', 'UA-166758556-1', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+
+
+    <div class="back-to-top" id="back-to-top">
+        <i class="iconfont icon-up"></i>
+    </div>
+
+</body>
+
+</html>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Web on adoredee</title>
+    <link>https://www.kangzhiheng.top/categories/web/</link>
+    <description>Recent content in Web on adoredee</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <copyright>Copyright @ 2008 - 2020, Steve Francia and the Hugo Authors; All Rights Reserved.</copyright>
+    <lastBuildDate>Sat, 15 Feb 2020 00:00:00 +0000</lastBuildDate><atom:link href="https://www.kangzhiheng.top/categories/web/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>TCP/IP之知识点梳理</title>
+      <link>https://www.kangzhiheng.top/post/6-tcp-ip%E7%9F%A5%E8%AF%86%E7%82%B9%E6%A2%B3%E7%90%86/</link>
+      <pubDate>Sat, 15 Feb 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.kangzhiheng.top/post/6-tcp-ip%E7%9F%A5%E8%AF%86%E7%82%B9%E6%A2%B3%E7%90%86/</guid>
+      <description>&lt;p&gt;网络原理&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -7,7 +7,7 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <copyright>Copyright @ 2008 - 2020, Steve Francia and the Hugo Authors; All Rights Reserved.</copyright>
-    <lastBuildDate>Tue, 07 Jul 2020 00:00:00 +0000</lastBuildDate><atom:link href="https://www.kangzhiheng.top/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 28 Apr 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://www.kangzhiheng.top/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Search</title>
       <link>https://www.kangzhiheng.top/search/</link>
@@ -15,6 +15,15 @@
       
       <guid>https://www.kangzhiheng.top/search/</guid>
       <description>/* 手机适配 */ @media screen and (max-width: 500px) { .search{ padding-right: 25px; } .search input{ width: 100%; } .search button{ display: none; } } /* 电脑适配 */ @media screen and (min-width: 500px) { .search{ width: 500px; } .search input{ width: 444px; } } /* 通用样式 */ .search{ margin: auto; } .search input{ outline: none; border: 2px solid #c05b4d; height: 48px; padding:</description>
+    </item>
+    
+    <item>
+      <title>再看反向传播算法</title>
+      <link>https://www.kangzhiheng.top/post/14-%E5%8F%8D%E5%90%91%E4%BC%A0%E6%92%AD%E5%9B%9E%E9%A1%BE/</link>
+      <pubDate>Wed, 28 Apr 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.kangzhiheng.top/post/14-%E5%8F%8D%E5%90%91%E4%BC%A0%E6%92%AD%E5%9B%9E%E9%A1%BE/</guid>
+      <description>&lt;p&gt;  本文主要介绍了反向传播算法，温故知新。&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -160,7 +169,7 @@
       <pubDate>Thu, 28 Feb 2019 00:00:00 +0000</pubDate>
       
       <guid>https://www.kangzhiheng.top/share/</guid>
-      <description>目录 免费插图/手绘网站（十分推荐） 人文历史 优质资源 效率工具 压缩网站 免费图库 良心图床 科学上网 其它 免费插图/手绘网站（十分推荐） Delesign</description>
+      <description>目录 免费插图/手绘网站（十分推荐） 人文历史 优质资源 效率工具 压缩网站 免费图库 良心图床 上网姿势 其它 免费插图/手绘网站（十分推荐） Delesign</description>
     </item>
     
     <item>
